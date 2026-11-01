@@ -798,9 +798,9 @@ class MultiCasePrintTests(unittest.TestCase):
 
     def test_actual_roster_and_unresolved_differences_retained(self):
         summary=self.p.summarize(self.rows)
-        self.assertEqual(summary['cases'],19)
-        self.assertEqual(summary['compared_body_characters'],1267)
-        self.assertEqual(summary['different_character_positions'],8)
+        self.assertEqual(summary['cases'],21)
+        self.assertEqual(summary['compared_body_characters'],1617)
+        self.assertEqual(summary['different_character_positions'],10)
         self.assertEqual(len(next(r for r in self.rows if r['case_id']=='XJ-KCLY-C-H3-P014-1')['differences']),0)
 
     def test_duplicate_case_cannot_inflate_full_case_count(self):
@@ -812,7 +812,7 @@ class MultiCasePrintTests(unittest.TestCase):
         for row in rows:
             row['pdf_page']=rows[0]['pdf_page']
             for loc in row.get('column_locations',[]):loc['pdf_page']=rows[0]['pdf_page']
-        self.assertEqual(self.p.summarize(rows)['unique_pdf_pages'],4)
+        self.assertEqual(self.p.summarize(rows)['unique_pdf_pages'],5)
 
     def test_column_roster_cannot_drop_half_leaf(self):
         import json
@@ -986,7 +986,7 @@ class PendingPrintReadingTests(unittest.TestCase):
         p,r=self.record()
         rows=[p.build(path=f) for f in sorted((p.ROOT/'research/print_case_reviews').glob('*.json'))]
         summary=p.summarize(rows,[r])
-        self.assertEqual((summary['cases'],summary['pending_model_image_readings']),(19,1))
+        self.assertEqual((summary['cases'],summary['pending_model_image_readings']),(21,1))
         r['case_id']=rows[0]['case_id']
         with self.assertRaisesRegex(ValueError,'cannot also be completed'):p.summarize(rows,[r])
 
@@ -1077,6 +1077,37 @@ class ZtlyPrintScopeTests(unittest.TestCase):
         self.assertEqual(c['fields']['course']['observations'][0]['time_phase'],'later_narrator_window')
         self.assertFalse(c['fields']['prior_treatment']['observations'])
         self.assertEqual(r['scan_columns'][-1],'芷桔梗月餘而瘡愈')
+
+class WksyPrintTemporalTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        import check_print_case as p
+        cls.rows={key:p.build(path=p.ROOT/f'research/print_case_reviews/WKSY_V3_{key}_2026-11-01.json')
+                  for key in ['P017','P120']}
+        cls.core={r['case_id']:r for r in review.build()[0]}
+
+    def test_new_differences_keep_source_and_column_positions(self):
+        a=self.rows['P017']['differences'][0];b=self.rows['P120']['differences'][0]
+        self.assertEqual((a['working'],a['scan'],a['source_start_char'],a['scan_column_index'],a['scan_column_char_index']),('痠','酸',22,2,1))
+        self.assertEqual((b['working'],b['scan'],b['source_start_char'],b['scan_column_index'],b['scan_column_char_index']),('趾','指',15,1,14))
+
+    def test_cross_page_care_boundary_keeps_frozen_punctuation_separate(self):
+        r=self.rows['P017'];c=self.core[r['case_id']]
+        self.assertEqual([x['pdf_page'] for x in r['page_renders']],[99,100])
+        self.assertEqual(r['column_locations'][5],{'pdf_page':100,'page_half':'right','column_from_right':1})
+        self.assertIn('不能潰先用補中益氣湯',r['scan_reading'])
+        self.assertTrue(c['fields']['mechanism']['observations'][-1]['reading_joined_source_segments'].endswith('不能潰'))
+        self.assertTrue(all(o['time_phase']=='later_narrator_window' for o in c['fields']['prior_treatment']['observations']))
+        self.assertNotIn('一儒者',r['scan_reading'])
+
+    def test_other_patients_outcome_not_assigned_to_index_patient(self):
+        r=self.rows['P120'];c=self.core[r['case_id']]
+        self.assertTrue(r['scan_reading'].endswith('是時同患此症服敗毒之藥者俱不救'))
+        self.assertIn('余為此足三陰虛',r['scan_reading'])
+        self.assertIn('固服除濕敗毒等劑',r['scan_reading'])
+        quotes=[o['reading_joined_source_segments'] for f in c['fields'].values() for o in f['observations']]
+        self.assertFalse(any('俱不救' in q for q in quotes))
+        self.assertFalse(r['initial_query_eligible'])
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,0 +1,36 @@
+{
+  "case_id":"XJ-WKSY-C-V3-P120-1",
+  "review_date":"2026-11-01",
+  "method":"model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication":"pending",
+  "initial_query_eligible":false,
+  "pdf_record":"research/scan_reviews/WKSY_target_spots_2026-10-28.json",
+  "pdf_page":128,
+  "page_half":"right",
+  "location":"第128页右半叶自右第1至7列；起一膏粱之人，止服敗毒之藥者俱不救；第8列另列下一节标题。",
+  "render_command":"pdftoppm -f 128 -l 128 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256":"f7c528e740b51633ef3774bc3003dd49228379cf62918ae3b95e2feb0a6edcd5",
+  "scan_columns":[
+    "一膏粱之人先作渴足熱後足大指赤痛六脈洪",
+    "數而無力左尺為甚余為此足三陰虛當滋化源",
+    "為主固服除濕敗毒等劑元氣益虛色黯延足余",
+    "乃朝用補中益氣湯夕用補陰八珍湯各三十餘",
+    "劑及桑枝灸潰而膿清作渴不止遂朝以前湯送",
+    "加減八味丸夕用十全大補湯三十餘劑而痊是",
+    "時同患此症服敗毒之藥者俱不救"
+  ],
+  "column_locations":[
+    {"pdf_page":128,"page_half":"right","column_from_right":1},
+    {"pdf_page":128,"page_half":"right","column_from_right":2},
+    {"pdf_page":128,"page_half":"right","column_from_right":3},
+    {"pdf_page":128,"page_half":"right","column_from_right":4},
+    {"pdf_page":128,"page_half":"right","column_from_right":5},
+    {"pdf_page":128,"page_half":"right","column_from_right":6},
+    {"pdf_page":128,"page_half":"right","column_from_right":7}
+  ],
+  "transcription_policy":"正文常用字编码模型对照，不穷尽异体、训点与标点，不据病例或同患群体叙述推断疗效因果。",
+  "expected_substitutions":[{"working":"趾","scan":"指"}],
+  "full_case_model_image_comparisons":1,
+  "expert_collated_cases":0,
+  "scope":"one_full_case_one_print_witness_not_source_correction"
+}
