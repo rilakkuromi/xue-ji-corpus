@@ -1,0 +1,28 @@
+{
+  "case_id":"XJ-NKCZ-C-V1-P103-1",
+  "review_date":"2026-10-30",
+  "method":"model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication":"pending",
+  "initial_query_eligible":false,
+  "pdf_record":"research/scan_reviews/NKCZ_target_spots_2026-10-27.json",
+  "pdf_page":37,
+  "page_half":"left",
+  "location":"第37页左半叶自右第5至7列；第4列为治驗题，第5列起一婦人久而不愈，第7列止至春而愈；同列其后此症若肝經風火等理论不属固定案文窗口，未加入本案对照。",
+  "render_command":"pdftoppm -f 37 -l 37 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256":"83f13b1b51aeae762f89feb55b4fd844301939bf1e0c8665d5fdf200177111a2",
+  "scan_columns":[
+    "一婦人久而不愈或以為木旺之症用散腫潰堅",
+    "湯伐之腫硬益甚余以為肝經氣血虧損當滋化",
+    "源用六味地黃丸補中益氣湯至春而愈"
+  ],
+  "column_locations":[
+    {"pdf_page":37,"page_half":"left","column_from_right":5},
+    {"pdf_page":37,"page_half":"left","column_from_right":6},
+    {"pdf_page":37,"page_half":"left","column_from_right":7}
+  ],
+  "transcription_policy":"正文常用字编码模型对照，不穷尽异体、训点与标点；保留或以為与余以為的解释者区别，不把后续理论纳入固定案文。",
+  "expected_substitutions":[],
+  "full_case_model_image_comparisons":1,
+  "expert_collated_cases":0,
+  "scope":"one_frozen_case_window_excluding_following_theory_not_source_correction"
+}

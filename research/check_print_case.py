@@ -41,6 +41,9 @@ def build(record=None, path=INPUT):
     if r['full_case_model_image_comparisons']!=1 or r['expert_collated_cases']!=0:
         raise ValueError('Model image comparison is not expert collation')
     witness=json.loads((ROOT/r['pdf_record']).read_text())
+    work=r['case_id'].split('-')[1]
+    if {s['source_ref'].split('-')[1] for s in witness['spots']}!={work}:
+        raise ValueError('Case work and PDF witness work mismatch')
     if r['pdf_record']=='research/scan_reviews/KCLY_target_spots_2026-10-27.json':
         import check_witness_bibliography as bibliography
         audited=bibliography.build()
@@ -51,6 +54,9 @@ def build(record=None, path=INPUT):
         reviewed_catalog=catalog.build()
         r.update(catalog_review_ref='research/witness_reviews/KCLY_catalog_2026-10-29.json',
                  edition_catalog_verification=reviewed_catalog['edition_catalog_verification'])
+    else:
+        r.update(edition_date_verification='inherited_metadata_not_reverified_from_images',
+                 bibliographic_metadata_origin=witness.get('bibliographic_metadata_origin','inherited_scan_record_not_new_titlepage_audit'))
     if not 1<=r['pdf_page']<=witness['pdf_pages']:raise ValueError('Page outside PDF')
     if any(not 1<=x['pdf_page']<=witness['pdf_pages'] for x in r.get('boundary_checks',[])):
         raise ValueError('Boundary inspection page outside PDF')
@@ -127,6 +133,8 @@ def pending_readings(record=None):
             r['full_case_model_image_comparisons']!=0 or r['expert_collated_cases']!=0):
             raise ValueError('Pending image record cannot claim completion or query eligibility')
         witness=json.loads((ROOT/r['pdf_record']).read_text())
+        if {s['source_ref'].split('-')[1] for s in witness['spots']}!={r['case_id'].split('-')[1]}:
+            raise ValueError('Pending case work and PDF witness work mismatch')
         if r['pdf_sha256']!=witness['pdf_sha256']:raise ValueError('Pending PDF identity drift')
         if not r['unresolved_readings']:raise ValueError('Pending image record needs an unresolved reading')
         pages=r['viewed_pdf_pages']
@@ -160,15 +168,19 @@ def summarize(records, pending=None):
     if pending:
         if set(ids)&{r['case_id'] for r in pending}:raise ValueError('Pending case cannot also be completed')
         result.update(pending_model_image_readings=len(pending),pending_case_ids=[r['case_id'] for r in pending])
+    works=sorted({r['case_id'].split('-')[1] for r in records})
+    result.update(cases_by_work={w:sum(r['case_id'].split('-')[1]==w for r in records) for w in works},
+                  compared_body_characters_by_work={w:sum(r['compared_body_characters_excluding_modern_punctuation'] for r in records if r['case_id'].split('-')[1]==w) for w in works})
     return result
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--write',action='store_true');p.add_argument('--pdf',type=Path);p.add_argument('--all',action='store_true');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--write',action='store_true');p.add_argument('--pdf',type=Path,action='append',help='Repeat for every compared PDF when --all spans multiple witnesses');p.add_argument('--all',action='store_true');a=p.parse_args()
+    supplied={(pdf.stat().st_size,hashlib.sha256(pdf.read_bytes()).hexdigest()) for pdf in (a.pdf or [])}
     paths=sorted((ROOT/'research/print_case_reviews').glob('*.json')) if a.all else [INPUT]
     records=[]
     for path in paths:
         r=build(path=path);records.append(r)
-        if a.pdf and (a.pdf.stat().st_size!=r['pdf_bytes'] or hashlib.sha256(a.pdf.read_bytes()).hexdigest()!=r['pdf_sha256']):
+        if supplied and (r['pdf_bytes'],r['pdf_sha256']) not in supplied:
             raise ValueError('PDF identity mismatch')
         # Preserve the first published artifact name for backwards compatibility.
         out=OUT if path==INPUT else ROOT/'research/samples'/('print_case_'+path.stem.lower()+'.json')

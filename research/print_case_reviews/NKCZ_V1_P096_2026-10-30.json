@@ -1,0 +1,28 @@
+{
+  "case_id":"XJ-NKCZ-C-V1-P096-1",
+  "review_date":"2026-10-30",
+  "method":"model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication":"pending",
+  "initial_query_eligible":false,
+  "pdf_record":"research/scan_reviews/NKCZ_target_spots_2026-10-27.json",
+  "pdf_page":35,
+  "page_half":"left",
+  "location":"第35页左半叶自右第4至6列；起一婦人暴怒，止月餘而愈；第7列另案。",
+  "render_command":"pdftoppm -f 35 -l 35 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256":"28986d0354c05afb904ffecfbf8c1487dc7f6c1495b259da6ec80aae4126ba4f",
+  "scan_columns":[
+    "一婦人暴怒脇下腫痛胸膈不利時或氣走作痛",
+    "與方脈流氣飲數劑而止更以小柴胡對四物加",
+    "香附貝母月餘而愈"
+  ],
+  "column_locations":[
+    {"pdf_page":35,"page_half":"left","column_from_right":4},
+    {"pdf_page":35,"page_half":"left","column_from_right":5},
+    {"pdf_page":35,"page_half":"left","column_from_right":6}
+  ],
+  "transcription_policy":"正文常用字编码模型对照，不穷尽异体、训点与标点，不据病例叙述推断疗效因果。",
+  "expected_substitutions":[],
+  "full_case_model_image_comparisons":1,
+  "expert_collated_cases":0,
+  "scope":"one_full_case_one_print_witness_not_source_correction"
+}

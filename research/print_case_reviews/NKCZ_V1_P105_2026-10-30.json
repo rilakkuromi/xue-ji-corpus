@@ -1,0 +1,28 @@
+{
+  "case_id":"XJ-NKCZ-C-V1-P105-1",
+  "review_date":"2026-10-30",
+  "method":"model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication":"pending",
+  "initial_query_eligible":false,
+  "pdf_record":"research/scan_reviews/NKCZ_target_spots_2026-10-27.json",
+  "pdf_page":38,
+  "page_half":"right_then_left",
+  "location":"第38页右半叶自右第9列接左半叶第1至2列；起一癧婦潰後，止三十餘劑而斂；左第3列另起一婦人項結核。",
+  "render_command":"pdftoppm -f 38 -l 38 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256":"f50de7d121cf7d55df996e5b53fab2a10c3a7873f381bcb803bf2cd0f1005bb7",
+  "scan_columns":[
+    "一癧婦潰後發熱煩躁作渴脈大而虛以當歸補",
+    "血湯六劑而安熱退又以聖愈湯數劑而全愈更",
+    "以八珍加貝母遠志三十餘劑而斂"
+  ],
+  "column_locations":[
+    {"pdf_page":38,"page_half":"right","column_from_right":9},
+    {"pdf_page":38,"page_half":"left","column_from_right":1},
+    {"pdf_page":38,"page_half":"left","column_from_right":2}
+  ],
+  "transcription_policy":"正文常用字编码模型对照，记录工作痊对扫描全，不据单一藏本改写冻结源文或验证疗效。",
+  "expected_substitutions":[{"working":"痊","scan":"全"}],
+  "full_case_model_image_comparisons":1,
+  "expert_collated_cases":0,
+  "scope":"one_full_case_two_halves_one_print_witness_not_source_correction"
+}

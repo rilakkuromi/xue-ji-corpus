@@ -1,0 +1,28 @@
+{
+  "case_id":"XJ-NKCZ-C-V1-P106-1",
+  "review_date":"2026-10-30",
+  "method":"model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication":"pending",
+  "initial_query_eligible":false,
+  "pdf_record":"research/scan_reviews/NKCZ_target_spots_2026-10-27.json",
+  "pdf_page":38,
+  "page_half":"left",
+  "location":"第38页左半叶自右第3至5列；起一婦人項結核，止又用加味逍遙散而安；第6列另起一婦人瘰癧後。",
+  "render_command":"pdftoppm -f 38 -l 38 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256":"f50de7d121cf7d55df996e5b53fab2a10c3a7873f381bcb803bf2cd0f1005bb7",
+  "scan_columns":[
+    "一婦人項結核寒熱頭痛脅乳脹痛內熱口苦小",
+    "便頻數症屬肝火血虛用四物加柴胡山梔膽草",
+    "而愈又用加味逍遙散而安"
+  ],
+  "column_locations":[
+    {"pdf_page":38,"page_half":"left","column_from_right":3},
+    {"pdf_page":38,"page_half":"left","column_from_right":4},
+    {"pdf_page":38,"page_half":"left","column_from_right":5}
+  ],
+  "transcription_policy":"正文常用字编码模型对照，不穷尽异体、训点与标点，不据病例叙述推断疗效因果。",
+  "expected_substitutions":[],
+  "full_case_model_image_comparisons":1,
+  "expert_collated_cases":0,
+  "scope":"one_full_case_one_print_witness_not_source_correction"
+}

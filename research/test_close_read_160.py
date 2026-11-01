@@ -798,9 +798,9 @@ class MultiCasePrintTests(unittest.TestCase):
 
     def test_actual_roster_and_unresolved_differences_retained(self):
         summary=self.p.summarize(self.rows)
-        self.assertEqual(summary['cases'],11)
-        self.assertEqual(summary['compared_body_characters'],829)
-        self.assertEqual(summary['different_character_positions'],7)
+        self.assertEqual(summary['cases'],15)
+        self.assertEqual(summary['compared_body_characters'],1030)
+        self.assertEqual(summary['different_character_positions'],8)
         self.assertEqual(len(next(r for r in self.rows if r['case_id']=='XJ-KCLY-C-H3-P014-1')['differences']),0)
 
     def test_duplicate_case_cannot_inflate_full_case_count(self):
@@ -812,7 +812,7 @@ class MultiCasePrintTests(unittest.TestCase):
         for row in rows:
             row['pdf_page']=rows[0]['pdf_page']
             for loc in row.get('column_locations',[]):loc['pdf_page']=rows[0]['pdf_page']
-        self.assertEqual(self.p.summarize(rows)['unique_pdf_pages'],1)
+        self.assertEqual(self.p.summarize(rows)['unique_pdf_pages'],2)
 
     def test_column_roster_cannot_drop_half_leaf(self):
         import json
@@ -986,9 +986,46 @@ class PendingPrintReadingTests(unittest.TestCase):
         p,r=self.record()
         rows=[p.build(path=f) for f in sorted((p.ROOT/'research/print_case_reviews').glob('*.json'))]
         summary=p.summarize(rows,[r])
-        self.assertEqual((summary['cases'],summary['pending_model_image_readings']),(11,1))
+        self.assertEqual((summary['cases'],summary['pending_model_image_readings']),(15,1))
         r['case_id']=rows[0]['case_id']
         with self.assertRaisesRegex(ValueError,'cannot also be completed'):p.summarize(rows,[r])
+
+class NkczPrintWitnessTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        import check_print_case as p
+        cls.p=p
+        cls.rows={key:p.build(path=p.ROOT/f'research/print_case_reviews/NKCZ_V1_{key}_2026-10-30.json')
+                  for key in ['P096','P103','P105','P106']}
+
+    def test_completed_and_pending_cannot_borrow_other_book_pdf(self):
+        r=copy.deepcopy(self.rows['P096']);r['pdf_record']='research/scan_reviews/KCLY_target_spots_2026-10-27.json'
+        with self.assertRaisesRegex(ValueError,'work mismatch'):self.p.build(r)
+        pending=self.p.pending_readings()[0];pending['pdf_record']='research/scan_reviews/NKCZ_target_spots_2026-10-27.json'
+        with self.assertRaisesRegex(ValueError,'work mismatch'):self.p.pending_readings(pending)
+
+    def test_nkcz_does_not_inherit_kcly_catalog_support(self):
+        for r in self.rows.values():
+            self.assertEqual(r['edition_date_verification'],'inherited_metadata_not_reverified_from_images')
+            self.assertNotIn('catalog_review_ref',r)
+            self.assertNotIn('edition_catalog_verification',r)
+
+    def test_print_difference_and_half_leaf_transition_preserved(self):
+        r=self.rows['P105'];d=r['differences'][0]
+        self.assertEqual((d['working'],d['scan'],d['source_ref'],d['source_start_char']),('痊','全','XJ-NKCZ-V1-P105',41))
+        cut=len(r['scan_columns'][0])
+        self.assertEqual((r['alignment'][cut-1]['scan'],r['alignment'][cut]['scan']),('補','血'))
+        self.assertEqual(r['column_locations'][1],{'pdf_page':38,'page_half':'left','column_from_right':1})
+
+    def test_following_theory_not_added_to_case_or_work_counts(self):
+        r=self.rows['P103']
+        self.assertTrue(r['scan_reading'].endswith('至春而愈'))
+        self.assertNotIn('此症若',r['scan_reading'])
+        self.assertIn('或以為木旺',r['scan_reading'])
+        self.assertIn('余以為肝經',r['scan_reading'])
+        s=self.p.summarize(list(self.rows.values()))
+        self.assertEqual(s['cases_by_work'],{'NKCZ':4})
+        self.assertEqual(s['compared_body_characters_by_work'],{'NKCZ':201})
 
 if __name__ == '__main__':
     unittest.main()
