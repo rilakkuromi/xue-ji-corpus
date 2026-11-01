@@ -1,0 +1,157 @@
+{
+  "case_id": "XJ-LZWKFH-C-V5-P183-1",
+  "work_ref": "XJ-LZWKFH",
+  "review_date": "2026-11-01",
+  "method": "model_visual_full_case_iiif_image_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "manifest_snapshot": "research/iiif_reviews/LZWKFH_utokyo_manifest_2026-11-01.json",
+  "manifest_sha256": "68515bd79c17017d8314296af9d6f40bc15c30e33b0d41897efdad8b667bd83c",
+  "manifest_uri": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/f5da8d18-31e7-8864-2fbc-18507c563722/manifest",
+  "catalogue_url": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/f5da8d18-31e7-8864-2fbc-18507c563722",
+  "catalogue_claim": {
+    "title": "立齋外科發揮 8巻 [3]",
+    "holding": "東京大学総合図書館",
+    "shelfmark": "V11:1104",
+    "year": "1661",
+    "status": "institutional_catalogue_page_read_not_colophon_reverified"
+  },
+  "waseda_retry": {
+    "url": "https://archive.wul.waseda.ac.jp/kosho/ya09/ya09_00584/ya09_00584_0032/ya09_00584_0032_p0040.jpg",
+    "http_status": 503,
+    "visual_read_performed": false,
+    "scope": "distinct_witness_not_replaced_by_Tokyo_reading"
+  },
+  "viewed_canvases": [
+    {
+      "ordinal_one_based": 2,
+      "canvas_uri": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/f5da8d18-31e7-8864-2fbc-18507c563722/canvas/p2",
+      "image_service": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0002.tif",
+      "requested_width": 4000,
+      "download_url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0002.tif/full/4000,/0/default.jpg",
+      "bytes": 723839,
+      "sha256": "9f39816ef3b24eb5ae50d673e312e6a8ae5c4a7648a2dc05d3662b83f4dc4a39"
+    },
+    {
+      "ordinal_one_based": 19,
+      "canvas_uri": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/f5da8d18-31e7-8864-2fbc-18507c563722/canvas/p19",
+      "image_service": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0019.tif",
+      "requested_width": 4000,
+      "download_url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0019.tif/full/4000,/0/default.jpg",
+      "bytes": 769286,
+      "sha256": "8071771c633881531fd1510729334c3c579d223c205e1643281df03b7fcfa9ba"
+    },
+    {
+      "ordinal_one_based": 21,
+      "canvas_uri": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/f5da8d18-31e7-8864-2fbc-18507c563722/canvas/p21",
+      "image_service": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0021.tif",
+      "requested_width": 4000,
+      "download_url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0021.tif/full/4000,/0/default.jpg",
+      "bytes": 814083,
+      "sha256": "cbfb00e92942368b85a30f44927cb305ba6962b202d116fd33599baea18844a6"
+    },
+    {
+      "ordinal_one_based": 22,
+      "canvas_uri": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/f5da8d18-31e7-8864-2fbc-18507c563722/canvas/p22",
+      "image_service": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0022.tif",
+      "requested_width": 4000,
+      "download_url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0022.tif/full/4000,/0/default.jpg",
+      "bytes": 822120,
+      "sha256": "183d54e632e14f5acf5fe786a866df6e3f55a2b63a19d5e2d412264a5dd58b9b"
+    },
+    {
+      "ordinal_one_based": 24,
+      "canvas_uri": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/f5da8d18-31e7-8864-2fbc-18507c563722/canvas/p24",
+      "image_service": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0024.tif",
+      "requested_width": 4000,
+      "download_url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0024.tif/full/4000,/0/default.jpg",
+      "bytes": 800535,
+      "sha256": "fd207f0f07d0911ab08198a13bc94196520240e9dcca863bd8e95d44c98a78e3"
+    },
+    {
+      "ordinal_one_based": 28,
+      "canvas_uri": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/f5da8d18-31e7-8864-2fbc-18507c563722/canvas/p28",
+      "image_service": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0028.tif",
+      "requested_width": 4000,
+      "download_url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0028.tif/full/4000,/0/default.jpg",
+      "bytes": 802882,
+      "sha256": "b8ec511019437a65ab973104950c9759583903ec1bb83c7783b0e5788f3dffe2"
+    },
+    {
+      "ordinal_one_based": 30,
+      "canvas_uri": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/f5da8d18-31e7-8864-2fbc-18507c563722/canvas/p30",
+      "image_service": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0030.tif",
+      "requested_width": 4000,
+      "download_url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0030.tif/full/4000,/0/default.jpg",
+      "bytes": 814295,
+      "sha256": "b5e675bd9815c5991a3d83041a598f2c4d0205221f1ea75d1bdf2aec19d8a550"
+    },
+    {
+      "ordinal_one_based": 32,
+      "canvas_uri": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/f5da8d18-31e7-8864-2fbc-18507c563722/canvas/p32",
+      "image_service": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0032.tif",
+      "requested_width": 5000,
+      "download_url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0032.tif/full/5000,/0/default.jpg",
+      "bytes": 1083231,
+      "sha256": "0acf780ebca916c0bae4f6fc40d2732a0e13c716e80142c2ef8942f1bbcfb654"
+    },
+    {
+      "ordinal_one_based": 33,
+      "canvas_uri": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/f5da8d18-31e7-8864-2fbc-18507c563722/canvas/p33",
+      "image_service": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0033.tif",
+      "requested_width": 5000,
+      "download_url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0033.tif/full/5000,/0/default.jpg",
+      "bytes": 1146143,
+      "sha256": "378dcc400d93469d7830b02719a3c778189ec6154d99828895473d65ac85c895"
+    },
+    {
+      "ordinal_one_based": 40,
+      "canvas_uri": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/f5da8d18-31e7-8864-2fbc-18507c563722/canvas/p40",
+      "image_service": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0040.tif",
+      "requested_width": 4000,
+      "download_url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0040.tif/full/4000,/0/default.jpg",
+      "bytes": 756710,
+      "sha256": "e568ab64f9fec5567788deeb45e2efb8759ccb8fe3ced61efe91e728fa84bf39"
+    }
+  ],
+  "case_canvas_ordinal_one_based": 33,
+  "location": "第33幅右半叶自右第1至5列，版心卷五三十一；止數劑而痊，第5列下段一男子另案。列内字符只计正文，不含句读圈与训点。",
+  "scan_columns": [
+    "一男子因瘡痛傷胃氣少食作嘔惡",
+    "寒以六君子湯加當歸四劑少愈",
+    "以十宣散加白朮茯苓陳皮數劑",
+    "而膿成針之又以前散去防風白",
+    "芷數劑而痊"
+  ],
+  "column_locations": [
+    {
+      "page_half": "right",
+      "column_from_right": 1
+    },
+    {
+      "page_half": "right",
+      "column_from_right": 2
+    },
+    {
+      "page_half": "right",
+      "column_from_right": 3
+    },
+    {
+      "page_half": "right",
+      "column_from_right": 4
+    },
+    {
+      "page_half": "right",
+      "column_from_right": 5
+    }
+  ],
+  "expected_substitutions": [],
+  "detail_image": {
+    "url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/003/V11_1104_003_0033.tif/7100,350,1250,2450/full/0/default.jpg",
+    "sha256": "47ab2402893d63bd81f1c53fb107048e84e8cfa1abab96ae7777b19eec5c3b5e",
+    "bytes": 395324
+  },
+  "transcription_policy": "常用字编码模型对照，不穷尽异体、训点或标点；东京大学新见证不能回填早稻田旧图的核验状态。"
+}

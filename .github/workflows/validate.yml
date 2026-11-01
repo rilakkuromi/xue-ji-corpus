@@ -52,6 +52,7 @@ jobs:
           python3 research/build_event_pilot.py --work BYCY
           python3 research/build_event_pilot.py --work KCLY
           python3 research/check_print_case.py --all
+          python3 research/check_iiif_case.py
           python3 research/check_witness_bibliography.py
           python3 research/check_witness_catalog.py
       - name: Reject invalid provenance, spans, verification and query claims

@@ -1144,5 +1144,60 @@ class NkzyPrintColumnAndPrognosisTests(unittest.TestCase):
         self.assertFalse(any('後果然' in q or '憂其' in q for q in quotes))
         self.assertEqual(c['fields']['course']['observations'][0]['reading_joined_source_segments'],'時五月請治')
 
+class IiifIndependentWitnessTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        import check_iiif_case as iiif
+        cls.iiif=iiif;cls.row=iiif.build()
+
+    def test_complete_case_and_target_not_promoted_to_waseda_verification(self):
+        r=self.row
+        self.assertEqual(r['compared_body_characters'],58)
+        self.assertFalse(r['differences'])
+        target=next(x for x in r['alignment'] if x['source_start_char']==29)
+        self.assertEqual((target['working'],target['scan'],target['column_from_right'],target['scan_column_char_index']),('少','少',2,12))
+        self.assertTrue(r['scan_reading'].endswith('數劑而痊'))
+        self.assertFalse(r['waseda_retry']['visual_read_performed'])
+
+    def test_manifest_identity_cannot_be_relabelled(self):
+        r=copy.deepcopy(self.row);r['manifest_uri']='https://example.invalid/other'
+        with self.assertRaisesRegex(ValueError,'Manifest identity'):self.iiif.build(r)
+
+    def test_unviewed_case_canvas_rejected(self):
+        r=copy.deepcopy(self.row);r['case_canvas_ordinal_one_based']=1
+        with self.assertRaisesRegex(ValueError,'not viewed'):self.iiif.build(r)
+
+    def test_different_work_cannot_borrow_iiif_witness(self):
+        r=copy.deepcopy(self.row);r['work_ref']='XJ-BYCY'
+        with self.assertRaisesRegex(ValueError,'work mismatch'):self.iiif.build(r)
+
+    def test_query_expert_and_other_witness_claims_rejected(self):
+        for key,value in [('initial_query_eligible',True),('expert_collated_cases',1)]:
+            r=copy.deepcopy(self.row);r[key]=value
+            with self.assertRaisesRegex(ValueError,'verification claim'):self.iiif.build(r)
+        r=copy.deepcopy(self.row);r['waseda_retry']['visual_read_performed']=True
+        with self.assertRaisesRegex(ValueError,'cannot verify Waseda'):self.iiif.build(r)
+
+    def test_truncated_case_cannot_count_as_complete(self):
+        r=copy.deepcopy(self.row);r['scan_columns'][-1]='芷數劑而'
+        with self.assertRaisesRegex(ValueError,'character count'):self.iiif.build(r)
+
+    def test_reversed_column_reading_rejected(self):
+        r=copy.deepcopy(self.row);r['column_locations'][1]['column_from_right']=1
+        with self.assertRaisesRegex(ValueError,'column order'):self.iiif.build(r)
+
+    def test_actual_image_check_requires_case_image_not_only_title_page(self):
+        import tempfile,hashlib
+        from pathlib import Path
+        r=copy.deepcopy(self.row);data=b'fixture-image-identity'
+        r['viewed_canvases'][0].update(sha256=hashlib.sha256(data).hexdigest(),bytes=len(data))
+        with tempfile.TemporaryDirectory() as d:
+            path=Path(d)/'fixture.jpg';path.write_bytes(data)
+            with self.assertRaisesRegex(ValueError,'case image required'):self.iiif.check_images(r,[path])
+
+    def test_combined_case_count_rejects_duplicate_across_formats(self):
+        r=copy.deepcopy(self.row);r['case_id']='XJ-KCLY-C-H3-P005-1'
+        with self.assertRaisesRegex(ValueError,'Duplicate case'):self.iiif.summarize(r)
+
 if __name__ == '__main__':
     unittest.main()
