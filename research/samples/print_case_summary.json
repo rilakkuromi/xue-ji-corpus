@@ -1,6 +1,6 @@
 {
   "scope": "full_case_model_image_comparisons_not_expert_collation",
-  "cases": 21,
+  "cases": 23,
   "case_ids": [
     "XJ-KCLY-C-H1-P005-1",
     "XJ-KCLY-C-H1-P006-1",
@@ -19,21 +19,23 @@
     "XJ-NKCZ-C-V1-P103-1",
     "XJ-NKCZ-C-V1-P105-1",
     "XJ-NKCZ-C-V1-P106-1",
+    "XJ-NKZY-C-V2-P051-1",
+    "XJ-NKZY-C-V2-P092-1",
     "XJ-WKSY-C-V3-P017-1",
     "XJ-WKSY-C-V3-P120-1",
     "XJ-ZTLY-C-V1-P054-1",
     "XJ-ZTLY-C-V1-P102-1"
   ],
-  "compared_body_characters": 1617,
-  "different_character_positions": 10,
-  "unique_pdf_pages": 15,
+  "compared_body_characters": 1758,
+  "different_character_positions": 14,
+  "unique_pdf_pages": 17,
   "expert_collated_cases": 0,
   "initial_query_exported": 0,
   "reviewed_block_cases": 1,
   "reviewed_block_difference_events": 4,
   "counting_note": "different_character_positions covers equal-length cases only; block events reported separately",
   "boundary_only_pdf_pages": 1,
-  "unique_pdf_pages_including_boundary_checks": 16,
+  "unique_pdf_pages_including_boundary_checks": 18,
   "pending_model_image_readings": 1,
   "pending_case_ids": [
     "XJ-KCLY-C-H2-P012-1"
@@ -42,6 +44,7 @@
     "KCLY": 11,
     "LYJY": 2,
     "NKCZ": 4,
+    "NKZY": 2,
     "WKSY": 2,
     "ZTLY": 2
   },
@@ -49,6 +52,7 @@
     "KCLY": 829,
     "LYJY": 121,
     "NKCZ": 201,
+    "NKZY": 141,
     "WKSY": 350,
     "ZTLY": 116
   }

@@ -1,0 +1,30 @@
+{
+  "case_id":"XJ-NKZY-C-V2-P051-1",
+  "review_date":"2026-11-01",
+  "method":"model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication":"pending",
+  "initial_query_eligible":false,
+  "pdf_record":"research/scan_reviews/NKZY_target_spots_2026-10-27.json",
+  "pdf_page":67,
+  "page_half":"left",
+  "location":"第67页左半叶自右第1列中段商主客起，接第2至4列，止滋補腎水而愈；首列丸加五味而安属上案，第5列另起一儒者。",
+  "render_command":"pdftoppm -f 67 -l 67 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256":"f33625a4caf276fbe3f9402d4b0977bd9f8a66ff791ad866245e5d5cfc80c1ca",
+  "scan_columns":[
+    "商主客素膏粱小便赤數口乾作",
+    "渴吐痰稠粘右寸關數而有力此脾肺積熱遺於",
+    "膀胱用黃芩清肺飲調理脾肺用滋腎六味二丸",
+    "滋補腎水而愈"
+  ],
+  "column_locations":[
+    {"pdf_page":67,"page_half":"left","column_from_right":1,"start_char_one_based":7},
+    {"pdf_page":67,"page_half":"left","column_from_right":2},
+    {"pdf_page":67,"page_half":"left","column_from_right":3},
+    {"pdf_page":67,"page_half":"left","column_from_right":4}
+  ],
+  "transcription_policy":"正文常用字编码模型对照，不穷尽异体、训点与标点，不据病例叙述推断疗效因果。",
+  "expected_substitutions":[{"working":"黏","scan":"粘"}],
+  "full_case_model_image_comparisons":1,
+  "expert_collated_cases":0,
+  "scope":"one_full_case_one_print_witness_not_source_correction"
+}

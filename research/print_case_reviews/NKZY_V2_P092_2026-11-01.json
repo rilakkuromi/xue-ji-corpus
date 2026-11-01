@@ -1,0 +1,32 @@
+{
+  "case_id":"XJ-NKZY-C-V2-P092-1",
+  "review_date":"2026-11-01",
+  "method":"model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication":"pending",
+  "initial_query_eligible":false,
+  "pdf_record":"research/scan_reviews/NKZY_target_spots_2026-10-27.json",
+  "pdf_page":78,
+  "page_half":"right",
+  "location":"第78页右半叶自右第2至6列；起職坊陳莪齋，止後果然；第7列另列各症方藥标题。",
+  "render_command":"pdftoppm -f 78 -l 78 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256":"fdfbfeeae759ce060631685fd5f5cd06f2fdd56e69359eaf046c52ca5a141b2c",
+  "scan_columns":[
+    "職坊陳莪齋年踰六旬先因大便不通服內疏等",
+    "劑後飲食少思胸腹作脹兩脅作痛形體倦怠兩",
+    "尺浮大左關短濇右關弦濇時五月請治余意乃",
+    "命門火衰不能生脾土而肺金又克肝木憂其金",
+    "旺之際不起後果然"
+  ],
+  "column_locations":[
+    {"pdf_page":78,"page_half":"right","column_from_right":2},
+    {"pdf_page":78,"page_half":"right","column_from_right":3},
+    {"pdf_page":78,"page_half":"right","column_from_right":4},
+    {"pdf_page":78,"page_half":"right","column_from_right":5},
+    {"pdf_page":78,"page_half":"right","column_from_right":6}
+  ],
+  "transcription_policy":"正文常用字编码模型对照，记录可辨字形不同，不穷尽异体、训点与标点；不将预后或后果然扩展为精确日期。",
+  "expected_substitutions":[{"working":"逾","scan":"踰"},{"working":"澀","scan":"濇"},{"working":"澀","scan":"濇"}],
+  "full_case_model_image_comparisons":1,
+  "expert_collated_cases":0,
+  "scope":"one_full_case_one_print_witness_not_source_correction"
+}

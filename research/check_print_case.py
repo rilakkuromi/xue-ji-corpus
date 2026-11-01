@@ -66,14 +66,16 @@ def build(record=None, path=INPUT):
         if len(r['column_locations'])!=len(r['scan_columns']):raise ValueError('Column location roster drift')
         previous=None
         for col,(text,location) in enumerate(zip(r['scan_columns'],r['column_locations']),1):
+            start=location.get('start_char_one_based',1)
             if (not 1<=location['pdf_page']<=witness['pdf_pages'] or
                 location['page_half'] not in {'left','right'} or
-                type(location['column_from_right']) is not int or location['column_from_right']<1):
+                type(location['column_from_right']) is not int or location['column_from_right']<1 or
+                type(start) is not int or start<1):
                 raise ValueError('Invalid column location')
             order=(location['pdf_page'],{'right':0,'left':1}[location['page_half']],location['column_from_right'])
             if previous is not None and order<=previous:raise ValueError('Duplicate or reversed column reading order')
             previous=order
-            column_positions.extend({'scan_column_index':col,'scan_column_char_index':i+1} for i in range(len(text)))
+            column_positions.extend({'scan_column_index':col,'scan_column_char_index':i+start} for i in range(len(text)))
     chars=[]
     used_pages={x['pdf_page'] for x in r.get('column_locations',[{'pdf_page':r['pdf_page']}])}
     if len(used_pages)>1:
