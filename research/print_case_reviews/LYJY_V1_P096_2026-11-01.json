@@ -1,0 +1,30 @@
+{
+  "case_id":"XJ-LYJY-C-V1-P096",
+  "review_date":"2026-11-01",
+  "method":"model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication":"pending",
+  "initial_query_eligible":false,
+  "pdf_record":"research/scan_reviews/LYJY_target_spots_2026-10-28.json",
+  "pdf_page":36,
+  "page_half":"right",
+  "location":"第36页右半叶自右第3至6列；起一男子足三陰虛，止不越月而歿；第7列另起一婦人。",
+  "render_command":"pdftoppm -f 36 -l 36 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256":"2cf9c9050bb5a2b5052206d8681d99dea7a98d8034aa787505842a552b0af5d8",
+  "scan_columns":[
+    "一男子足三陰虛患血風瘡症誤服祛風散毒之",
+    "劑外敷斑蝥巴豆等類肌肉潰爛嘔吐腹膨或泄",
+    "瀉足冷或煩熱作渴此藥復傷脾胃虛敗也辭不",
+    "治不越月而歿"
+  ],
+  "column_locations":[
+    {"pdf_page":36,"page_half":"right","column_from_right":3},
+    {"pdf_page":36,"page_half":"right","column_from_right":4},
+    {"pdf_page":36,"page_half":"right","column_from_right":5},
+    {"pdf_page":36,"page_half":"right","column_from_right":6}
+  ],
+  "transcription_policy":"正文常用字编码模型对照，不穷尽异体、训点与标点，不据病例叙述推断疗效因果。",
+  "expected_substitutions":[],
+  "full_case_model_image_comparisons":1,
+  "expert_collated_cases":0,
+  "scope":"one_full_case_one_print_witness_not_source_correction"
+}

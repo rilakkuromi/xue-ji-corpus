@@ -1,0 +1,30 @@
+{
+  "case_id":"XJ-LYJY-C-V1-P097",
+  "review_date":"2026-11-01",
+  "method":"model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication":"pending",
+  "initial_query_eligible":false,
+  "pdf_record":"research/scan_reviews/LYJY_target_spots_2026-10-28.json",
+  "pdf_page":36,
+  "page_half":"right_to_left",
+  "location":"第36页右半叶自右第7至9列接左半叶首列首字愈；左第2列一婦人性急善怒另起下一案。",
+  "render_command":"pdftoppm -f 36 -l 36 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256":"2cf9c9050bb5a2b5052206d8681d99dea7a98d8034aa787505842a552b0af5d8",
+  "scan_columns":[
+    "一婦人膿水淋漓發熱作渴體倦惡寒經水不調",
+    "久而不愈此肝脾虧損而虛熱也先用補中益氣",
+    "湯加川芎炒山梔元氣漸復更以逍遙散而瘡漸",
+    "愈"
+  ],
+  "column_locations":[
+    {"pdf_page":36,"page_half":"right","column_from_right":7},
+    {"pdf_page":36,"page_half":"right","column_from_right":8},
+    {"pdf_page":36,"page_half":"right","column_from_right":9},
+    {"pdf_page":36,"page_half":"left","column_from_right":1}
+  ],
+  "transcription_policy":"正文常用字编码模型对照，不穷尽异体、训点与标点，不据病例叙述推断疗效因果。",
+  "expected_substitutions":[],
+  "full_case_model_image_comparisons":1,
+  "expert_collated_cases":0,
+  "scope":"one_full_case_one_print_witness_not_source_correction"
+}

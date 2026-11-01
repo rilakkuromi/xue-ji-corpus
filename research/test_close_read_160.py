@@ -798,8 +798,8 @@ class MultiCasePrintTests(unittest.TestCase):
 
     def test_actual_roster_and_unresolved_differences_retained(self):
         summary=self.p.summarize(self.rows)
-        self.assertEqual(summary['cases'],15)
-        self.assertEqual(summary['compared_body_characters'],1030)
+        self.assertEqual(summary['cases'],17)
+        self.assertEqual(summary['compared_body_characters'],1151)
         self.assertEqual(summary['different_character_positions'],8)
         self.assertEqual(len(next(r for r in self.rows if r['case_id']=='XJ-KCLY-C-H3-P014-1')['differences']),0)
 
@@ -812,7 +812,7 @@ class MultiCasePrintTests(unittest.TestCase):
         for row in rows:
             row['pdf_page']=rows[0]['pdf_page']
             for loc in row.get('column_locations',[]):loc['pdf_page']=rows[0]['pdf_page']
-        self.assertEqual(self.p.summarize(rows)['unique_pdf_pages'],2)
+        self.assertEqual(self.p.summarize(rows)['unique_pdf_pages'],3)
 
     def test_column_roster_cannot_drop_half_leaf(self):
         import json
@@ -986,7 +986,7 @@ class PendingPrintReadingTests(unittest.TestCase):
         p,r=self.record()
         rows=[p.build(path=f) for f in sorted((p.ROOT/'research/print_case_reviews').glob('*.json'))]
         summary=p.summarize(rows,[r])
-        self.assertEqual((summary['cases'],summary['pending_model_image_readings']),(15,1))
+        self.assertEqual((summary['cases'],summary['pending_model_image_readings']),(17,1))
         r['case_id']=rows[0]['case_id']
         with self.assertRaisesRegex(ValueError,'cannot also be completed'):p.summarize(rows,[r])
 
@@ -1026,6 +1026,29 @@ class NkczPrintWitnessTests(unittest.TestCase):
         s=self.p.summarize(list(self.rows.values()))
         self.assertEqual(s['cases_by_work'],{'NKCZ':4})
         self.assertEqual(s['compared_body_characters_by_work'],{'NKCZ':201})
+
+class LyjyPrintBoundaryTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        import check_print_case as p
+        cls.rows={key:p.build(path=p.ROOT/f'research/print_case_reviews/LYJY_V1_{key}_2026-11-01.json')
+                  for key in ['P096','P097']}
+
+    def test_mechanism_and_refusal_not_changed_by_image_comparison(self):
+        r=self.rows['P096']
+        self.assertIn('此藥復傷脾胃虛敗也辭不治不越月而歿',r['scan_reading'])
+        self.assertFalse(r['differences'])
+        self.assertNotIn('catalog_review_ref',r)
+        self.assertEqual(r['expert_collated_cases'],0)
+        self.assertFalse(r['initial_query_eligible'])
+
+    def test_final_character_on_next_half_leaf_kept_without_next_case(self):
+        r=self.rows['P097']
+        self.assertTrue(r['scan_reading'].endswith('逍遙散而瘡漸愈'))
+        self.assertEqual(r['scan_columns'][-1],'愈')
+        self.assertNotIn('性急善怒',r['scan_reading'])
+        self.assertEqual(r['column_locations'][-1],{'pdf_page':36,'page_half':'left','column_from_right':1})
+        self.assertEqual((r['alignment'][-1]['scan_column_index'],r['alignment'][-1]['scan_column_char_index']),(4,1))
 
 if __name__ == '__main__':
     unittest.main()
