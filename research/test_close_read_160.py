@@ -798,8 +798,8 @@ class MultiCasePrintTests(unittest.TestCase):
 
     def test_actual_roster_and_unresolved_differences_retained(self):
         summary=self.p.summarize(self.rows)
-        self.assertEqual(summary['cases'],17)
-        self.assertEqual(summary['compared_body_characters'],1151)
+        self.assertEqual(summary['cases'],19)
+        self.assertEqual(summary['compared_body_characters'],1267)
         self.assertEqual(summary['different_character_positions'],8)
         self.assertEqual(len(next(r for r in self.rows if r['case_id']=='XJ-KCLY-C-H3-P014-1')['differences']),0)
 
@@ -812,7 +812,7 @@ class MultiCasePrintTests(unittest.TestCase):
         for row in rows:
             row['pdf_page']=rows[0]['pdf_page']
             for loc in row.get('column_locations',[]):loc['pdf_page']=rows[0]['pdf_page']
-        self.assertEqual(self.p.summarize(rows)['unique_pdf_pages'],3)
+        self.assertEqual(self.p.summarize(rows)['unique_pdf_pages'],4)
 
     def test_column_roster_cannot_drop_half_leaf(self):
         import json
@@ -986,7 +986,7 @@ class PendingPrintReadingTests(unittest.TestCase):
         p,r=self.record()
         rows=[p.build(path=f) for f in sorted((p.ROOT/'research/print_case_reviews').glob('*.json'))]
         summary=p.summarize(rows,[r])
-        self.assertEqual((summary['cases'],summary['pending_model_image_readings']),(17,1))
+        self.assertEqual((summary['cases'],summary['pending_model_image_readings']),(19,1))
         r['case_id']=rows[0]['case_id']
         with self.assertRaisesRegex(ValueError,'cannot also be completed'):p.summarize(rows,[r])
 
@@ -1049,6 +1049,34 @@ class LyjyPrintBoundaryTests(unittest.TestCase):
         self.assertNotIn('性急善怒',r['scan_reading'])
         self.assertEqual(r['column_locations'][-1],{'pdf_page':36,'page_half':'left','column_from_right':1})
         self.assertEqual((r['alignment'][-1]['scan_column_index'],r['alignment'][-1]['scan_column_char_index']),(4,1))
+
+class ZtlyPrintScopeTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        import check_print_case as p
+        cls.rows={key:p.build(path=p.ROOT/f'research/print_case_reviews/ZTLY_V1_{key}_2026-11-01.json')
+                  for key in ['P054','P102']}
+        cls.core={r['case_id']:r for r in review.build()[0]}
+
+    def test_case_stops_before_quoted_general_theory(self):
+        r=self.rows['P054']
+        self.assertIn('因怒發痓',r['scan_reading'])
+        self.assertTrue(r['scan_reading'].endswith('治之頓愈'))
+        self.assertNotIn('劉宗厚',r['scan_reading'])
+        self.assertNotIn('敦土平木',r['scan_reading'])
+        quotes=[o['reading_joined_source_segments'] for f in self.core[r['case_id']]['fields'].values() for o in f['observations']]
+        self.assertFalse(any('平木' in q for q in quotes))
+
+    def test_distinct_explainers_and_later_course_retained(self):
+        r=self.rows['P102'];c=self.core[r['case_id']]
+        self.assertIn('手背俱腫',r['scan_reading'])
+        self.assertIn('彼以為毒氣內攻',r['scan_reading'])
+        self.assertIn('此痛傷胃氣所致也',r['scan_reading'])
+        mechanisms=c['fields']['mechanism']['observations']
+        self.assertEqual([o['speaker_role'] for o in mechanisms],['patient_or_family','case_narrator'])
+        self.assertEqual(c['fields']['course']['observations'][0]['time_phase'],'later_narrator_window')
+        self.assertFalse(c['fields']['prior_treatment']['observations'])
+        self.assertEqual(r['scan_columns'][-1],'芷桔梗月餘而瘡愈')
 
 if __name__ == '__main__':
     unittest.main()

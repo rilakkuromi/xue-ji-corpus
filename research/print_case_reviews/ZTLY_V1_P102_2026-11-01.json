@@ -1,0 +1,30 @@
+{
+  "case_id":"XJ-ZTLY-C-V1-P102-1",
+  "review_date":"2026-11-01",
+  "method":"model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication":"pending",
+  "initial_query_eligible":false,
+  "pdf_record":"research/scan_reviews/ZTLY_target_spots_2026-10-27.json",
+  "pdf_page":36,
+  "page_half":"left",
+  "location":"第36页左半叶自右第4至7列；起一婦人傷指，止月餘而瘡愈；第8列另列下一节标题，不纳入案文。",
+  "render_command":"pdftoppm -f 36 -l 36 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256":"87cc5b0ae29e9681d15d388f60273270f3491b5e217e587491285e62cf9a1de6",
+  "scan_columns":[
+    "一婦人傷指手背俱腫微嘔少食彼以為毒氣內",
+    "攻診其脈沉細此痛傷胃氣所致也遂刺出膿碗",
+    "許先以六君藿香當歸而食進繼以八珍黃耆白",
+    "芷桔梗月餘而瘡愈"
+  ],
+  "column_locations":[
+    {"pdf_page":36,"page_half":"left","column_from_right":4},
+    {"pdf_page":36,"page_half":"left","column_from_right":5},
+    {"pdf_page":36,"page_half":"left","column_from_right":6},
+    {"pdf_page":36,"page_half":"left","column_from_right":7}
+  ],
+  "transcription_policy":"正文常用字编码模型对照，不穷尽异体、训点与标点，不据病例叙述推断疗效因果。",
+  "expected_substitutions":[],
+  "full_case_model_image_comparisons":1,
+  "expert_collated_cases":0,
+  "scope":"one_full_case_one_print_witness_not_source_correction"
+}

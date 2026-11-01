@@ -1,0 +1,28 @@
+{
+  "case_id":"XJ-ZTLY-C-V1-P054-1",
+  "review_date":"2026-11-01",
+  "method":"model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication":"pending",
+  "initial_query_eligible":false,
+  "pdf_record":"research/scan_reviews/ZTLY_target_spots_2026-10-27.json",
+  "pdf_page":24,
+  "page_half":"right",
+  "location":"第24页右半叶自右第6至8列；起有一患者兩月餘矣，止治之頓愈；同第8列劉宗厚先生云另起引述通论，不纳入固定案文。",
+  "render_command":"pdftoppm -f 24 -l 24 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256":"d467e448d403cadf9ab5fb8e2d242f8c9dbbf8a20008e128936cd28ed55039cd",
+  "scan_columns":[
+    "有一患者兩月餘矣瘡口未完因怒發痓瘡口出",
+    "血此怒動肝火而為患耳用柴胡芩連山梔防風",
+    "桔梗天麻鉤藤鉤甘草治之頓愈"
+  ],
+  "column_locations":[
+    {"pdf_page":24,"page_half":"right","column_from_right":6},
+    {"pdf_page":24,"page_half":"right","column_from_right":7},
+    {"pdf_page":24,"page_half":"right","column_from_right":8}
+  ],
+  "transcription_policy":"正文常用字编码模型对照，不穷尽异体、训点与标点，不据病例叙述推断疗效因果。",
+  "expected_substitutions":[],
+  "full_case_model_image_comparisons":1,
+  "expert_collated_cases":0,
+  "scope":"one_full_case_one_print_witness_not_source_correction"
+}
