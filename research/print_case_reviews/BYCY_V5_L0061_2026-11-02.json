@@ -1,0 +1,28 @@
+{
+  "case_id":"XJ-BYCY-C-V5-L0061",
+  "review_date":"2026-11-02",
+  "method":"model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication":"pending",
+  "initial_query_eligible":false,
+  "pdf_record":"research/scan_reviews/BYCY_target_spots_2026-11-02.json",
+  "pdf_page":8,
+  "page_half":"right",
+  "location":"第8页右半叶自右第3至5列，止第5列烏梅治之而愈；同列舎親吳海槎子起属下一案，排除。",
+  "render_command":"pdftoppm -f 8 -l 8 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256":"9a7393c3b9f0021ed095389f685f53e32315be4992da2f1a8c74488112ed2035",
+  "scan_columns":[
+    "一女子十五歲項患五核時常寒熱肝脉弦長而",
+    "出寸口此血盛無偶之症也用小柴胡湯加生地",
+    "烏梅治之而愈"
+  ],
+  "column_locations":[
+    {"pdf_page":8,"page_half":"right","column_from_right":3},
+    {"pdf_page":8,"page_half":"right","column_from_right":4},
+    {"pdf_page":8,"page_half":"right","column_from_right":5}
+  ],
+  "transcription_policy":"正文常用字编码模型对照；歲/嵗逐位置保留，不穷尽异体、训点与标点，不据叙述推断疗效因果。",
+  "expected_substitutions":[{"working":"嵗","scan":"歲"}],
+  "full_case_model_image_comparisons":1,
+  "expert_collated_cases":0,
+  "scope":"one_full_case_one_print_witness_not_source_correction"
+}

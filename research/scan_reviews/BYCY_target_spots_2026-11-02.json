@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-02",
+  "edition": "NCL-06248-0013；承應三年（1654）为继承元数据，本轮未从刊记重验",
+  "bibliographic_metadata_origin": "existing_corpus_metadata_not_new_date_audit_title_and_author_viewed_on_page_4",
+  "file_page_url": "https://commons.wikimedia.org/wiki/File:NCL-06248-0013_保嬰粹要.pdf",
+  "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/NCL-06248-0013_%E4%BF%9D%E5%AC%B0%E7%B2%B9%E8%A6%81.pdf",
+  "pdf_bytes": 17041014,
+  "pdf_sha256": "6ad34811aff376298258f8b5c6ee358ef4259805c7cc575cd1b069000218ab0c",
+  "pdf_pages": 72,
+  "page_numbering": "1-based PDF pages, not printed folio numbers",
+  "method": "model_visual_read_of_rendered_target_spots_after_actual_pdf_download",
+  "human_adjudication": "pending",
+  "full_case_print_collations": 0,
+  "source_git_blob": "e8459e27e93711c44357fafcf7d106f97ecaca26",
+  "viewed_pages": [
+    {
+      "pdf_page": 1,
+      "render_sha256": "f8dfec1316af9bac8594bcc62c5ba81c428af70c0e2779b2ff30174c8c022783",
+      "scope": "title_or_locator_only"
+    },
+    {
+      "pdf_page": 3,
+      "render_sha256": "682cfdb5074da65436964ce44407d626c18ff15e75ea2c452613eadb8e292ca3",
+      "scope": "title_or_locator_only"
+    },
+    {
+      "pdf_page": 4,
+      "render_sha256": "e2ba6896d8b9153d78f82d64b6f0c343598bedb5da5d9d66b7eb3167ef543f8c",
+      "scope": "title_or_locator_only"
+    },
+    {
+      "pdf_page": 5,
+      "render_sha256": "cc0f7985eeb2cc18fca0b8fb813834a076396e1ba915726cb492bd048547006a",
+      "scope": "title_or_locator_only"
+    },
+    {
+      "pdf_page": 7,
+      "render_sha256": "edb7731f9bc4c8b771c60b7fa023628f779dcca527f10207745217c520d245b9",
+      "scope": "full_case_body_reading"
+    },
+    {
+      "pdf_page": 8,
+      "render_sha256": "9a7393c3b9f0021ed095389f685f53e32315be4992da2f1a8c74488112ed2035",
+      "scope": "full_case_body_reading"
+    }
+  ],
+  "titlepage_observation": {
+    "pdf_page": 4,
+    "title": "保嬰粹要",
+    "author_line": "古吳薛己著",
+    "scope": "model_visual_title_and_author_only_not_date_or_expert_adjudication"
+  },
+  "spots": [
+    {
+      "spot_id": "BYCY-7-L0046-HABITUS",
+      "source_ref": "XJ-BYCY-V5-L0046",
+      "working_evidence": {
+        "source_start_char": 14,
+        "source_end_char_exclusive": 18,
+        "raw_quote": "肌體骨立"
+      },
+      "pdf_page": 7,
+      "page_half": "right",
+      "page_location": "自右第4列第15至18字",
+      "image_target_reading_without_added_punctuation": "肌體骨立",
+      "disputed_working_glyph": "肌體骨立",
+      "model_verdict": "supports_working_glyph_at_target_only",
+      "scope": "specified_glyph_and_context_only_not_entire_case_or_edition",
+      "human_adjudication": "pending",
+      "rendered_page_sha256": "edb7731f9bc4c8b771c60b7fa023628f779dcca527f10207745217c520d245b9"
+    }
+  ]
+}

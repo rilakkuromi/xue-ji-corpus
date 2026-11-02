@@ -798,9 +798,9 @@ class MultiCasePrintTests(unittest.TestCase):
 
     def test_actual_roster_and_unresolved_differences_retained(self):
         summary=self.p.summarize(self.rows)
-        self.assertEqual(summary['cases'],23)
-        self.assertEqual(summary['compared_body_characters'],1758)
-        self.assertEqual(summary['different_character_positions'],14)
+        self.assertEqual(summary['cases'],25)
+        self.assertEqual(summary['compared_body_characters'],1857)
+        self.assertEqual(summary['different_character_positions'],17)
         self.assertEqual(len(next(r for r in self.rows if r['case_id']=='XJ-KCLY-C-H3-P014-1')['differences']),0)
 
     def test_duplicate_case_cannot_inflate_full_case_count(self):
@@ -812,7 +812,7 @@ class MultiCasePrintTests(unittest.TestCase):
         for row in rows:
             row['pdf_page']=rows[0]['pdf_page']
             for loc in row.get('column_locations',[]):loc['pdf_page']=rows[0]['pdf_page']
-        self.assertEqual(self.p.summarize(rows)['unique_pdf_pages'],6)
+        self.assertEqual(self.p.summarize(rows)['unique_pdf_pages'],7)
 
     def test_column_roster_cannot_drop_half_leaf(self):
         import json
@@ -986,7 +986,7 @@ class PendingPrintReadingTests(unittest.TestCase):
         p,r=self.record()
         rows=[p.build(path=f) for f in sorted((p.ROOT/'research/print_case_reviews').glob('*.json'))]
         summary=p.summarize(rows,[r])
-        self.assertEqual((summary['cases'],summary['pending_model_image_readings']),(23,1))
+        self.assertEqual((summary['cases'],summary['pending_model_image_readings']),(25,1))
         r['case_id']=rows[0]['case_id']
         with self.assertRaisesRegex(ValueError,'cannot also be completed'):p.summarize(rows,[r])
 
@@ -1198,6 +1198,41 @@ class IiifIndependentWitnessTests(unittest.TestCase):
     def test_combined_case_count_rejects_duplicate_across_formats(self):
         r=copy.deepcopy(self.row);r['case_id']='XJ-KCLY-C-H3-P005-1'
         with self.assertRaisesRegex(ValueError,'Duplicate case'):self.iiif.summarize(r)
+
+class BycyPrintBoundaryTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        import check_print_case as p
+        cls.p=p
+        cls.rows={k:p.build(path=p.ROOT/f'research/print_case_reviews/BYCY_V5_{k}_2026-11-02.json')
+                  for k in ['L0046','L0061']}
+        cls.core={r['case_id']:r for r in review.build()[0]}
+
+    def test_variants_keep_physical_column_and_literal_source_positions(self):
+        a=self.rows['L0046'];b=self.rows['L0061']
+        self.assertEqual(a['compared_body_characters_excluding_modern_punctuation'],55)
+        self.assertEqual(b['compared_body_characters_excluding_modern_punctuation'],44)
+        self.assertEqual([(d['working'],d['scan'],d['source_ref'],d['source_start_char']) for d in a['differences']],
+                         [('嵗','歲','XJ-BYCY-V5-L0046',5),('黄','黃','XJ-BYCY-V5-L0048',1)])
+        self.assertEqual([(d['working'],d['scan']) for d in b['differences']],[('嵗','歲')])
+        self.assertEqual(a['alignment'][-1]['scan_column_char_index'],17)
+        self.assertEqual(b['alignment'][-1]['scan_column_char_index'],6)
+
+    def test_next_patient_and_truncated_outcome_cannot_count_as_full_case(self):
+        for key,extra in [('L0046','周世菊子'),('L0061','舎親吳海槎子')]:
+            r=copy.deepcopy(self.rows[key]);r['scan_columns'][-1]+=extra
+            with self.assertRaisesRegex(ValueError,'equal character count'):self.p.build(r)
+            r=copy.deepcopy(self.rows[key]);r['scan_columns'][-1]=r['scan_columns'][-1][:-1]
+            with self.assertRaisesRegex(ValueError,'equal character count'):self.p.build(r)
+
+    def test_post_treatment_course_and_physician_interpretation_remain_distinct(self):
+        a=self.core[self.rows['L0046']['case_id']]
+        later=next(o for o in a['fields']['course']['observations'] if o['reading_joined_source_segments'].startswith('三月餘'))
+        self.assertEqual(later['time_phase'],'later_narrator_window')
+        self.assertFalse(a['fields']['prior_treatment']['observations'])
+        b=self.core[self.rows['L0061']['case_id']]
+        self.assertEqual(b['fields']['mechanism']['observations'][0]['assertion_type'],'physician_interpretation')
+        self.assertFalse(b['fields']['mechanism']['observations'][0]['initial_query_eligible'])
 
 if __name__ == '__main__':
     unittest.main()

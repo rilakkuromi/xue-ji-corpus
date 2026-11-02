@@ -35,7 +35,7 @@ initial/later window 相对于首次明确叙述者评议或处置；later 包�
 
 ## 002 · XJ-BYCY-C-V5-L0046
 
-来源状态：`source_research_with_caveats`；原刻：本轮未核；人工审校待办。
+来源状态：`source_research_with_caveats`；原刻：仅指定字句影像点核，非全案校定；人工审校待办。
 
 案文窗口：
 
