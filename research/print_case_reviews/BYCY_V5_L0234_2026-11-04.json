@@ -1,0 +1,45 @@
+{
+  "case_id": "XJ-BYCY-C-V5-L0234",
+  "review_date": "2026-11-04",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/BYCY_target_spots_2026-11-02.json",
+  "pdf_page": 18,
+  "page_half": "left",
+  "location": "第18页left半叶自右第5至7列。止頓愈，下一列舉人余時正子另起。",
+  "render_command": "pdftoppm -f 18 -l 18 -scale-to 3600 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256": "7f31eb3c170de0ac0da72db9f5f92a8cf40795c60b47c3d339d89a92f55b454b",
+  "scan_columns": [
+    "張廷評子停食面赤用清熱發散之劑腹脹痰喘",
+    "倦怠惡寒此脾胃傷而不能生肺金用六君桔梗",
+    "以補脾肺山查神麴以消餘食頓愈"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 18,
+      "page_half": "left",
+      "column_from_right": 5
+    },
+    {
+      "pdf_page": 18,
+      "page_half": "left",
+      "column_from_right": 6
+    },
+    {
+      "pdf_page": 18,
+      "page_half": "left",
+      "column_from_right": 7
+    }
+  ],
+  "transcription_policy": "正文常用字编码模型对照；歲/嵗、黃/黄逐位置保留，不穷尽异体、训点与标点，不据叙述推断疗效因果。",
+  "expected_substitutions": [
+    {
+      "working": "麯",
+      "scan": "麴"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction"
+}

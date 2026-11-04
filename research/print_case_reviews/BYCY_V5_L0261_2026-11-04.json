@@ -1,0 +1,39 @@
+{
+  "case_id": "XJ-BYCY-C-V5-L0261",
+  "review_date": "2026-11-04",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/BYCY_target_spots_2026-11-02.json",
+  "pdf_page": 20,
+  "page_half": "right",
+  "location": "第20页right半叶自右第8至9列。止勿藥自愈，左半叶另起五臟疳瘡篇。",
+  "render_command": "pdftoppm -f 20 -l 20 -scale-to 3600 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256": "77440ecde6bb7b64ed316df4193d7e0ed094071caf81c8ac80abb51f23033639",
+  "scan_columns": [
+    "豐考功子作痒發熱用犀角消毒散一劑頓作吐",
+    "瀉此邪氣上下俱出其疹果消勿藥自愈"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 20,
+      "page_half": "right",
+      "column_from_right": 8
+    },
+    {
+      "pdf_page": 20,
+      "page_half": "right",
+      "column_from_right": 9
+    }
+  ],
+  "transcription_policy": "正文常用字编码模型对照；歲/嵗、黃/黄逐位置保留，不穷尽异体、训点与标点，不据叙述推断疗效因果。",
+  "expected_substitutions": [
+    {
+      "working": "㵼",
+      "scan": "瀉"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction"
+}
