@@ -1,0 +1,63 @@
+{
+  "case_id": "XJ-BYCY-C-V5-L0028",
+  "review_date": "2026-11-04",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/BYCY_target_spots_2026-11-02.json",
+  "page_half": "right",
+  "location": "第6页右3列第6字其起，止右6列中書竟不起；同列翁乃服前言不妄接两案合论，不计入患者正文。",
+  "pdf_page": 6,
+  "render_sha256": "e0b4f9364f9deb03871032faf88dd385fda5a3a8f69711170df7ef3a5b05eb09",
+  "render_command": "pdftoppm -f 6 -l 6 -scale-to 2900 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "scan_columns": [
+    "其嗣中書患勞瘵公以火治之雖少",
+    "愈而晡熱未止復囑余治其時孟冬脉洪數余謂",
+    "水虛火旺不宜於夏公愈忌余尋構謗余由此而",
+    "歸後季夏中書竟不起"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 6,
+      "page_half": "right",
+      "column_from_right": 3,
+      "start_char_one_based": 6
+    },
+    {
+      "pdf_page": 6,
+      "page_half": "right",
+      "column_from_right": 4,
+      "start_char_one_based": 1
+    },
+    {
+      "pdf_page": 6,
+      "page_half": "right",
+      "column_from_right": 5,
+      "start_char_one_based": 1
+    },
+    {
+      "pdf_page": 6,
+      "page_half": "right",
+      "column_from_right": 6,
+      "start_char_one_based": 1
+    }
+  ],
+  "transcription_policy": "按正文大字读录，不含训点；不改写冻结转录，不据医案叙述推断疗效因果。",
+  "expected_substitutions": [
+    {
+      "working": "虧",
+      "scan": "虛"
+    },
+    {
+      "working": "冝",
+      "scan": "宜"
+    },
+    {
+      "working": "搆",
+      "scan": "構"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction"
+}

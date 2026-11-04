@@ -1,0 +1,62 @@
+{
+  "case_id": "XJ-BYCY-C-V5-L0026",
+  "review_date": "2026-11-04",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/BYCY_target_spots_2026-11-02.json",
+  "page_half": "left",
+  "location": "第5页左9列起，第6页右1至3列续，止果卒；同列其嗣中書为下一患者。",
+  "pdf_page": 5,
+  "render_sha256": "cc0f7985eeb2cc18fca0b8fb813834a076396e1ba915726cb492bd048547006a",
+  "render_command": "pdftoppm -f 5 -l 5 -scale-to 3200 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "scan_columns": [
+    "閣老張羅峯孫患此掌院公投以化痰削堅之劑",
+    "夜熱吐痰甚劇邀余治之時值季夏脉浮大按之",
+    "而濇余曰症屬於肝而反見肺脉當甚於金旺之",
+    "際至期果卒"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 5,
+      "page_half": "left",
+      "column_from_right": 9,
+      "start_char_one_based": 1
+    },
+    {
+      "pdf_page": 6,
+      "page_half": "right",
+      "column_from_right": 1,
+      "start_char_one_based": 1
+    },
+    {
+      "pdf_page": 6,
+      "page_half": "right",
+      "column_from_right": 2,
+      "start_char_one_based": 1
+    },
+    {
+      "pdf_page": 6,
+      "page_half": "right",
+      "column_from_right": 3,
+      "start_char_one_based": 1
+    }
+  ],
+  "transcription_policy": "按正文大字读录，不含训点；不改写冻结转录，不据医案叙述推断疗效因果。",
+  "expected_substitutions": [],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction",
+  "page_renders": [
+    {
+      "pdf_page": 5,
+      "render_sha256": "cc0f7985eeb2cc18fca0b8fb813834a076396e1ba915726cb492bd048547006a",
+      "render_command": "pdftoppm -f 5 -l 5 -scale-to 3200 -png -singlefile INPUT.pdf OUTPUT_PREFIX"
+    },
+    {
+      "pdf_page": 6,
+      "render_sha256": "e0b4f9364f9deb03871032faf88dd385fda5a3a8f69711170df7ef3a5b05eb09",
+      "render_command": "pdftoppm -f 6 -l 6 -scale-to 2900 -png -singlefile INPUT.pdf OUTPUT_PREFIX"
+    }
+  ]
+}
