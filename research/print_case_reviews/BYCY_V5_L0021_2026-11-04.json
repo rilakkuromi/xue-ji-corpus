@@ -1,0 +1,83 @@
+{
+  "case_id": "XJ-BYCY-C-V5-L0021",
+  "review_date": "2026-11-04",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/BYCY_target_spots_2026-11-02.json",
+  "pdf_page": 5,
+  "page_half": "left",
+  "location": "第5页左3至8列，止瘡斂矣；左9列另起張羅峯孫案。",
+  "render_command": "pdftoppm -f 5 -l 5 -scale-to 3200 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256": "cc0f7985eeb2cc18fca0b8fb813834a076396e1ba915726cb492bd048547006a",
+  "scan_columns": [
+    "閣老楊石齋子年十五歲發熱作渴日晡頰赤脉",
+    "數無力症屬陰虛有熱用補陰八珍湯五十餘劑",
+    "又加參芪二十劑而潰但膿水清稀肌肉不生此",
+    "脾氣虛也以參芪歸术為主佐以白芍藥熟地麥",
+    "門五味氣血乃復遂以必效散一服癧毒去而瘡",
+    "斂矣"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 5,
+      "page_half": "left",
+      "column_from_right": 3
+    },
+    {
+      "pdf_page": 5,
+      "page_half": "left",
+      "column_from_right": 4
+    },
+    {
+      "pdf_page": 5,
+      "page_half": "left",
+      "column_from_right": 5
+    },
+    {
+      "pdf_page": 5,
+      "page_half": "left",
+      "column_from_right": 6
+    },
+    {
+      "pdf_page": 5,
+      "page_half": "left",
+      "column_from_right": 7
+    },
+    {
+      "pdf_page": 5,
+      "page_half": "left",
+      "column_from_right": 8
+    }
+  ],
+  "transcription_policy": "正文常用字编码模型对照；歲/嵗、黃/黄逐位置保留，不穷尽异体、训点与标点，不据叙述推断疗效因果。",
+  "expected_substitutions": [
+    {
+      "working": "嵗",
+      "scan": "歲"
+    },
+    {
+      "working": "隂",
+      "scan": "陰"
+    },
+    {
+      "working": "隂",
+      "scan": "陰"
+    },
+    {
+      "working": "茋",
+      "scan": "芪"
+    },
+    {
+      "working": "虚",
+      "scan": "虛"
+    },
+    {
+      "working": "茋",
+      "scan": "芪"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction"
+}

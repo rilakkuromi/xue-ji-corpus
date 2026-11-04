@@ -1,0 +1,73 @@
+{
+  "case_id": "XJ-BYCY-C-V5-L0052",
+  "review_date": "2026-11-04",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/BYCY_target_spots_2026-11-02.json",
+  "pdf_page": 7,
+  "page_half": "left",
+  "location": "第7页左1至7列，止而痊；左8列一女子耳下結核另起。",
+  "render_command": "pdftoppm -f 7 -l 7 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256": "edb7731f9bc4c8b771c60b7fa023628f779dcca527f10207745217c520d245b9",
+  "scan_columns": [
+    "一女子十六歲經事不調項側兩臂胸乳脇肋兩",
+    "股兩腿內外膁有核如榛如豆不計其數隱於肉",
+    "裡其色不變大按則痛或投以降火消毒不按自",
+    "痛發熱作渴日晡益甚經水過期左關脉數此肝",
+    "火血燥也用清肝益榮湯六十餘劑諸症已愈惟",
+    "項核未消以當歸龍薈丸數服及八珍湯加柴胡",
+    "山梔三十餘劑而痊"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 7,
+      "page_half": "left",
+      "column_from_right": 1
+    },
+    {
+      "pdf_page": 7,
+      "page_half": "left",
+      "column_from_right": 2
+    },
+    {
+      "pdf_page": 7,
+      "page_half": "left",
+      "column_from_right": 3
+    },
+    {
+      "pdf_page": 7,
+      "page_half": "left",
+      "column_from_right": 4
+    },
+    {
+      "pdf_page": 7,
+      "page_half": "left",
+      "column_from_right": 5
+    },
+    {
+      "pdf_page": 7,
+      "page_half": "left",
+      "column_from_right": 6
+    },
+    {
+      "pdf_page": 7,
+      "page_half": "left",
+      "column_from_right": 7
+    }
+  ],
+  "transcription_policy": "正文常用字编码模型对照；歲/嵗、黃/黄逐位置保留，不穷尽异体、训点与标点，不据叙述推断疗效因果。",
+  "expected_substitutions": [
+    {
+      "working": "嵗",
+      "scan": "歲"
+    },
+    {
+      "working": "内",
+      "scan": "內"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction"
+}

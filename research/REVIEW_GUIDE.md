@@ -10,7 +10,7 @@
 - 3案来源needs_review继续隔离；初诊查询导出全部禁用。
 - 古籍来源文字摘要、ID、样本名单和字符跨度保持不变；来源文件两处非原典书目说明及其版本校验已更新，见SOURCE_BASELINE.md。
 
-八书160案第二遍模型阅读全部完成；独立维度160案111条（115片段），事件试点8案98段90关系，八书各有1案。整案模型影像对照28案2038字：PDF27案1980字、立斋IIIF一案58字；八书覆盖，1口齿字形待辨不计完成，余132案未完成。PDF图读与定位记录合并35唯一页（本轮新看第6页），东京大学另实际查看10个IIIF画布，不混作PDF页。综合汇总 `samples/image_case_summary.json`，PDF专用汇总 `samples/print_case_summary.json`。NKZY为内科摘要，NKCZ为女科撮要，BYCY为保婴粹要。专家整案校定仍0。最新自审见 `samples/SELF_REVIEW_BYCY_ADJACENT_2026-11-04.md`，历史报告保留阶段数字。
+八书160案第二遍模型阅读全部完成；独立维度160案111条（115片段），事件试点8案98段90关系，八书各有1案。整案模型影像对照30案2257字：PDF29案2199字、立斋IIIF一案58字；八书覆盖，1口齿字形待辨不计完成，余130案未完成。PDF图读与定位记录合并35唯一页，东京大学另实际查看10个IIIF画布，不混作PDF页。综合汇总 `samples/image_case_summary.json`，PDF专用汇总 `samples/print_case_summary.json`。NKZY为内科摘要，NKCZ为女科撮要，BYCY为保婴粹要。专家整案校定仍0。最新自审见 `samples/SELF_REVIEW_BYCY_L0021_L0052_2026-11-04.md`，历史报告保留阶段数字。
 
 ## 复验
 

@@ -1,0 +1,439 @@
+{
+  "date_client_timezone_Asia_Shanghai": "2026-11-04",
+  "execution": "actual_local_subprocess_execution",
+  "python_version": "3.15.0",
+  "source_baseline_commit": "3266f7ba3bbf01806b44e01f7cfe415b03f8da2a",
+  "files_sha256": {
+    "research/reproduce_sample.py": "3be515bf526107d003cf1ac847515eba038e7305c079d9c39e30af340ed4e5e4",
+    "research/build_close_read_160.py": "0f02941cef34bcdd0f201b56b8256660f0dfdca031ae9a2a537c83e48f2c2dc4",
+    "research/check_sample_snapshots.py": "20e1ef6c759238fdfcace2abf286fec883b1f1528708bc487df43b1af92c76df",
+    "research/test_close_read_160.py": "f208f7ed452abb97e6e939cd4e30d1fdd796c0e284920ffa6590b801f24dc4d5",
+    "research/run_research_checks.py": "b1d10dc784ce20992efaf051812700269a2c519a6e6f061ae747afd6868d9310",
+    "research/check_publication.py": "2c3572140d46ece37c66e69405385016f5a80ae580df65a29f11857f5783cb70",
+    "research/build_extended_kcly.py": "993ba57074013db8b9bd6b493f8312a3a26ccde5dff3aa1efdce1b35cfd7ad69",
+    "research/build_event_pilot.py": "93fecf579412f0dbe2c3c624fab89e952c1030e07725011267d442b9d8339e7e",
+    "research/check_scan_spots.py": "f93e2b6ff146e8c03b7a39f9277324f507529e8fb21f4ac37f8287e66bc43cc3",
+    "research/check_cross_annotation_consistency.py": "88796a4d36c55ffa7f00a0d0e0ca82f981038a11feb56e3705c8727bda51cc52",
+    "research/review_inputs/BYCY.tsv": "4dd578efe9389bc9eedc5fe6cbf9b816110cc7379c6fc5040389e535dd6c1253",
+    "research/review_inputs/BYCY_anchor_review_2026-10-28.json": "e65f5987a0fe52abfe4a88161a747dbaa54cf099a96f51435cead7492c13dc3a",
+    "research/review_inputs/BYCY_event_pilot.json": "4444d1d90097ca69ff951216744106b1b6ba20db84f25edfda7b90727c66c5eb",
+    "research/review_inputs/BYCY_extended.tsv": "0aadc4cc267d80165416138228a41f7acab3f7d22dd324a82a8212813c3907d7",
+    "research/review_inputs/BYCY_extended_review.json": "447cc04339af7681bc3da06341739c49624e193b3311802ab263a41c5e6586e2",
+    "research/review_inputs/BYCY_role_pilot.json": "73127f92708bc6e0dab63dd2ff2d587e44005911ace9b4e50865e21726bf0e1c",
+    "research/review_inputs/BYCY_second_pass.json": "83b90793358ccb9df01c9396bbe75ea5094e78d7b2072e1f0d6c8def18df2b54",
+    "research/review_inputs/KCLY.tsv": "485659bd2dc3cb1b21928efc9c48832b8e968a004b12186de34c11e8b600b1fc",
+    "research/review_inputs/KCLY_event_pilot.json": "c7451cb37c1b7ba060c07c868ec3b1f5dd64d69c65190b19e62969cdc31e5e9a",
+    "research/review_inputs/KCLY_extended.tsv": "04387d315886b7d3ebc08d016ab80510ead76b0305d3f709c5894073529569c4",
+    "research/review_inputs/KCLY_second_pass.json": "be39abb9962523c6e72a0b6a1caf2ee4bdcfbc515bde41c64d9df2855e560b84",
+    "research/review_inputs/LYJY.tsv": "999242bbdc6fc36356abfe7a7b32275620aa868547186111adc452641ca8416c",
+    "research/review_inputs/LYJY_event_pilot.json": "8d59e69d5ff40db7b06bc8847afa28565ec4dca85a694add50c51c5462b3d245",
+    "research/review_inputs/LYJY_extended.tsv": "e046eef6f825e17e9eb96c0cd0ace497772c2e708ef261f19faa245af638bd39",
+    "research/review_inputs/LYJY_second_pass.json": "0c218deb2d1719495518a0307f5d43fa8a8a361abe06e769f683b955abda4d22",
+    "research/review_inputs/LZWKFH.tsv": "ee5625c4f8a646aa68285ce427edac165b4535d069ee72b414cd56a6235da791",
+    "research/review_inputs/LZWKFH_event_pilot.json": "b43c1169f5d33506e314029a82d3f70be699bdc535beefc01dd2715404a30725",
+    "research/review_inputs/LZWKFH_extended.tsv": "80aba3087f889d37170b1b85af45b4e870b19377107227b0a0e6c80cff11e372",
+    "research/review_inputs/LZWKFH_second_pass.json": "730a89a359683480e6f9baaa6fa65026574536f25999b7733ba78c786724f5d5",
+    "research/review_inputs/NKCZ.tsv": "22d5b8e327475e073d7afd7ed82829dc1cece39a430be9cf81f18d86fa621be6",
+    "research/review_inputs/NKCZ_event_pilot.json": "5483b2b471eba38d9e9f918a8a62e6d670fc3782c5807f24d23cd0df9880a0ad",
+    "research/review_inputs/NKCZ_extended.tsv": "feab9da3fbe9a0fc8673e01e3b5f50afdfc3bb7768897c83b0e0aab7d7f4ed84",
+    "research/review_inputs/NKCZ_second_pass.json": "902129ca788275091deaebbd0ba92c0068463a832b486a385e3ce43c599bac8e",
+    "research/review_inputs/NKZY.tsv": "b96bbbc8f7d451105a9673c4932a8edd038a2bdaaa520308eae7285ed2016f72",
+    "research/review_inputs/NKZY_event_pilot.json": "5e6518a9c35f3225662f9161db41112ca1a53b7a1d7a303f1b413d60842dc768",
+    "research/review_inputs/NKZY_extended.tsv": "9df236aaa6efb06cd23b073e75b971b2d9d08b88dcf832e79cdfa0d7827dba97",
+    "research/review_inputs/NKZY_second_pass.json": "b61548592fe07e5b6a56b34b45323eea2d088863963bbf2c8ef74e231c20a956",
+    "research/review_inputs/WKSY.tsv": "6626d275a05417b869ed891825fcdf4928dc75e2908fd6a01c95f6773f597ef2",
+    "research/review_inputs/WKSY_event_pilot.json": "e534e9c76b0688136379b1ecfbdb4abd9f08aaf5d404a549b8c92558d3c16c6c",
+    "research/review_inputs/WKSY_extended.tsv": "b4ae4763d53bdc70f95ea48cabc7277b72aaf92f4a5fc5c5a5c76f8f63bcd2d6",
+    "research/review_inputs/WKSY_second_pass.json": "3758f31edbb7bdbd1aac52c7015539200a5553618b8260dcb04dd44b34260310",
+    "research/review_inputs/ZTLY.tsv": "e15b948eaac0616ff34d9c73f75cc7211b9129fa800cc91318008cd91d789792",
+    "research/review_inputs/ZTLY_event_pilot.json": "3a1488e3be7d98eb155ba8ff6c2a3627d5801edf062e1726dc8233a4f3016a46",
+    "research/review_inputs/ZTLY_extended.tsv": "b573c9d1b5f49d7346716361ad23049c1435c5b7200c739f6022c37ace4b6a8f",
+    "research/review_inputs/ZTLY_second_pass.json": "df73dc900bd127272c247b88c08213bcab7c78d474063b7f55c4b912fcd2c326",
+    "research/review_inputs/cross_negative_spots_2026-10-28.json": "c93472811ee0314770caa23cc38fad3877ead95a39b681a57f458f2bde724153",
+    "research/review_inputs/observation_role_overrides.json": "0c845e6f63aba673b7e01b74c39a94a5d59c9299b0cffc8a2936fe770e454b0a",
+    "research/review_inputs/phase_overrides.json": "7b5c9dfe51fca303b9bed6f63373004254169abb6b9a9ce652d452607988e0c6",
+    "research/check_print_case.py": "c5bcd250266b92bcb18fd36d5a364ec12e705d47cd625a53cce355ba3757dc08",
+    "research/print_case_reviews/BYCY_V5_L0021_2026-11-04.json": "4d19add8e593d314fe7cae35f420080b8b92bac2cdf05d3693e9c298db3e1867",
+    "research/print_case_reviews/BYCY_V5_L0026_2026-11-04.json": "15a0c1ca99756bb34df4ee89ad40e69f1769c816805fc698427e94c026114f3b",
+    "research/print_case_reviews/BYCY_V5_L0028_2026-11-04.json": "f64e8cf026b0afe6e0cf93979508fb3ada4b4763e1eb0b482f5052fa53988f97",
+    "research/print_case_reviews/BYCY_V5_L0046_2026-11-02.json": "9800f33828efd666988d76cd50a3072baa07c22f751909ba93fcf19e52a10252",
+    "research/print_case_reviews/BYCY_V5_L0052_2026-11-04.json": "4ccd4b0602a563fea0768d5d011c4e33dccaefabd1b913ef688ddfd18c3ecf8f",
+    "research/print_case_reviews/BYCY_V5_L0061_2026-11-02.json": "cbb2896b62c6d941a07387bbec0434452847c3deb1df32eecaf65c2a6e93d018",
+    "research/print_case_reviews/KCLY_H1_P005_2026-10-30.json": "371bb96caed095d93c0661cfd60bf65cf353a1b2ad1439485b25dc8e35b5b694",
+    "research/print_case_reviews/KCLY_H1_P006_2026-10-30.json": "3117b7c889e94121aa96d03adc76c1901a237105deb3a5ab361a93918eb6ab04",
+    "research/print_case_reviews/KCLY_H1_P009_2026-10-30.json": "9326857135e9540323b1742491a2d5e1188eda4e807ab424be2e5646cc3b5952",
+    "research/print_case_reviews/KCLY_H1_P010_2026-10-29.json": "d413f3f46b804261a379b50054666ccf7cbe52046096d94882a4d61188f2c6ea",
+    "research/print_case_reviews/KCLY_H1_P011_2026-10-28.json": "e676b2a2968a960396c517f5e104fdc4b654f1bff4efa103ab1610858ec326a2",
+    "research/print_case_reviews/KCLY_H1_P012_2026-10-28.json": "5a7c23458d1ff1739dfc58b77adef21a31a086518e127fbefb33f0b54eba3e4d",
+    "research/print_case_reviews/KCLY_H2_P004_2026-10-30.json": "1ffdb414e5a649f581e018d0a624ea49d93da61b2a994e21d223909960108b06",
+    "research/print_case_reviews/KCLY_H2_P005_2026-10-30.json": "f27b24130bdcfec5626c9f26dad52676173c92b06412f2f21efbd7f864964164",
+    "research/print_case_reviews/KCLY_H2_P008_2026-10-30.json": "7a9c55310549a7b19ef2eb2a630edde52e783539a140a79fef132eafe066be4c",
+    "research/print_case_reviews/KCLY_H3_P005_2026-10-28.json": "045ea337ab375944128ea0fbfa8edf058bc0112458b988ebf2b31d333e41231b",
+    "research/print_case_reviews/KCLY_H3_P014_2026-10-28.json": "bf3ef6f7a7420adba1fa0ad3ee41b6f918e8a6ee75a9ab2fe7671647ad4cc2a6",
+    "research/print_case_reviews/LYJY_V1_P096_2026-11-01.json": "0e97cb25e06c21baf3bda0f7aa82fbc16cdde58db170bcc2727e986f7699c9d7",
+    "research/print_case_reviews/LYJY_V1_P097_2026-11-01.json": "c70726d144b918edf99f191001da2ccdc6edf1f480bf9484e3d60a93ed9e51d5",
+    "research/print_case_reviews/NKCZ_V1_P096_2026-10-30.json": "1d274a0aef0068e3758ecebdeb29780ae679189b871ac94ddcfcb96de27d4019",
+    "research/print_case_reviews/NKCZ_V1_P103_2026-10-30.json": "253571702b3f41054ebdebc831747df41356d8ba9cf0016451d0095b85f19b47",
+    "research/print_case_reviews/NKCZ_V1_P105_2026-10-30.json": "e372424b1f400bceebc32b8cdcd82b5f31d07f01c98a73a6e42b8f4ee3b72694",
+    "research/print_case_reviews/NKCZ_V1_P106_2026-10-30.json": "805d344fb1fa60c7d6d4eff9bbcbc3c563507accc7fd4718d9aef310c7581916",
+    "research/print_case_reviews/NKZY_V2_P051_2026-11-01.json": "666b697a6262ebd566fceb879af4147319f8cb414231c26b18de9e2e7183337e",
+    "research/print_case_reviews/NKZY_V2_P092_2026-11-01.json": "acdad771bc0f93abcec0f70f6497e39c5200000a74cf68a16b10dbe2cafa3593",
+    "research/print_case_reviews/WKSY_V3_P017_2026-11-01.json": "466c6818a72813061d9427f78b6c5e498581ea4b34eb648f55421536eb827b22",
+    "research/print_case_reviews/WKSY_V3_P120_2026-11-01.json": "eda7287a06238f6b9b5ab47ce144f7bd1ef576cd45bdea6644f00f203aee23f0",
+    "research/print_case_reviews/ZTLY_V1_P054_2026-11-01.json": "b3b03503d7515d5a0910b197ff7c8bc84ed2e3309a5f56cf6b3b2e3c6a137b0d",
+    "research/print_case_reviews/ZTLY_V1_P102_2026-11-01.json": "80e8380e62504307df25b4fb99d73f8854afc9a1529427346ed38e8c44f9b55c",
+    "research/check_iiif_case.py": "1c506155ae3c3a4326cd523fa46d156695047eae335b66f2d0bd235a2956ce41",
+    "research/iiif_reviews/LZWKFH_V5_P183_2026-11-01.json": "a1773e06c7cea002dc4b721f059fd0b248191ddadc0aa491ff502122901236e8",
+    "research/iiif_reviews/LZWKFH_utokyo_manifest_2026-11-01.json": "68515bd79c17017d8314296af9d6f40bc15c30e33b0d41897efdad8b667bd83c",
+    ".github/workflows/validate.yml": "73eb11b45acb142a9e5492706e4ce75d19b53ece4257fc201de092339368e55d",
+    "research/print_case_pending/KCLY_H2_P012_2026-10-30.json": "1b3473b4a72b8c3348110cfaf498667495a339580b32cb0404ea0e0dab1f19df",
+    "research/check_witness_bibliography.py": "f72c0f5831e0c77023f146fd14126ccc702434cf0bd64ba04761015525af2b11",
+    "research/witness_reviews/KCLY_bibliography_2026-10-29.json": "2c68e8e6bbd51b3a1d1b974bab4c9eaccafe7a3ff7f9b0e37c69935d5ad470b4",
+    "research/witness_reviews/KCLY_catalog_2026-10-29.json": "9c7e3e3c8cf192b30dfc682cabce6281a27feed07b9298e4f6a0be624f6e41b0",
+    "research/check_witness_catalog.py": "949280b986ee6c359abfeabb31e6f15a1131a22706fb9fcecda835b90c32cca1",
+    "research/build_role_pilot.py": "aaea77f273e8136e6b98818df62a75215cc0290cdedf16c0c097fabe65727f33",
+    "research/scan_reviews/BYCY_target_spots_2026-11-02.json": "37e8b7764ed8526f8af87218aff4ee96ae814f621948b699360acb9fbc1becb8",
+    "research/scan_reviews/KCLY_target_spots_2026-10-27.json": "385beb12fd0c6e0e8aaba2d0eb0f420dec5a2a9946b62b489ce7eb37b3e4f86c",
+    "research/scan_reviews/LYJY_target_spots_2026-10-28.json": "98ab78bd31e8084e5cc1b722b010bbc2cf7ec40d7279fc16ffa2843b51e733ed",
+    "research/scan_reviews/NKCZ_target_spots_2026-10-27.json": "7ba5dc8e6deb428bf379decd8e99b6ddcfc42562d144cd8c9b3f68721d701fe3",
+    "research/scan_reviews/NKZY_target_spots_2026-10-27.json": "045d85c2491249f8691d38f5e6cf221eb1a0fa92b5639bdaf548f21c9189ba11",
+    "research/scan_reviews/WKSY_target_spots_2026-10-28.json": "2a2f273b3a76ee714ef871b7aa2848bea4e83a7fdee96507bb71e60ac988911b",
+    "research/scan_reviews/ZTLY_target_spots_2026-10-27.json": "89db976a4113e63cc839cbaa9653027dabe9797027c70362876c94c68be3d497"
+  },
+  "structural_summary": {
+    "works": 8,
+    "records": 5361,
+    "duplicate_source_ids": 0,
+    "errors": 0,
+    "warnings": 8
+  },
+  "source_summary": {
+    "works": 8,
+    "records": 5361,
+    "structured": {
+      "cases": 1532,
+      "non_case_units": 3272
+    },
+    "review_exclusions": 9,
+    "text_sha256": "a719e844641d9b610848a923e108f663d0fc1620d4f28c26f1925bfc9d5d27aa",
+    "report_refreshed": false
+  },
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "work/validate_complete_corpus.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"corpus\": \"outputs/薛己核心医案_结构化样本.md\",\n  \"works\": {\n    \"XJ-NKZY\": {\n      \"title\": \"內科摘要\",\n      \"records\": 546,\n      \"headings\": [\n        \"卷上\",\n        \"卷下\"\n      ],\n      \"id_series\": {\n        \"XJ-NKZY-V1\": {\n          \"count\": 178,\n          \"first\": 1,\n          \"last\": 176\n        },\n        \"XJ-NKZY-V2\": {\n          \"count\": 368,\n          \"first\": 1,\n          \"last\": 368\n        }\n      },\n      \"errors\": [],\n      \"warnings\": [\n        \"尚未完成全书馆藏影像逐字校定（现有状态仅代表抽样）\"\n      ]\n    },\n    \"XJ-NKCZ\": {\n      \"title\": \"女科撮要\",\n      \"records\": 593,\n      \"headings\": [\n        \"前序\",\n        \"卷上\",\n        \"卷下\"\n      ],\n      \"id_series\": {\n        \"XJ-NKCZ-PRE\": {\n          \"count\": 2,\n          \"first\": 1,\n          \"last\": 2\n        },\n        \"XJ-NKCZ-V1\": {\n          \"count\": 257,\n          \"first\": 1,\n          \"last\": 257\n        },\n        \"XJ-NKCZ-V2\": {\n          \"count\": 334,\n          \"first\": 1,\n          \"last\": 334\n        }\n      },\n      \"errors\": [],\n      \"warnings\": [\n        \"尚未完成全书馆藏影像逐字校定（现有状态仅代表抽样）\"\n      ]\n    },\n    \"XJ-ZTLY\": {\n      \"title\": \"正體類要\",\n      \"records\": 329,\n      \"headings\": [\n        \"序\",\n        \"上卷\",\n        \"下卷\"\n      ],\n      \"id_series\": {\n        \"XJ-ZTLY-PRE\": {\n          \"count\": 2,\n          \"first\": 1,\n          \"last\": 2\n        },\n        \"XJ-ZTLY-V1\": {\n          \"count\": 112,\n          \"first\": 1,\n          \"last\": 112\n        },\n        \"XJ-ZTLY-V2\": {\n          \"count\": 215,\n          \"first\": 1,\n          \"last\": 215\n        }\n      },\n      \"errors\": [],\n      \"warnings\": [\n        \"尚未完成全书馆藏影像逐字校定（现有状态仅代表抽样）\"\n      ]\n    },\n    \"XJ-KCLY\": {\n      \"title\": \"口齒類要\",\n      \"records\": 322,\n      \"headings\": [\n        \"繭唇一\",\n        \"口瘡二\",\n        \"齒痛三\",\n        \"舌症四\",\n        \"喉痹諸症五\",\n        \"喉痛六\",\n        \"諸骨稻穀發鯁七\",\n        \"治諸鯁咒法八\",\n        \"誤吞水蛭九\",\n        \"諸蟲入耳十\",\n        \"蛇入七竅及蟲咬傷十一\",\n        \"男女體氣十二\",\n        \"附方並注\"\n      ],\n      \"id_series\": {\n        \"XJ-KCLY-H1\": {\n          \"count\": 13,\n          \"first\": 1,\n          \"last\": 13\n        },\n        \"XJ-KCLY-H2\": {\n          \"count\": 15,\n          \"first\": 1,\n          \"last\": 15\n        },\n        \"XJ-KCLY-H3\": {\n          \"count\": 25,\n          \"first\": 1,\n          \"last\": 25\n        },\n        \"XJ-KCLY-H4\": {\n          \"count\": 13,\n          \"first\": 1,\n          \"last\": 13\n        },\n        \"XJ-KCLY-H5\": {\n          \"count\": 14,\n          \"first\": 1,\n          \"last\": 14\n        },\n        \"XJ-KCLY-H6\": {\n          \"count\": 21,\n          \"first\": 1,\n          \"last\": 21\n        },\n        \"XJ-KCLY-H7\": {\n          \"count\": 10,\n          \"first\": 1,\n          \"last\": 10\n        },\n        \"XJ-KCLY-H8\": {\n          \"count\": 1,\n          \"first\": 1,\n          \"last\": 1\n        },\n        \"XJ-KCLY-H9\": {\n          \"count\": 1,\n          \"first\": 1,\n          \"last\": 1\n        },\n        \"XJ-KCLY-H10\": {\n          \"count\": 3,\n          \"first\": 1,\n          \"last\": 3\n        },\n        \"XJ-KCLY-H11\": {\n          \"count\": 1,\n          \"first\": 1,\n          \"last\": 1\n        },\n        \"XJ-KCLY-H12\": {\n          \"count\": 1,\n          \"first\": 1,\n          \"last\": 1\n        },\n        \"XJ-KCLY-H13\": {\n          \"count\": 204,\n          \"first\": 1,\n          \"last\": 204\n        }\n      },\n      \"errors\": [],\n      \"warnings\": [\n        \"尚未完成全书馆藏影像逐字校定（现有状态仅代表抽样）\"\n      ]\n    },\n    \"XJ-LZWKFH\": {\n      \"title\": \"立齋外科發揮\",\n      \"records\": 1170,\n      \"headings\": [\n        \"敘\",\n        \"卷一\",\n        \"卷二\",\n        \"卷三\",\n        \"卷四\",\n        \"卷五\",\n        \"卷六\",\n        \"卷七\",\n        \"卷八\"\n      ],\n      \"id_series\": {\n        \"XJ-LZWKFH-H1\": {\n          \"count\": 2,\n          \"first\": 1,\n          \"last\": 2\n        },\n        \"XJ-LZWKFH-V1\": {\n          \"count\": 99,\n          \"first\": 1,\n          \"last\": 99\n        },\n        \"XJ-LZWKFH-V2\": {\n          \"count\": 136,\n          \"first\": 1,\n          \"last\": 136\n        },\n        \"XJ-LZWKFH-V3\": {\n          \"count\": 178,\n          \"first\": 1,\n          \"last\": 178\n        },\n        \"XJ-LZWKFH-V4\": {\n          \"count\": 115,\n          \"first\": 1,\n          \"last\": 115\n        },\n        \"XJ-LZWKFH-V5\": {\n          \"count\": 205,\n          \"first\": 1,\n          \"last\": 205\n        },\n        \"XJ-LZWKFH-V6\": {\n          \"count\": 121,\n          \"first\": 1,\n          \"last\": 121\n        },\n        \"XJ-LZWKFH-V7\": {\n          \"count\": 163,\n          \"first\": 1,\n          \"last\": 163\n        },\n        \"XJ-LZWKFH-V8\": {\n          \"count\": 151,\n          \"first\": 1,\n          \"last\": 151\n        }\n      },\n      \"errors\": [],\n      \"warnings\": [\n        \"尚未完成全书馆藏影像逐字校定（现有状态仅代表抽样）\"\n      ]\n    },\n    \"XJ-WKSY\": {\n      \"title\": \"外科樞要\",\n      \"records\": 853,\n      \"headings\": [\n        \"序\",\n        \"卷一\",\n        \"卷二\",\n        \"卷三\",\n        \"卷四\"\n      ],\n      \"id_series\": {\n        \"XJ-WKSY-PRE\": {\n          \"count\": 2,\n          \"first\": 1,\n          \"last\": 2\n        },\n        \"XJ-WKSY-V1\": {\n          \"count\": 100,\n          \"first\": 1,\n          \"last\": 100\n        },\n        \"XJ-WKSY-V2\": {\n          \"count\": 166,\n          \"first\": 1,\n          \"last\": 166\n        },\n        \"XJ-WKSY-V3\": {\n          \"count\": 168,\n          \"first\": 1,\n          \"last\": 168\n        },\n        \"XJ-WKSY-V4\": {\n          \"count\": 417,\n          \"first\": 1,\n          \"last\": 417\n        }\n      },\n      \"errors\": [],\n      \"warnings\": [\n        \"尚未完成全书馆藏影像逐字校定（现有状态仅代表抽样）\"\n      ]\n    },\n    \"XJ-LYJY\": {\n      \"title\": \"癘瘍機要\",\n      \"records\": 409,\n      \"headings\": [\n        \"序\",\n        \"上卷\",\n        \"中卷\",\n        \"下卷\"\n      ],\n      \"id_series\": {\n        \"XJ-LYJY-PRE\": {\n          \"count\": 2,\n          \"first\": 1,\n          \"last\": 2\n        },\n        \"XJ-LYJY-V1\": {\n          \"count\": 113,\n          \"first\": 1,\n          \"last\": 113\n        },\n        \"XJ-LYJY-V2\": {\n          \"count\": 71,\n          \"first\": 1,\n          \"last\": 71\n        },\n        \"XJ-LYJY-V3\": {\n          \"count\": 223,\n          \"first\": 1,\n          \"last\": 221\n        }\n      },\n      \"errors\": [],\n      \"warnings\": [\n        \"尚未完成全书馆藏影像逐字校定（现有状态仅代表抽样）\"\n      ]\n    },\n    \"XJ-BYCY\": {\n      \"title\": \"保嬰粹要\",\n      \"records\": 1139,\n      \"headings\": [\n        \"卷五（保嬰粹要）\"\n      ],\n      \"id_series\": {\n        \"XJ-BYCY-V5\": {\n          \"count\": 1139,\n          \"first\": 1,\n          \"last\": 1139\n        }\n      },\n      \"errors\": [],\n      \"warnings\": [\n        \"尚未完成全书馆藏影像逐字校定（现有状态仅代表抽样）\"\n      ]\n    }\n  },\n  \"summary\": {\n    \"works\": 8,\n    \"records\": 5361,\n    \"duplicate_source_ids\": 0,\n    \"errors\": 0,\n    \"warnings\": 8\n  },\n  \"errors\": [],\n  \"warnings\": [\n    \"XJ-NKZY: 尚未完成全书馆藏影像逐字校定（现有状态仅代表抽样）\",\n    \"XJ-NKCZ: 尚未完成全书馆藏影像逐字校定（现有状态仅代表抽样）\",\n    \"XJ-ZTLY: 尚未完成全书馆藏影像逐字校定（现有状态仅代表抽样）\",\n    \"XJ-KCLY: 尚未完成全书馆藏影像逐字校定（现有状态仅代表抽样）\",\n    \"XJ-LZWKFH: 尚未完成全书馆藏影像逐字校定（现有状态仅代表抽样）\",\n    \"XJ-WKSY: 尚未完成全书馆藏影像逐字校定（现有状态仅代表抽样）\",\n    \"XJ-LYJY: 尚未完成全书馆藏影像逐字校定（现有状态仅代表抽样）\",\n    \"XJ-BYCY: 尚未完成全书馆藏影像逐字校定（现有状态仅代表抽样）\"\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "work/audit_corpus.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"works\": 8,\n  \"records\": 5361,\n  \"structured\": {\n    \"cases\": 1532,\n    \"non_case_units\": 3272\n  },\n  \"review_exclusions\": 9,\n  \"text_sha256\": \"a719e844641d9b610848a923e108f663d0fc1620d4f28c26f1925bfc9d5d27aa\",\n  \"report_refreshed\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "work/check_retrieval_inheritance.py"
+      ],
+      "returncode": 0,
+      "stdout": "pending sources: 9 | structured records by status: {'source_research_with_caveats': 4777, 'needs_review': 27}\ngaps: 0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/reproduce_sample.py"
+      ],
+      "returncode": 0,
+      "stdout": "PASS: 5361 sources, 1532 cases, 160 unique sample rows, 8 works x 20\nPASS: manifest reproducible; 375 evidence spans exact\nCandidate spans by field: {'course': 34, 'mechanism': 112, 'prior_treatment': 31, 'symptoms': 160, 'trigger': 38}\nPASS: 16 model close-read pilot records, 50 exact evidence spans\nPASS: frozen source Git blob: e8459e27e93711c44357fafcf7d106f97ecaca26\nNo clinical feature polarity, time point or medical interpretation has been adjudicated.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_close_read_160.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"date\": \"2026-10-28\",\n  \"initial_review_date\": \"2026-10-26\",\n  \"cases\": 160,\n  \"domains\": 800,\n  \"cases_per_work\": {\n    \"XJ-BYCY\": 20,\n    \"XJ-KCLY\": 20,\n    \"XJ-LYJY\": 20,\n    \"XJ-LZWKFH\": 20,\n    \"XJ-NKCZ\": 20,\n    \"XJ-NKZY\": 20,\n    \"XJ-WKSY\": 20,\n    \"XJ-ZTLY\": 20\n  },\n  \"domains_with_evidence\": {\n    \"symptoms\": 160,\n    \"trigger\": 54,\n    \"course\": 128,\n    \"prior_treatment\": 72,\n    \"mechanism\": 121\n  },\n  \"observations\": 788,\n  \"literal_source_spans\": 801,\n  \"multi_segment_observations\": 13,\n  \"phases\": {\n    \"initial_narrator_window\": 529,\n    \"later_narrator_window\": 249,\n    \"unknown\": 10\n  },\n  \"default_retrieval_excluded\": 3,\n  \"human_adjudicated_cases\": 0,\n  \"print_images_checked_this_pass\": 14,\n  \"full_case_print_collations_this_pass\": 0,\n  \"targeted_print_spot_review_refs\": [\n    \"research/scan_reviews/BYCY_target_spots_2026-11-02.json\",\n    \"research/scan_reviews/KCLY_target_spots_2026-10-27.json\",\n    \"research/scan_reviews/LYJY_target_spots_2026-10-28.json\",\n    \"research/scan_reviews/NKCZ_target_spots_2026-10-27.json\",\n    \"research/scan_reviews/NKZY_target_spots_2026-10-27.json\",\n    \"research/scan_reviews/WKSY_target_spots_2026-10-28.json\",\n    \"research/scan_reviews/ZTLY_target_spots_2026-10-27.json\"\n  ],\n  \"targeted_print_spots_recorded\": 16,\n  \"initial_query_exported\": 0,\n  \"cases_with_second_model_pass\": 160,\n  \"interpretation_scope\": \"initial_model_read_all_cases_followup_scope_in_per_case_records_not_exhaustive\",\n  \"source_git_blob\": \"e8459e27e93711c44357fafcf7d106f97ecaca26\"\n}\nPASS: reviewed choices reproduce all outputs; every quoted segment is exact and inside its case\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/check_sample_snapshots.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"date\": \"2026-10-28\",\n  \"source_git_blob\": \"e8459e27e93711c44357fafcf7d106f97ecaca26\",\n  \"summary\": {\n    \"exact_quote_present_in_mapped_snapshot_record\": 783,\n    \"quote_differs_from_cached_transcription\": 18\n  },\n  \"evidence_segments\": 801,\n  \"original_print_images_checked\": 0\n}\nPASS: dated snapshot reconciliation reproduced; differences retained, not silently corrected\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_extended_kcly.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"date\": \"2026-10-27\",\n  \"cases\": 20,\n  \"dimension_slots\": 80,\n  \"cases_with_selected_evidence\": {\n    \"pulse\": 5,\n    \"tongue_features\": 1,\n    \"habitus\": 2,\n    \"habits\": 5\n  },\n  \"observations\": 17,\n  \"literal_spans\": 17,\n  \"phases\": {\n    \"initial_narrator_window\": 12,\n    \"later_narrator_window\": 5\n  },\n  \"human_adjudicated\": 0,\n  \"initial_query_exported\": 0,\n  \"default_retrieval_excluded\": 0,\n  \"scope\": \"independent_dimensions_separate_from_five_domain_totals\"\n}\nPASS: independent-dimension choices reproduce exact evidence; no absence or clinical validity inferred\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_extended_kcly.py",
+        "--work",
+        "ZTLY"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"date\": \"2026-10-27\",\n  \"cases\": 20,\n  \"dimension_slots\": 80,\n  \"cases_with_selected_evidence\": {\n    \"pulse\": 9,\n    \"tongue_features\": 0,\n    \"habitus\": 1,\n    \"habits\": 0\n  },\n  \"observations\": 10,\n  \"literal_spans\": 10,\n  \"phases\": {\n    \"initial_narrator_window\": 9,\n    \"later_narrator_window\": 1\n  },\n  \"human_adjudicated\": 0,\n  \"initial_query_exported\": 0,\n  \"default_retrieval_excluded\": 0,\n  \"scope\": \"independent_dimensions_separate_from_five_domain_totals\"\n}\nPASS: independent-dimension choices reproduce exact evidence; no absence or clinical validity inferred\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_extended_kcly.py",
+        "--work",
+        "NKCZ"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"date\": \"2026-10-27\",\n  \"cases\": 20,\n  \"dimension_slots\": 80,\n  \"cases_with_selected_evidence\": {\n    \"pulse\": 2,\n    \"tongue_features\": 0,\n    \"habitus\": 1,\n    \"habits\": 6\n  },\n  \"observations\": 9,\n  \"literal_spans\": 9,\n  \"phases\": {\n    \"initial_narrator_window\": 9\n  },\n  \"human_adjudicated\": 0,\n  \"initial_query_exported\": 0,\n  \"default_retrieval_excluded\": 0,\n  \"scope\": \"independent_dimensions_separate_from_five_domain_totals\"\n}\nPASS: independent-dimension choices reproduce exact evidence; no absence or clinical validity inferred\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_extended_kcly.py",
+        "--work",
+        "NKZY"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"date\": \"2026-10-27\",\n  \"cases\": 20,\n  \"dimension_slots\": 80,\n  \"cases_with_selected_evidence\": {\n    \"pulse\": 10,\n    \"tongue_features\": 0,\n    \"habitus\": 5,\n    \"habits\": 6\n  },\n  \"observations\": 22,\n  \"literal_spans\": 22,\n  \"phases\": {\n    \"initial_narrator_window\": 18,\n    \"later_narrator_window\": 4\n  },\n  \"human_adjudicated\": 0,\n  \"initial_query_exported\": 0,\n  \"default_retrieval_excluded\": 3,\n  \"scope\": \"independent_dimensions_separate_from_five_domain_totals\"\n}\nPASS: independent-dimension choices reproduce exact evidence; no absence or clinical validity inferred\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_extended_kcly.py",
+        "--work",
+        "WKSY"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"date\": \"2026-10-28\",\n  \"cases\": 20,\n  \"dimension_slots\": 80,\n  \"cases_with_selected_evidence\": {\n    \"pulse\": 10,\n    \"tongue_features\": 0,\n    \"habitus\": 0,\n    \"habits\": 2\n  },\n  \"observations\": 15,\n  \"literal_spans\": 15,\n  \"phases\": {\n    \"initial_narrator_window\": 11,\n    \"later_narrator_window\": 4\n  },\n  \"human_adjudicated\": 0,\n  \"initial_query_exported\": 0,\n  \"default_retrieval_excluded\": 0,\n  \"scope\": \"independent_dimensions_separate_from_five_domain_totals\"\n}\nPASS: independent-dimension choices reproduce exact evidence; no absence or clinical validity inferred\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_event_pilot.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\"cases\": 1, \"narrative_segments\": 14, \"complete_case_window_coverage\": true, \"human_adjudication\": \"pending\", \"initial_query_exported\": 0}\nPASS: exact full-window segmentation; care recommendation not counted as performed treatment\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_event_pilot.py",
+        "--work",
+        "NKCZ"
+      ],
+      "returncode": 0,
+      "stdout": "{\"cases\": 1, \"narrative_segments\": 7, \"complete_case_window_coverage\": true, \"human_adjudication\": \"pending\", \"initial_query_exported\": 0}\nPASS: exact full-window segmentation; care recommendation not counted as performed treatment\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_event_pilot.py",
+        "--work",
+        "NKZY"
+      ],
+      "returncode": 0,
+      "stdout": "{\"cases\": 1, \"narrative_segments\": 13, \"complete_case_window_coverage\": true, \"human_adjudication\": \"pending\", \"initial_query_exported\": 0}\nPASS: exact full-window segmentation; care recommendation not counted as performed treatment\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_event_pilot.py",
+        "--work",
+        "WKSY"
+      ],
+      "returncode": 0,
+      "stdout": "{\"cases\": 1, \"narrative_segments\": 9, \"complete_case_window_coverage\": true, \"human_adjudication\": \"pending\", \"initial_query_exported\": 0}\nPASS: exact full-window segmentation; care recommendation not counted as performed treatment\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/check_scan_spots.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\"recorded_model_visual_spots\": 16, \"recorded_pdf_pages_viewed\": 14, \"pdf_artifact_hash_checked_this_command\": false, \"full_case_print_collations\": 0, \"human_adjudication\": \"pending\"}\nPASS: recorded provenance and source links valid; visual glyph judgments are not automatically verified\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_extended_kcly.py",
+        "--work",
+        "LYJY"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"date\": \"2026-10-28\",\n  \"cases\": 20,\n  \"dimension_slots\": 80,\n  \"cases_with_selected_evidence\": {\n    \"pulse\": 8,\n    \"tongue_features\": 0,\n    \"habitus\": 2,\n    \"habits\": 5\n  },\n  \"observations\": 16,\n  \"literal_spans\": 16,\n  \"phases\": {\n    \"initial_narrator_window\": 13,\n    \"later_narrator_window\": 2,\n    \"unknown\": 1\n  },\n  \"human_adjudicated\": 0,\n  \"initial_query_exported\": 0,\n  \"default_retrieval_excluded\": 0,\n  \"scope\": \"independent_dimensions_separate_from_five_domain_totals\"\n}\nPASS: independent-dimension choices reproduce exact evidence; no absence or clinical validity inferred\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_extended_kcly.py",
+        "--work",
+        "LZWKFH"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"date\": \"2026-10-28\",\n  \"cases\": 20,\n  \"dimension_slots\": 80,\n  \"cases_with_selected_evidence\": {\n    \"pulse\": 11,\n    \"tongue_features\": 0,\n    \"habitus\": 1,\n    \"habits\": 0\n  },\n  \"observations\": 12,\n  \"literal_spans\": 12,\n  \"phases\": {\n    \"initial_narrator_window\": 12\n  },\n  \"human_adjudicated\": 0,\n  \"initial_query_exported\": 0,\n  \"default_retrieval_excluded\": 0,\n  \"scope\": \"independent_dimensions_separate_from_five_domain_totals\"\n}\nPASS: independent-dimension choices reproduce exact evidence; no absence or clinical validity inferred\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_event_pilot.py",
+        "--work",
+        "LZWKFH"
+      ],
+      "returncode": 0,
+      "stdout": "{\"cases\": 1, \"narrative_segments\": 11, \"complete_case_window_coverage\": true, \"human_adjudication\": \"pending\", \"initial_query_exported\": 0}\nPASS: exact full-window segmentation; care recommendation not counted as performed treatment\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_event_pilot.py",
+        "--work",
+        "LYJY"
+      ],
+      "returncode": 0,
+      "stdout": "{\"cases\": 1, \"narrative_segments\": 7, \"complete_case_window_coverage\": true, \"human_adjudication\": \"pending\", \"initial_query_exported\": 0}\nPASS: exact full-window segmentation; care recommendation not counted as performed treatment\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_extended_kcly.py",
+        "--work",
+        "BYCY"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"date\": \"2026-10-28\",\n  \"cases\": 20,\n  \"dimension_slots\": 80,\n  \"cases_with_selected_evidence\": {\n    \"pulse\": 7,\n    \"tongue_features\": 0,\n    \"habitus\": 2,\n    \"habits\": 1\n  },\n  \"observations\": 10,\n  \"literal_spans\": 14,\n  \"phases\": {\n    \"initial_narrator_window\": 8,\n    \"later_narrator_window\": 2\n  },\n  \"human_adjudicated\": 0,\n  \"initial_query_exported\": 0,\n  \"default_retrieval_excluded\": 0,\n  \"scope\": \"independent_dimensions_separate_from_five_domain_totals\"\n}\nPASS: independent-dimension choices reproduce exact evidence; no absence or clinical validity inferred\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/check_cross_annotation_consistency.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\"core_case_rows\": 160, \"independent_case_rows\": 160, \"independent_observations\": 111, \"overlapping_cross_dimension_observation_pairs_checked\": 14, \"core_observations_overlapping_pilot_events_checked\": 49, \"phase_difference_candidates\": [], \"held_out_candidates\": 3}\nPASS: stored joins, literal provenance and label-consistency profile reproduced; semantic accuracy not established\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_role_pilot.py"
+      ],
+      "returncode": 0,
+      "stdout": "PASS: 1 case, 7 selected role/modality findings; expert pending; query disabled\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_event_pilot.py",
+        "--work",
+        "BYCY"
+      ],
+      "returncode": 0,
+      "stdout": "{\"cases\": 1, \"narrative_segments\": 26, \"complete_case_window_coverage\": true, \"human_adjudication\": \"pending\", \"initial_query_exported\": 0}\nPASS: exact full-window segmentation; care recommendation not counted as performed treatment\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/build_event_pilot.py",
+        "--work",
+        "KCLY"
+      ],
+      "returncode": 0,
+      "stdout": "{\"cases\": 1, \"narrative_segments\": 11, \"complete_case_window_coverage\": true, \"human_adjudication\": \"pending\", \"initial_query_exported\": 0}\nPASS: exact full-window segmentation; care recommendation not counted as performed treatment\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/check_print_case.py",
+        "--all"
+      ],
+      "returncode": 0,
+      "stdout": "{\"scope\": \"full_case_model_image_comparisons_not_expert_collation\", \"cases\": 29, \"case_ids\": [\"XJ-BYCY-C-V5-L0021\", \"XJ-BYCY-C-V5-L0026\", \"XJ-BYCY-C-V5-L0028\", \"XJ-BYCY-C-V5-L0046\", \"XJ-BYCY-C-V5-L0052\", \"XJ-BYCY-C-V5-L0061\", \"XJ-KCLY-C-H1-P005-1\", \"XJ-KCLY-C-H1-P006-1\", \"XJ-KCLY-C-H1-P009-1\", \"XJ-KCLY-C-H1-P010-1\", \"XJ-KCLY-C-H1-P011-1\", \"XJ-KCLY-C-H1-P012-1\", \"XJ-KCLY-C-H2-P004-1\", \"XJ-KCLY-C-H2-P005-1\", \"XJ-KCLY-C-H2-P008-1\", \"XJ-KCLY-C-H3-P005-1\", \"XJ-KCLY-C-H3-P014-1\", \"XJ-LYJY-C-V1-P096\", \"XJ-LYJY-C-V1-P097\", \"XJ-NKCZ-C-V1-P096-1\", \"XJ-NKCZ-C-V1-P103-1\", \"XJ-NKCZ-C-V1-P105-1\", \"XJ-NKCZ-C-V1-P106-1\", \"XJ-NKZY-C-V2-P051-1\", \"XJ-NKZY-C-V2-P092-1\", \"XJ-WKSY-C-V3-P017-1\", \"XJ-WKSY-C-V3-P120-1\", \"XJ-ZTLY-C-V1-P054-1\", \"XJ-ZTLY-C-V1-P102-1\"], \"compared_body_characters\": 2199, \"different_character_positions\": 28, \"unique_pdf_pages\": 21, \"expert_collated_cases\": 0, \"initial_query_exported\": 0, \"reviewed_block_cases\": 1, \"reviewed_block_difference_events\": 4, \"counting_note\": \"different_character_positions covers equal-length cases only; block events reported separately\", \"boundary_only_pdf_pages\": 1, \"unique_pdf_pages_including_boundary_checks\": 22, \"pending_model_image_readings\": 1, \"pending_case_ids\": [\"XJ-KCLY-C-H2-P012-1\"], \"cases_by_work\": {\"BYCY\": 6, \"KCLY\": 11, \"LYJY\": 2, \"NKCZ\": 4, \"NKZY\": 2, \"WKSY\": 2, \"ZTLY\": 2}, \"compared_body_characters_by_work\": {\"BYCY\": 441, \"KCLY\": 829, \"LYJY\": 121, \"NKCZ\": 201, \"NKZY\": 141, \"WKSY\": 350, \"ZTLY\": 116}}\nPASS: recorded full-case model reading reproduces; visual accuracy and expert review not established\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/check_iiif_case.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\"scope\": \"combined_model_image_comparisons_not_expert_collation\", \"cases\": 30, \"compared_body_characters\": 2257, \"pdf_cases\": 29, \"iiif_cases\": 1, \"works\": [\"BYCY\", \"KCLY\", \"LYJY\", \"LZWKFH\", \"NKCZ\", \"NKZY\", \"WKSY\", \"ZTLY\"], \"cases_by_work\": {\"BYCY\": 6, \"KCLY\": 11, \"LYJY\": 2, \"NKCZ\": 4, \"NKZY\": 2, \"WKSY\": 2, \"ZTLY\": 2, \"LZWKFH\": 1}, \"compared_body_characters_by_work\": {\"BYCY\": 441, \"KCLY\": 829, \"LYJY\": 121, \"NKCZ\": 201, \"NKZY\": 141, \"WKSY\": 350, \"ZTLY\": 116, \"LZWKFH\": 58}, \"equal_length_different_positions\": 28, \"reviewed_block_difference_events\": 4, \"pending_model_image_readings\": 1, \"viewed_iiif_canvases\": 10, \"page_counting_note\": \"IIIF canvases are not PDF pages; manifest identifiers retained separately\", \"expert_collated_cases\": 0, \"initial_query_exported\": 0}\nPASS: recorded IIIF provenance and alignment reproduce; visual accuracy not established by program\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/check_witness_bibliography.py"
+      ],
+      "returncode": 0,
+      "stdout": "PASS: 5 recorded pages; title/printed attribution model-read; inherited date unverified; expert pending\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/check_witness_catalog.py"
+      ],
+      "returncode": 0,
+      "stdout": "PASS: matching institutional catalog edition field supports 1654; image colophon and expert review unverified\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "research/check_publication.py"
+      ],
+      "returncode": 0,
+      "stdout": "PASS: 359 tracked text files; restricted metadata findings=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research",
+        "-p",
+        "test_close_read_160.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_mechanism_stops_before_performed_care (test_close_read_160.BycyAssessmentBoundaryTests.test_mechanism_stops_before_performed_care) ... ok\ntest_old_merged_quote_still_triggers_phase_candidate (test_close_read_160.BycyAssessmentBoundaryTests.test_old_merged_quote_still_triggers_phase_candidate) ... ok\ntest_calendar_conversion_rejected (test_close_read_160.BycyFullEventTests.test_calendar_conversion_rejected) ... ok\ntest_conditional_warning_cannot_be_death (test_close_read_160.BycyFullEventTests.test_conditional_warning_cannot_be_death) ... ok\ntest_mother_diagnosis_cannot_move_to_child (test_close_read_160.BycyFullEventTests.test_mother_diagnosis_cannot_move_to_child) ... ok\ntest_proposed_fuzi_cannot_be_performed (test_close_read_160.BycyFullEventTests.test_proposed_fuzi_cannot_be_performed) ... ok\ntest_shared_treatment_cannot_drop_mother (test_close_read_160.BycyFullEventTests.test_shared_treatment_cannot_drop_mother) ... ok\ntest_unknown_prior_treater_cannot_be_narrator (test_close_read_160.BycyFullEventTests.test_unknown_prior_treater_cannot_be_narrator) ... ok\ntest_next_patient_and_truncated_outcome_cannot_count_as_full_case (test_close_read_160.BycyPrintBoundaryTests.test_next_patient_and_truncated_outcome_cannot_count_as_full_case) ... ok\ntest_post_treatment_course_and_physician_interpretation_remain_distinct (test_close_read_160.BycyPrintBoundaryTests.test_post_treatment_course_and_physician_interpretation_remain_distinct) ... ok\ntest_variants_keep_physical_column_and_literal_source_positions (test_close_read_160.BycyPrintBoundaryTests.test_variants_keep_physical_column_and_literal_source_positions) ... ok\ntest_conditional_death_cannot_be_observed_outcome (test_close_read_160.BycyRoleTests.test_conditional_death_cannot_be_observed_outcome) ... ok\ntest_mother_assessment_cannot_be_child_feature (test_close_read_160.BycyRoleTests.test_mother_assessment_cannot_be_child_feature) ... ok\ntest_proposed_fuzi_cannot_be_performed (test_close_read_160.BycyRoleTests.test_proposed_fuzi_cannot_be_performed) ... ok\ntest_roles_cannot_keep_labels_but_swap_evidence (test_close_read_160.BycyRoleTests.test_roles_cannot_keep_labels_but_swap_evidence) ... ok\ntest_shared_medicine_cannot_drop_mother (test_close_read_160.BycyRoleTests.test_shared_medicine_cannot_drop_mother) ... ok\ntest_unresolved_sign_cannot_be_standard_pulse (test_close_read_160.BycyRoleTests.test_unresolved_sign_cannot_be_standard_pulse) ... ok\ntest_case_cannot_invent_targeted_scan_reference (test_close_read_160.ExtendedAndScanTests.test_case_cannot_invent_targeted_scan_reference) ... ok\ntest_empty_tongue_slot_is_not_explicit_absence (test_close_read_160.ExtendedAndScanTests.test_empty_tongue_slot_is_not_explicit_absence) ... ok\ntest_extended_observation_cannot_enable_query_export (test_close_read_160.ExtendedAndScanTests.test_extended_observation_cannot_enable_query_export) ... ok\ntest_recurrent_case_pulse_stages_remain_separate (test_close_read_160.ExtendedAndScanTests.test_recurrent_case_pulse_stages_remain_separate) ... ok\ntest_scan_artifact_hash_rejects_unrelated_pdf (test_close_read_160.ExtendedAndScanTests.test_scan_artifact_hash_rejects_unrelated_pdf) ... ok\ntest_scan_page_must_be_in_downloaded_pdf (test_close_read_160.ExtendedAndScanTests.test_scan_page_must_be_in_downloaded_pdf) ... ok\ntest_scan_reference_does_not_leak_to_other_case_in_same_paragraph (test_close_read_160.ExtendedAndScanTests.test_scan_reference_does_not_leak_to_other_case_in_same_paragraph) ... ok\ntest_scan_spot_cannot_claim_full_case_collation (test_close_read_160.ExtendedAndScanTests.test_scan_spot_cannot_claim_full_case_collation) ... ok\ntest_tongue_swelling_cannot_be_promoted_to_formal_exam (test_close_read_160.ExtendedAndScanTests.test_tongue_swelling_cannot_be_promoted_to_formal_exam) ... ok\ntest_differences_cannot_be_silently_emptied (test_close_read_160.FullCasePrintComparisonTests.test_differences_cannot_be_silently_emptied) ... ok\ntest_model_reading_cannot_be_expert_review (test_close_read_160.FullCasePrintComparisonTests.test_model_reading_cannot_be_expert_review) ... ok\ntest_print_page_must_exist (test_close_read_160.FullCasePrintComparisonTests.test_print_page_must_exist) ... ok\ntest_scan_omission_cannot_pass_equal_length_alignment (test_close_read_160.FullCasePrintComparisonTests.test_scan_omission_cannot_pass_equal_length_alignment) ... ok\ntest_actual_image_check_requires_case_image_not_only_title_page (test_close_read_160.IiifIndependentWitnessTests.test_actual_image_check_requires_case_image_not_only_title_page) ... ok\ntest_combined_case_count_rejects_duplicate_across_formats (test_close_read_160.IiifIndependentWitnessTests.test_combined_case_count_rejects_duplicate_across_formats) ... ok\ntest_complete_case_and_target_not_promoted_to_waseda_verification (test_close_read_160.IiifIndependentWitnessTests.test_complete_case_and_target_not_promoted_to_waseda_verification) ... ok\ntest_different_work_cannot_borrow_iiif_witness (test_close_read_160.IiifIndependentWitnessTests.test_different_work_cannot_borrow_iiif_witness) ... ok\ntest_manifest_identity_cannot_be_relabelled (test_close_read_160.IiifIndependentWitnessTests.test_manifest_identity_cannot_be_relabelled) ... ok\ntest_query_expert_and_other_witness_claims_rejected (test_close_read_160.IiifIndependentWitnessTests.test_query_expert_and_other_witness_claims_rejected) ... ok\ntest_reversed_column_reading_rejected (test_close_read_160.IiifIndependentWitnessTests.test_reversed_column_reading_rejected) ... ok\ntest_truncated_case_cannot_count_as_complete (test_close_read_160.IiifIndependentWitnessTests.test_truncated_case_cannot_count_as_complete) ... ok\ntest_unviewed_case_canvas_rejected (test_close_read_160.IiifIndependentWitnessTests.test_unviewed_case_canvas_rejected) ... ok\ntest_bounded_negation_screen_flags_compound_without_auto_relabeling (test_close_read_160.IndependentJoinQualityTests.test_bounded_negation_screen_flags_compound_without_auto_relabeling) ... ok\ntest_cold_drink_wording_is_not_premorbid_habit (test_close_read_160.IndependentJoinQualityTests.test_cold_drink_wording_is_not_premorbid_habit) ... ok\ntest_compound_pus_nonformation_is_split_without_negating_whole_case (test_close_read_160.IndependentJoinQualityTests.test_compound_pus_nonformation_is_split_without_negating_whole_case) ... ok\ntest_interval_comparison_excludes_touching_endpoints (test_close_read_160.IndependentJoinQualityTests.test_interval_comparison_excludes_touching_endpoints) ... ok\ntest_literal_pulse_cannot_be_retyped_as_habit (test_close_read_160.IndependentJoinQualityTests.test_literal_pulse_cannot_be_retyped_as_habit) ... ok\ntest_mother_evidence_cannot_be_promoted_to_child_feature (test_close_read_160.IndependentJoinQualityTests.test_mother_evidence_cannot_be_promoted_to_child_feature) ... ok\ntest_real_event_core_phase_mismatch_flagged (test_close_read_160.IndependentJoinQualityTests.test_real_event_core_phase_mismatch_flagged) ... ok\ntest_real_overlapping_body_feature_phase_mismatch_flagged (test_close_read_160.IndependentJoinQualityTests.test_real_overlapping_body_feature_phase_mismatch_flagged) ... ok\ntest_wrong_work_identity_rejected (test_close_read_160.IndependentJoinQualityTests.test_wrong_work_identity_rejected) ... ok\ntest_bystander_opinion_cannot_be_physician_observation (test_close_read_160.KclySignedWitnessTests.test_bystander_opinion_cannot_be_physician_observation) ... ok\ntest_ganzhi_cannot_be_calendar_date (test_close_read_160.KclySignedWitnessTests.test_ganzhi_cannot_be_calendar_date) ... ok\ntest_physician_quote_cannot_be_patient_interpretation (test_close_read_160.KclySignedWitnessTests.test_physician_quote_cannot_be_patient_interpretation) ... ok\ntest_praise_cannot_be_verified_outcome (test_close_read_160.KclySignedWitnessTests.test_praise_cannot_be_verified_outcome) ... ok\ntest_signature_cannot_be_lizhai (test_close_read_160.KclySignedWitnessTests.test_signature_cannot_be_lizhai) ... ok\ntest_alternative_clauses_and_sexual_background_stay_literal (test_close_read_160.LyjyBoundaryTests.test_alternative_clauses_and_sexual_background_stay_literal) ... ok\ntest_hair_loss_after_prior_drug_not_untreated_baseline (test_close_read_160.LyjyBoundaryTests.test_hair_loss_after_prior_drug_not_untreated_baseline) ... ok\ntest_no_narrator_encounter_does_not_invent_first_visit (test_close_read_160.LyjyBoundaryTests.test_no_narrator_encounter_does_not_invent_first_visit) ... ok\ntest_persistent_gloom_is_not_episode_trigger (test_close_read_160.LyjyBoundaryTests.test_persistent_gloom_is_not_episode_trigger) ... ok\ntest_unknown_prefix_does_not_imply_absence (test_close_read_160.LyjyBoundaryTests.test_unknown_prefix_does_not_imply_absence) ... ok\ntest_death_cannot_be_dropped_from_window (test_close_read_160.LyjyDeclinedCareTests.test_death_cannot_be_dropped_from_window) ... ok\ntest_declined_care_cannot_become_patient_refusal (test_close_read_160.LyjyDeclinedCareTests.test_declined_care_cannot_become_patient_refusal) ... ok\ntest_declined_care_cannot_become_performed (test_close_read_160.LyjyDeclinedCareTests.test_declined_care_cannot_become_performed) ... ok\ntest_relative_month_cannot_become_calendar_date (test_close_read_160.LyjyDeclinedCareTests.test_relative_month_cannot_become_calendar_date) ... ok\ntest_final_character_on_next_half_leaf_kept_without_next_case (test_close_read_160.LyjyPrintBoundaryTests.test_final_character_on_next_half_leaf_kept_without_next_case) ... ok\ntest_mechanism_and_refusal_not_changed_by_image_comparison (test_close_read_160.LyjyPrintBoundaryTests.test_mechanism_and_refusal_not_changed_by_image_comparison) ... ok\ntest_absent_pain_after_moxibustion_is_not_baseline (test_close_read_160.LzwStagedCareTests.test_absent_pain_after_moxibustion_is_not_baseline) ... ok\ntest_early_negative_and_later_positive_fever_do_not_collapse (test_close_read_160.LzwStagedCareTests.test_early_negative_and_later_positive_fever_do_not_collapse) ... ok\ntest_later_intent_cannot_be_promoted_to_performed (test_close_read_160.LzwStagedCareTests.test_later_intent_cannot_be_promoted_to_performed) ... ok\ntest_post_purgation_state_is_separate_from_traumatic_blood_loss (test_close_read_160.LzwStagedCareTests.test_post_purgation_state_is_separate_from_traumatic_blood_loss) ... ok\ntest_unknown_protected_intent_id_rejected (test_close_read_160.LzwStagedCareTests.test_unknown_protected_intent_id_rejected) ... ok\ntest_warning_is_not_verified_drug_mechanism (test_close_read_160.LzwStagedCareTests.test_warning_is_not_verified_drug_mechanism) ... ok\ntest_actual_roster_and_unresolved_differences_retained (test_close_read_160.MultiCasePrintTests.test_actual_roster_and_unresolved_differences_retained) ... ok\ntest_column_roster_cannot_drop_half_leaf (test_close_read_160.MultiCasePrintTests.test_column_roster_cannot_drop_half_leaf) ... ok\ntest_corrected_neighbor_column_numbers_preserved (test_close_read_160.MultiCasePrintTests.test_corrected_neighbor_column_numbers_preserved) ... ok\ntest_cross_page_record_cannot_drop_render_identity (test_close_read_160.MultiCasePrintTests.test_cross_page_record_cannot_drop_render_identity) ... ok\ntest_duplicate_case_cannot_inflate_full_case_count (test_close_read_160.MultiCasePrintTests.test_duplicate_case_cannot_inflate_full_case_count) ... ok\ntest_invalid_leaf_side_rejected (test_close_read_160.MultiCasePrintTests.test_invalid_leaf_side_rejected) ... ok\ntest_same_pdf_page_cannot_inflate_unique_page_count (test_close_read_160.MultiCasePrintTests.test_same_pdf_page_cannot_inflate_unique_page_count) ... ok\ntest_summary_counts_all_column_pages (test_close_read_160.MultiCasePrintTests.test_summary_counts_all_column_pages) ... ok\ntest_true_page_join_and_case_boundary_preserved (test_close_read_160.MultiCasePrintTests.test_true_page_join_and_case_boundary_preserved) ... ok\ntest_care_intent_cannot_be_claimed_issued_recommendation (test_close_read_160.NkczIntentTests.test_care_intent_cannot_be_claimed_issued_recommendation) ... ok\ntest_care_intent_cannot_be_claimed_performed (test_close_read_160.NkczIntentTests.test_care_intent_cannot_be_claimed_performed) ... ok\ntest_event_identity_cannot_be_relabelled (test_close_read_160.NkczIntentTests.test_event_identity_cannot_be_relabelled) ... ok\ntest_habitual_affect_does_not_invent_episode_trigger (test_close_read_160.NkczIntentTests.test_habitual_affect_does_not_invent_episode_trigger) ... ok\ntest_prior_interpreter_is_not_assumed_to_be_narrator (test_close_read_160.NkczIntentTests.test_prior_interpreter_is_not_assumed_to_be_narrator) ... ok\ntest_retrospective_mechanism_remains_later (test_close_read_160.NkczIntentTests.test_retrospective_mechanism_remains_later) ... ok\ntest_completed_and_pending_cannot_borrow_other_book_pdf (test_close_read_160.NkczPrintWitnessTests.test_completed_and_pending_cannot_borrow_other_book_pdf) ... ok\ntest_following_theory_not_added_to_case_or_work_counts (test_close_read_160.NkczPrintWitnessTests.test_following_theory_not_added_to_case_or_work_counts) ... ok\ntest_nkcz_does_not_inherit_kcly_catalog_support (test_close_read_160.NkczPrintWitnessTests.test_nkcz_does_not_inherit_kcly_catalog_support) ... ok\ntest_print_difference_and_half_leaf_transition_preserved (test_close_read_160.NkczPrintWitnessTests.test_print_difference_and_half_leaf_transition_preserved) ... ok\ntest_book_prediction_is_not_patient_three_year_course (test_close_read_160.NkzyClaimAndExclusionTests.test_book_prediction_is_not_patient_three_year_course) ... ok\ntest_claim_cannot_be_retyped_to_intervention (test_close_read_160.NkzyClaimAndExclusionTests.test_claim_cannot_be_retyped_to_intervention) ... ok\ntest_claimed_huanglian_is_not_performed_treatment (test_close_read_160.NkzyClaimAndExclusionTests.test_claimed_huanglian_is_not_performed_treatment) ... ok\ntest_ice_water_is_episode_behavior_not_premorbid_habit (test_close_read_160.NkzyClaimAndExclusionTests.test_ice_water_is_episode_behavior_not_premorbid_habit) ... ok\ntest_patient_suspicion_is_separate_from_later_narrator_judgment (test_close_read_160.NkzyClaimAndExclusionTests.test_patient_suspicion_is_separate_from_later_narrator_judgment) ... ok\ntest_pulse_prognosis_is_explicitly_marked_interpretive (test_close_read_160.NkzyClaimAndExclusionTests.test_pulse_prognosis_is_explicitly_marked_interpretive) ... ok\ntest_theory_does_not_generate_sexual_exposure (test_close_read_160.NkzyClaimAndExclusionTests.test_theory_does_not_generate_sexual_exposure) ... ok\ntest_three_pending_cases_stay_excluded_in_extended_dimensions (test_close_read_160.NkzyClaimAndExclusionTests.test_three_pending_cases_stay_excluded_in_extended_dimensions) ... ok\ntest_invalid_column_start_rejected (test_close_read_160.NkzyPrintColumnAndPrognosisTests.test_invalid_column_start_rejected) ... ok\ntest_mid_column_case_start_keeps_physical_character_position (test_close_read_160.NkzyPrintColumnAndPrognosisTests.test_mid_column_case_start_keeps_physical_character_position) ... ok\ntest_observed_variants_keep_working_spans (test_close_read_160.NkzyPrintColumnAndPrognosisTests.test_observed_variants_keep_working_spans) ... ok\ntest_prognosis_not_silently_added_as_initial_patient_fact (test_close_read_160.NkzyPrintColumnAndPrognosisTests.test_prognosis_not_silently_added_as_initial_patient_fact) ... ok\ntest_pending_case_cannot_double_count_as_complete (test_close_read_160.PendingPrintReadingTests.test_pending_case_cannot_double_count_as_complete) ... ok\ntest_pending_reading_cannot_claim_complete (test_close_read_160.PendingPrintReadingTests.test_pending_reading_cannot_claim_complete) ... ok\ntest_unknown_reading_cannot_be_filled_silently (test_close_read_160.PendingPrintReadingTests.test_unknown_reading_cannot_be_filled_silently) ... ok\ntest_half_page_transition_preserves_source_character_refs (test_close_read_160.PrintLipBatchTests.test_half_page_transition_preserves_source_character_refs) ... ok\ntest_neighbor_cases_end_before_next_case (test_close_read_160.PrintLipBatchTests.test_neighbor_cases_end_before_next_case) ... ok\ntest_same_reading_still_has_complete_source_alignment (test_close_read_160.PrintLipBatchTests.test_same_reading_still_has_complete_source_alignment) ... ok\ntest_duplicate_column_location_rejected (test_close_read_160.PrintTraceabilityAuditTests.test_duplicate_column_location_rejected) ... ok\ntest_print_insertion_has_physical_position_without_fake_source (test_close_read_160.PrintTraceabilityAuditTests.test_print_insertion_has_physical_position_without_fake_source) ... ok\ntest_reversed_column_order_rejected (test_close_read_160.PrintTraceabilityAuditTests.test_reversed_column_order_rejected) ... ok\ntest_all_rows_are_five_domain_model_drafts (test_close_read_160.ReviewContractTests.test_all_rows_are_five_domain_model_drafts) ... ok\ntest_duplicate_domain_observation_rejected (test_close_read_160.ReviewContractTests.test_duplicate_domain_observation_rejected) ... ok\ntest_invented_human_review_rejected (test_close_read_160.ReviewContractTests.test_invented_human_review_rejected) ... ok\ntest_join_retains_unicode_and_punctuation (test_close_read_160.ReviewContractTests.test_join_retains_unicode_and_punctuation) ... ok\ntest_outside_case_span_rejected (test_close_read_160.ReviewContractTests.test_outside_case_span_rejected) ... ok\ntest_pending_source_exclusion_cannot_be_dropped (test_close_read_160.ReviewContractTests.test_pending_source_exclusion_cannot_be_dropped) ... ok\ntest_repeated_quote_requires_disambiguation (test_close_read_160.ReviewContractTests.test_repeated_quote_requires_disambiguation) ... ok\ntest_second_pass_preserves_later_episode (test_close_read_160.ReviewContractTests.test_second_pass_preserves_later_episode) ... ok\ntest_snapshot_alignment_preserves_second_occurrence (test_close_read_160.ReviewContractTests.test_snapshot_alignment_preserves_second_occurrence) ... ok\ntest_snapshot_search_includes_overlapping_occurrences (test_close_read_160.ReviewContractTests.test_snapshot_search_includes_overlapping_occurrences) ... ok\ntest_tampered_literal_rejected (test_close_read_160.ReviewContractTests.test_tampered_literal_rejected) ... ok\ntest_time_and_speaker_regressions (test_close_read_160.ReviewContractTests.test_time_and_speaker_regressions) ... ok\ntest_unchecked_query_export_rejected (test_close_read_160.ReviewContractTests.test_unchecked_query_export_rejected) ... ok\ntest_wrong_source_blob_rejected (test_close_read_160.ReviewContractTests.test_wrong_source_blob_rejected) ... ok\ntest_different_reading_cannot_be_marked_equal (test_close_read_160.ReviewedBlockAlignmentTests.test_different_reading_cannot_be_marked_equal) ... ok\ntest_false_transposition_rejected (test_close_read_160.ReviewedBlockAlignmentTests.test_false_transposition_rejected) ... ok\ntest_missing_working_text_rejected (test_close_read_160.ReviewedBlockAlignmentTests.test_missing_working_text_rejected) ... ok\ntest_true_insert_is_preserved_without_source_padding (test_close_read_160.ReviewedBlockAlignmentTests.test_true_insert_is_preserved_without_source_padding) ... ok\ntest_bibliography_cannot_switch_pdf_identity (test_close_read_160.WitnessBibliographyTests.test_bibliography_cannot_switch_pdf_identity) ... ok\ntest_case_output_inherits_year_limit (test_close_read_160.WitnessBibliographyTests.test_case_output_inherits_year_limit) ... ok\ntest_claim_cannot_cite_unviewed_page (test_close_read_160.WitnessBibliographyTests.test_claim_cannot_cite_unviewed_page) ... ok\ntest_inherited_year_cannot_be_image_verified (test_close_read_160.WitnessBibliographyTests.test_inherited_year_cannot_be_image_verified) ... ok\ntest_catalog_and_image_verification_remain_separate (test_close_read_160.WitnessCatalogTests.test_catalog_and_image_verification_remain_separate) ... ok\ntest_catalog_cannot_be_promoted_to_colophon (test_close_read_160.WitnessCatalogTests.test_catalog_cannot_be_promoted_to_colophon) ... ok\ntest_citation_template_date_cannot_be_overwritten (test_close_read_160.WitnessCatalogTests.test_citation_template_date_cannot_be_overwritten) ... ok\ntest_other_book_number_rejected (test_close_read_160.WitnessCatalogTests.test_other_book_number_rejected) ... ok\ntest_ambiguous_background_does_not_default_to_drinking (test_close_read_160.WksyForecastAndWitnessTests.test_ambiguous_background_does_not_default_to_drinking) ... ok\ntest_claimed_scan_support_requires_target_in_recorded_reading (test_close_read_160.WksyForecastAndWitnessTests.test_claimed_scan_support_requires_target_in_recorded_reading) ... ok\ntest_collective_comparison_is_not_individual_death (test_close_read_160.WksyForecastAndWitnessTests.test_collective_comparison_is_not_individual_death) ... ok\ntest_general_theory_does_not_add_case_observations (test_close_read_160.WksyForecastAndWitnessTests.test_general_theory_does_not_add_case_observations) ... ok\ntest_healing_forecast_cannot_be_retyped_as_outcome (test_close_read_160.WksyForecastAndWitnessTests.test_healing_forecast_cannot_be_retyped_as_outcome) ... ok\ntest_healing_forecast_is_not_observed_outcome (test_close_read_160.WksyForecastAndWitnessTests.test_healing_forecast_is_not_observed_outcome) ... ok\ntest_mechanism_stops_before_next_treatment_marker (test_close_read_160.WksyForecastAndWitnessTests.test_mechanism_stops_before_next_treatment_marker) ... ok\ntest_narrator_sexual_explanation_does_not_generate_reported_exposure (test_close_read_160.WksyForecastAndWitnessTests.test_narrator_sexual_explanation_does_not_generate_reported_exposure) ... ok\ntest_synthetic_opposing_scan_reading_is_recordable (test_close_read_160.WksyForecastAndWitnessTests.test_synthetic_opposing_scan_reading_is_recordable) ... ok\ntest_synthetic_unresolved_scan_reading_is_recordable (test_close_read_160.WksyForecastAndWitnessTests.test_synthetic_unresolved_scan_reading_is_recordable) ... ok\ntest_cross_page_care_boundary_keeps_frozen_punctuation_separate (test_close_read_160.WksyPrintTemporalTests.test_cross_page_care_boundary_keeps_frozen_punctuation_separate) ... ok\ntest_new_differences_keep_source_and_column_positions (test_close_read_160.WksyPrintTemporalTests.test_new_differences_keep_source_and_column_positions) ... ok\ntest_other_patients_outcome_not_assigned_to_index_patient (test_close_read_160.WksyPrintTemporalTests.test_other_patients_outcome_not_assigned_to_index_patient) ... ok\ntest_advice_is_not_performed_treatment (test_close_read_160.ZtlyEventTests.test_advice_is_not_performed_treatment) ... ok\ntest_full_event_window_cannot_drop_outcome (test_close_read_160.ZtlyEventTests.test_full_event_window_cannot_drop_outcome) ... ok\ntest_general_theory_scan_does_not_attach_to_case (test_close_read_160.ZtlyEventTests.test_general_theory_scan_does_not_attach_to_case) ... ok\ntest_medicinal_wine_does_not_generate_drinking_habit (test_close_read_160.ZtlyEventTests.test_medicinal_wine_does_not_generate_drinking_habit) ... ok\ntest_narrative_adjacency_is_not_causality (test_close_read_160.ZtlyEventTests.test_narrative_adjacency_is_not_causality) ... ok\ntest_patient_explanation_is_not_physician_endorsement (test_close_read_160.ZtlyEventTests.test_patient_explanation_is_not_physician_endorsement) ... ok\ntest_refusal_after_advice_is_not_initial_window (test_close_read_160.ZtlyEventTests.test_refusal_after_advice_is_not_initial_window) ... ok\ntest_relative_day_cannot_invent_calendar_date (test_close_read_160.ZtlyEventTests.test_relative_day_cannot_invent_calendar_date) ... ok\ntest_role_override_cannot_rewrite_evidence (test_close_read_160.ZtlyEventTests.test_role_override_cannot_rewrite_evidence) ... ok\ntest_case_stops_before_quoted_general_theory (test_close_read_160.ZtlyPrintScopeTests.test_case_stops_before_quoted_general_theory) ... ok\ntest_distinct_explainers_and_later_course_retained (test_close_read_160.ZtlyPrintScopeTests.test_distinct_explainers_and_later_course_retained) ... ok\n\n----------------------------------------------------------------------\nRan 160 tests in 100.727s\n\nOK\n"
+    }
+  ],
+  "remote_ci_status": "not_established_by_this_local_run"
+}
