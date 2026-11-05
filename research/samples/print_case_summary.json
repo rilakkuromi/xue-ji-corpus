@@ -1,6 +1,6 @@
 {
   "scope": "full_case_model_image_comparisons_not_expert_collation",
-  "cases": 31,
+  "cases": 32,
   "case_ids": [
     "XJ-BYCY-C-V5-L0021",
     "XJ-BYCY-C-V5-L0026",
@@ -8,6 +8,7 @@
     "XJ-BYCY-C-V5-L0046",
     "XJ-BYCY-C-V5-L0052",
     "XJ-BYCY-C-V5-L0061",
+    "XJ-BYCY-C-V5-L0227",
     "XJ-BYCY-C-V5-L0234",
     "XJ-BYCY-C-V5-L0261",
     "XJ-KCLY-C-H1-P005-1",
@@ -34,8 +35,8 @@
     "XJ-ZTLY-C-V1-P054-1",
     "XJ-ZTLY-C-V1-P102-1"
   ],
-  "compared_body_characters": 2286,
-  "different_character_positions": 30,
+  "compared_body_characters": 2362,
+  "different_character_positions": 31,
   "unique_pdf_pages": 23,
   "expert_collated_cases": 0,
   "initial_query_exported": 0,
@@ -49,7 +50,7 @@
     "XJ-KCLY-C-H2-P012-1"
   ],
   "cases_by_work": {
-    "BYCY": 8,
+    "BYCY": 9,
     "KCLY": 11,
     "LYJY": 2,
     "NKCZ": 4,
@@ -58,7 +59,7 @@
     "ZTLY": 2
   },
   "compared_body_characters_by_work": {
-    "BYCY": 528,
+    "BYCY": 604,
     "KCLY": 829,
     "LYJY": 121,
     "NKCZ": 201,
