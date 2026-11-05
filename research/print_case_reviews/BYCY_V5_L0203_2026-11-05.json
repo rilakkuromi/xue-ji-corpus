@@ -1,0 +1,79 @@
+{
+  "case_id": "XJ-BYCY-C-V5-L0203",
+  "review_date": "2026-11-05",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/BYCY_target_spots_2026-11-02.json",
+  "pdf_page": 16,
+  "render_sha256": "aa7cfaf88426a47ac34b94c5ca93c1e2b59dfc0388037d52f85b69e3ddfbaaaa",
+  "render_command": "pdftoppm -f 16 -l 16 -scale-to 3600 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "page_half": "left",
+  "location": "第16页左半叶自右第8至9列，接第17页右半叶第1至4列。起一小兒臀患之，止而瘥；下一列一小兒腿患之另起。",
+  "scan_columns": [
+    "一小兒臀患之赤暈走循令人頻吮患處使其毒",
+    "聚於吮所乃砭出黑血餘暈塗以加味神功散時",
+    "以金銀花甘草節為末用人乳汁調服而愈月餘",
+    "後兩足赤腫仍治以前法而痊數日後兩足復赤",
+    "或用犀角解毒之類乳食不進其腹膨脹此復傷",
+    "其脾胃也仍敷前藥服補中益氣湯加茯苓而瘥"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 8
+    },
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 9
+    },
+    {
+      "pdf_page": 17,
+      "page_half": "right",
+      "column_from_right": 1
+    },
+    {
+      "pdf_page": 17,
+      "page_half": "right",
+      "column_from_right": 2
+    },
+    {
+      "pdf_page": 17,
+      "page_half": "right",
+      "column_from_right": 3
+    },
+    {
+      "pdf_page": 17,
+      "page_half": "right",
+      "column_from_right": 4
+    }
+  ],
+  "transcription_policy": "只录正文大字，保留散／循与黒／黑差异。底本不作改字，病机归于作者解释。",
+  "expected_substitutions": [
+    {
+      "working": "散",
+      "scan": "循"
+    },
+    {
+      "working": "黒",
+      "scan": "黑"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction",
+  "page_renders": [
+    {
+      "pdf_page": 16,
+      "render_sha256": "aa7cfaf88426a47ac34b94c5ca93c1e2b59dfc0388037d52f85b69e3ddfbaaaa",
+      "render_command": "pdftoppm -f 16 -l 16 -scale-to 3600 -png -singlefile INPUT.pdf OUTPUT_PREFIX"
+    },
+    {
+      "pdf_page": 17,
+      "render_sha256": "8d7ce3979bad25d02eca4318d0bfbb093353e4b67ed5d6c2dd07cc9850576bbc",
+      "render_command": "pdftoppm -f 17 -l 17 -scale-to 3600 -png -singlefile INPUT.pdf OUTPUT_PREFIX"
+    }
+  ]
+}
