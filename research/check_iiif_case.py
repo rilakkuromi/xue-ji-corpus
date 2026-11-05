@@ -70,7 +70,7 @@ def build(record=None):
 def summarize(row):
     pdf=json.loads((ROOT/'research/samples/print_case_summary.json').read_text())
     if row['case_id'] in pdf['case_ids']:raise ValueError('Duplicate case across PDF and IIIF')
-    return {'scope':'combined_model_image_comparisons_not_expert_collation','cases':pdf['cases']+1,
+    summary = {'scope':'combined_model_image_comparisons_not_expert_collation','cases':pdf['cases']+1,
             'compared_body_characters':pdf['compared_body_characters']+row['compared_body_characters'],
             'pdf_cases':pdf['cases'],'iiif_cases':1,'works':sorted({*pdf['cases_by_work'],'LZWKFH'}),
             'cases_by_work':{**pdf['cases_by_work'],'LZWKFH':pdf['cases_by_work'].get('LZWKFH',0)+1},
@@ -82,6 +82,21 @@ def summarize(row):
             'viewed_iiif_canvases':len(row['viewed_canvases']),
             'page_counting_note':'IIIF canvases are not PDF pages; manifest identifiers retained separately',
             'expert_collated_cases':0,'initial_query_exported':0}
+    import check_djvu_case
+    djvu = check_djvu_case.build()['cases']
+    seen = set(pdf['case_ids']) | {row['case_id']}
+    for case in djvu:
+        if case['case_id'] in seen:
+            raise ValueError('Duplicate case across image formats')
+        seen.add(case['case_id'])
+        summary['cases'] += 1
+        summary['compared_body_characters'] += case['compared_body_characters']
+        summary['cases_by_work']['BYCY'] += 1
+        summary['compared_body_characters_by_work']['BYCY'] += case['compared_body_characters']
+        summary['equal_length_different_positions'] += len(case['expected_differences'])
+    summary['djvu_cases'] = len(djvu)
+    summary['page_counting_note'] = 'PDF pages, IIIF canvases and DjVu pages are separate source units'
+    return summary
 
 def check_images(row,paths):
     known={(x['sha256'],x['bytes']) for x in row['viewed_canvases']}

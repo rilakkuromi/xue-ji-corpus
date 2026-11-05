@@ -1,7 +1,7 @@
 {
   "scope": "combined_model_image_comparisons_not_expert_collation",
-  "cases": 37,
-  "compared_body_characters": 2690,
+  "cases": 44,
+  "compared_body_characters": 3330,
   "pdf_cases": 36,
   "iiif_cases": 1,
   "works": [
@@ -15,7 +15,7 @@
     "ZTLY"
   ],
   "cases_by_work": {
-    "BYCY": 13,
+    "BYCY": 20,
     "KCLY": 11,
     "LYJY": 2,
     "NKCZ": 4,
@@ -25,7 +25,7 @@
     "LZWKFH": 1
   },
   "compared_body_characters_by_work": {
-    "BYCY": 874,
+    "BYCY": 1514,
     "KCLY": 829,
     "LYJY": 121,
     "NKCZ": 201,
@@ -34,11 +34,12 @@
     "ZTLY": 116,
     "LZWKFH": 58
   },
-  "equal_length_different_positions": 37,
+  "equal_length_different_positions": 58,
   "reviewed_block_difference_events": 4,
   "pending_model_image_readings": 1,
   "viewed_iiif_canvases": 10,
-  "page_counting_note": "IIIF canvases are not PDF pages; manifest identifiers retained separately",
+  "page_counting_note": "PDF pages, IIIF canvases and DjVu pages are separate source units",
   "expert_collated_cases": 0,
-  "initial_query_exported": 0
+  "initial_query_exported": 0,
+  "djvu_cases": 7
 }

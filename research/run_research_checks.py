@@ -28,6 +28,7 @@ commands=[
  ['research/build_event_pilot.py','--work','BYCY'],
  ['research/build_event_pilot.py','--work','KCLY'],
  ['research/check_print_case.py','--all'],
+ ['research/check_djvu_case.py'],
  ['research/check_iiif_case.py'],
  ['research/check_witness_bibliography.py'],
  ['research/check_witness_catalog.py'],
@@ -64,6 +65,7 @@ def main():
  tracked += sorted((ROOT/'research/review_inputs').glob('*'))
  tracked += [ROOT/'research/check_print_case.py',*sorted((ROOT/'research/print_case_reviews').glob('*.json'))]
  tracked += [ROOT/'research/check_iiif_case.py',*sorted((ROOT/'research/iiif_reviews').glob('*.json'))]
+ tracked += [ROOT/'research/check_djvu_case.py',*sorted((ROOT/'research/djvu_reviews').glob('*.json'))]
  tracked += [ROOT/'.github/workflows/validate.yml']
  tracked += sorted((ROOT/'research/print_case_pending').glob('*.json'))
  tracked += [ROOT/'research/check_witness_bibliography.py',*sorted((ROOT/'research/witness_reviews').glob('*.json'))]

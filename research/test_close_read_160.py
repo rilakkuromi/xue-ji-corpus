@@ -1199,6 +1199,33 @@ class IiifIndependentWitnessTests(unittest.TestCase):
         r=copy.deepcopy(self.row);r['case_id']='XJ-KCLY-C-H3-P005-1'
         with self.assertRaisesRegex(ValueError,'Duplicate case'):self.iiif.summarize(r)
 
+class DjvuCaseTests(unittest.TestCase):
+    def test_seven_cases_and_combined_roster(self):
+        import check_djvu_case as d
+        import check_iiif_case as iiif
+        rows = d.build()['cases']
+        self.assertEqual(len(rows), 7)
+        self.assertEqual(sum(r['compared_body_characters'] for r in rows), 640)
+        self.assertEqual(sum(len(r['expected_differences']) for r in rows), 21)
+        summary = iiif.summarize(iiif.build())
+        self.assertEqual(summary['cases'], 44)
+        self.assertEqual(summary['cases_by_work']['BYCY'], 20)
+
+    def test_duplicate_truncation_and_unrecorded_difference_rejected(self):
+        import check_djvu_case as d
+        import json
+        original = json.loads(d.INPUT.read_text())
+        for mutation in ('duplicate', 'truncate', 'difference'):
+            r = copy.deepcopy(original)
+            if mutation == 'duplicate':
+                r['cases'].append(copy.deepcopy(r['cases'][0]))
+            elif mutation == 'truncate':
+                r['cases'][0]['scan_columns'][-1] = r['cases'][0]['scan_columns'][-1][:-1]
+            else:
+                r['cases'][0]['expected_differences'] = []
+            with self.assertRaises(ValueError):
+                d.build(r)
+
 class BycyPrintBoundaryTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

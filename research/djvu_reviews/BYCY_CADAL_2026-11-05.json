@@ -1,0 +1,376 @@
+{
+  "review_date": "2026-11-05",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/CADAL06040558_%E8%96%9B%E6%B0%8F%E9%86%AB%E6%A1%88%C2%B7%E5%8D%B7%E4%BA%94.djvu",
+  "source_sha256": "616279ce69c2518e4abfce5b5a556361e2c1dbda416b76a635cb51af4ef92138",
+  "source_bytes": 4020710,
+  "page_count": 146,
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "cases": [
+    {
+      "case_id": "XJ-BYCY-C-V5-L0119",
+      "scan_columns": [
+        "鴻臚楊國威子年十二左脇下患此或用流氣敗毒之劑",
+        "至半載而潰又用十宣托裏之類年餘不斂左右脉數",
+        "而無力左關脉弦而細短此膽經之症蓋膽屬肝因腎",
+        "水不足肝木血燥而然遂用六味地黃丸以補腎水用",
+        "九味蘆薈丸以清肝火而愈"
+      ],
+      "column_locations": [
+        {
+          "djvu_page": 17,
+          "column_from_right": 7
+        },
+        {
+          "djvu_page": 17,
+          "column_from_right": 8
+        },
+        {
+          "djvu_page": 18,
+          "column_from_right": 1
+        },
+        {
+          "djvu_page": 18,
+          "column_from_right": 2
+        },
+        {
+          "djvu_page": 18,
+          "column_from_right": 3
+        }
+      ],
+      "expected_differences": [
+        {
+          "position_one_based": 59,
+          "working": "葢",
+          "scan": "蓋"
+        },
+        {
+          "position_one_based": 79,
+          "working": "黄",
+          "scan": "黃"
+        }
+      ],
+      "human_adjudication": "pending",
+      "initial_query_eligible": false,
+      "expert_collated_cases": 0,
+      "full_case_model_image_comparisons": 1
+    },
+    {
+      "case_id": "XJ-BYCY-C-V5-L0185",
+      "scan_columns": [
+        "少參史南湖孫乙未生丙申正月陰囊赤腫余作胎毒",
+        "治之而瘥後患發熱痰熱等症診其母有鬱火血熱用",
+        "解鬱凉血之藥子母俱服而愈至六月初患吐瀉小便",
+        "赤澁兩眼瞤動投參术之類不應以為慢驚然欲用附",
+        "子之藥請余議視其寅卯關脉赤此屬風熱用柴胡清",
+        "肝散加鈎藤鈎木賊草一劑即愈至丁酉正月初旬頸",
+        "患熱毒膿出貼藥感風發熱翌日頭面黯腫如大斗兩",
+        "耳厚寸許此風熱上攻血得熱而然急砭兩額出黑血",
+        "二盞許次砭面額亦如之隨用清熱化毒湯腫黯十退",
+        "七八翌日又砭各處血不甚黑乃止仍用前藥去牛蒡",
+        "子加熟地黃而愈此症若砭緩則血凝滯或為破傷風",
+        "皆致死"
+      ],
+      "column_locations": [
+        {
+          "djvu_page": 26,
+          "column_from_right": 1
+        },
+        {
+          "djvu_page": 26,
+          "column_from_right": 2
+        },
+        {
+          "djvu_page": 26,
+          "column_from_right": 3
+        },
+        {
+          "djvu_page": 26,
+          "column_from_right": 4
+        },
+        {
+          "djvu_page": 26,
+          "column_from_right": 5
+        },
+        {
+          "djvu_page": 26,
+          "column_from_right": 6
+        },
+        {
+          "djvu_page": 26,
+          "column_from_right": 7
+        },
+        {
+          "djvu_page": 26,
+          "column_from_right": 8
+        },
+        {
+          "djvu_page": 27,
+          "column_from_right": 1
+        },
+        {
+          "djvu_page": 27,
+          "column_from_right": 2
+        },
+        {
+          "djvu_page": 27,
+          "column_from_right": 3
+        },
+        {
+          "djvu_page": 27,
+          "column_from_right": 4
+        }
+      ],
+      "expected_differences": [
+        {
+          "position_one_based": 2,
+          "working": "叅",
+          "scan": "參"
+        },
+        {
+          "position_one_based": 14,
+          "working": "隂",
+          "scan": "陰"
+        },
+        {
+          "position_one_based": 38,
+          "working": "欝",
+          "scan": "鬱"
+        },
+        {
+          "position_one_based": 61,
+          "working": "㵼",
+          "scan": "瀉"
+        },
+        {
+          "position_one_based": 94,
+          "working": "夘",
+          "scan": "卯"
+        },
+        {
+          "position_one_based": 167,
+          "working": "黒",
+          "scan": "黑"
+        },
+        {
+          "position_one_based": 201,
+          "working": "黒",
+          "scan": "黑"
+        },
+        {
+          "position_one_based": 215,
+          "working": "黄",
+          "scan": "黃"
+        }
+      ],
+      "human_adjudication": "pending",
+      "initial_query_eligible": false,
+      "expert_collated_cases": 0,
+      "full_case_model_image_comparisons": 1
+    },
+    {
+      "case_id": "XJ-BYCY-C-V5-L0524",
+      "scan_columns": [
+        "林侍御子二歲腫痛寒熱尅伐過多不能成膿用托裏",
+        "清肝散而潰又用托裏散而斂後寒熱如瘧小便閉塞",
+        "亦屬肝火用小柴胡加山梔龍膽草車前子而愈"
+      ],
+      "column_locations": [
+        {
+          "djvu_page": 68,
+          "column_from_right": 4
+        },
+        {
+          "djvu_page": 68,
+          "column_from_right": 5
+        },
+        {
+          "djvu_page": 68,
+          "column_from_right": 6
+        }
+      ],
+      "expected_differences": [
+        {
+          "position_one_based": 6,
+          "working": "嵗",
+          "scan": "歲"
+        }
+      ],
+      "human_adjudication": "pending",
+      "initial_query_eligible": false,
+      "expert_collated_cases": 0,
+      "full_case_model_image_comparisons": 1
+    },
+    {
+      "case_id": "XJ-BYCY-C-V5-L0546",
+      "scan_columns": [
+        "吳江庠生史玄年自乳兒時即患目疾年二十歲目劄",
+        "頭搖用六味丸加五味子而安一日前症復作目忽生",
+        "翳余用聰明益氣湯并前丸即愈既而前症反甚形氣",
+        "消瘦脉洪大數用補中益氣湯及前丸而肺症悉平後",
+        "因赴選勞役患痢形氣憊弱肺洪大弦長按之微細仍",
+        "用前湯送香連丸而痢止再用六味丸料加五味子而",
+        "元氣復"
+      ],
+      "column_locations": [
+        {
+          "djvu_page": 71,
+          "column_from_right": 2
+        },
+        {
+          "djvu_page": 71,
+          "column_from_right": 3
+        },
+        {
+          "djvu_page": 71,
+          "column_from_right": 4
+        },
+        {
+          "djvu_page": 71,
+          "column_from_right": 5
+        },
+        {
+          "djvu_page": 71,
+          "column_from_right": 6
+        },
+        {
+          "djvu_page": 71,
+          "column_from_right": 7
+        },
+        {
+          "djvu_page": 71,
+          "column_from_right": 8
+        }
+      ],
+      "expected_differences": [
+        {
+          "position_one_based": 6,
+          "working": "𤣥",
+          "scan": "玄"
+        },
+        {
+          "position_one_based": 19,
+          "working": "嵗",
+          "scan": "歲"
+        },
+        {
+          "position_one_based": 23,
+          "working": "揺",
+          "scan": "搖"
+        },
+        {
+          "position_one_based": 103,
+          "working": "㣲",
+          "scan": "微"
+        }
+      ],
+      "human_adjudication": "pending",
+      "initial_query_eligible": false,
+      "expert_collated_cases": 0,
+      "full_case_model_image_comparisons": 1
+    },
+    {
+      "case_id": "XJ-BYCY-C-V5-L0553",
+      "scan_columns": [
+        "侍御吳東隅子下疳潰爛發熱作痛日晡尤甚先用補",
+        "中益氣湯後用九味蘆薈丸治之諸症悉愈"
+      ],
+      "column_locations": [
+        {
+          "djvu_page": 72,
+          "column_from_right": 1
+        },
+        {
+          "djvu_page": 72,
+          "column_from_right": 2
+        }
+      ],
+      "expected_differences": [
+        {
+          "position_one_based": 3,
+          "working": "呉",
+          "scan": "吳"
+        }
+      ],
+      "human_adjudication": "pending",
+      "initial_query_eligible": false,
+      "expert_collated_cases": 0,
+      "full_case_model_image_comparisons": 1
+    },
+    {
+      "case_id": "XJ-BYCY-C-V5-L0555",
+      "scan_columns": [
+        "太常邊華泉子二歲莖痿濕痒出白津余以為肝火不",
+        "信乃温補腎經果陰囊焮腫莖中作痛余用龍膽瀉肝",
+        "湯用六味地黃丸而痊"
+      ],
+      "column_locations": [
+        {
+          "djvu_page": 72,
+          "column_from_right": 3
+        },
+        {
+          "djvu_page": 72,
+          "column_from_right": 4
+        },
+        {
+          "djvu_page": 72,
+          "column_from_right": 5
+        }
+      ],
+      "expected_differences": [
+        {
+          "position_one_based": 8,
+          "working": "嵗",
+          "scan": "歲"
+        },
+        {
+          "position_one_based": 29,
+          "working": "隂",
+          "scan": "陰"
+        },
+        {
+          "position_one_based": 41,
+          "working": "㵼",
+          "scan": "瀉"
+        },
+        {
+          "position_one_based": 48,
+          "working": "黄",
+          "scan": "黃"
+        }
+      ],
+      "human_adjudication": "pending",
+      "initial_query_eligible": false,
+      "expert_collated_cases": 0,
+      "full_case_model_image_comparisons": 1
+    },
+    {
+      "case_id": "XJ-BYCY-C-V5-L0558",
+      "scan_columns": [
+        "劉武庫子睪丸作痛小便赤澁寒熱作嘔用小柴胡湯",
+        "加山梔車前子茯苓而愈"
+      ],
+      "column_locations": [
+        {
+          "djvu_page": 72,
+          "column_from_right": 6
+        },
+        {
+          "djvu_page": 72,
+          "column_from_right": 7
+        }
+      ],
+      "expected_differences": [
+        {
+          "position_one_based": 5,
+          "working": "睾",
+          "scan": "睪"
+        }
+      ],
+      "human_adjudication": "pending",
+      "initial_query_eligible": false,
+      "expert_collated_cases": 0,
+      "full_case_model_image_comparisons": 1
+    }
+  ]
+}
