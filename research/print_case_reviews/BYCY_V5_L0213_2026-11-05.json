@@ -1,0 +1,40 @@
+{
+  "case_id": "XJ-BYCY-C-V5-L0213",
+  "review_date": "2026-11-05",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/BYCY_target_spots_2026-11-02.json",
+  "pdf_page": 17,
+  "page_half": "right",
+  "location": "第17页右半叶自右第9列接左半叶第1至2列。起一女子赤暈，止治當詳審；左半叶第3列一女子十一歲另起。",
+  "render_command": "pdftoppm -f 17 -l 17 -scale-to 3600 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256": "8d7ce3979bad25d02eca4318d0bfbb093353e4b67ed5d6c2dd07cc9850576bbc",
+  "scan_columns": [
+    "一女子赤暈如霞作痒發熱此肝經血熱用小柴",
+    "胡加生地連翹丹皮而愈凡女子天癸將至婦人",
+    "月經不調被驚着惱多有此症治當詳審"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 17,
+      "page_half": "right",
+      "column_from_right": 9
+    },
+    {
+      "pdf_page": 17,
+      "page_half": "left",
+      "column_from_right": 1
+    },
+    {
+      "pdf_page": 17,
+      "page_half": "left",
+      "column_from_right": 2
+    }
+  ],
+  "transcription_policy": "只录正文大字。凡女子至治當詳審随冻结案段对照，归案后通论。",
+  "expected_substitutions": [],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction"
+}

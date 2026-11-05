@@ -1,8 +1,8 @@
 {
   "scope": "combined_model_image_comparisons_not_expert_collation",
-  "cases": 34,
-  "compared_body_characters": 2534,
-  "pdf_cases": 33,
+  "cases": 35,
+  "compared_body_characters": 2588,
+  "pdf_cases": 34,
   "iiif_cases": 1,
   "works": [
     "BYCY",
@@ -15,7 +15,7 @@
     "ZTLY"
   ],
   "cases_by_work": {
-    "BYCY": 10,
+    "BYCY": 11,
     "KCLY": 11,
     "LYJY": 2,
     "NKCZ": 4,
@@ -25,7 +25,7 @@
     "LZWKFH": 1
   },
   "compared_body_characters_by_work": {
-    "BYCY": 718,
+    "BYCY": 772,
     "KCLY": 829,
     "LYJY": 121,
     "NKCZ": 201,
