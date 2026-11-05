@@ -1,0 +1,680 @@
+{
+  "case_id": "XJ-BYCY-C-V5-L0521",
+  "review_date": "2026-11-05",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/BYCY_target_spots_2026-11-02.json",
+  "pdf_page": 36,
+  "page_half": "right",
+  "location": "第36页右半叶自右第1至3列，止而愈，下一列林侍御子另起。",
+  "render_command": "pdftoppm -f 36 -l 36 -scale-to 3600 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256": "886f623503b0e831ad701068d0667203aecbfb8b26632d5d9a871c99397eaee2",
+  "scan_columns": [
+    "司徒李杏岡仲子小便澁滯腫痛寒熱此肝經濕",
+    "熱用龍膽瀉肝湯而消但内熱倦怠此兼脾氣虛",
+    "弱用四君子加柴胡山梔芎歸而愈"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 36,
+      "page_half": "right",
+      "column_from_right": 1
+    },
+    {
+      "pdf_page": 36,
+      "page_half": "right",
+      "column_from_right": 2
+    },
+    {
+      "pdf_page": 36,
+      "page_half": "right",
+      "column_from_right": 3
+    }
+  ],
+  "transcription_policy": "只录正文大字，保留所列编码差异，冻结底本不改字。",
+  "expected_substitutions": [
+    {
+      "working": "㵼",
+      "scan": "瀉"
+    },
+    {
+      "working": "虚",
+      "scan": "虛"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction",
+  "edition_date_verification": "inherited_metadata_not_reverified_from_images",
+  "bibliographic_metadata_origin": "existing_corpus_metadata_not_new_date_audit_title_and_author_viewed_on_page_4",
+  "source_git_blob": "e8459e27e93711c44357fafcf7d106f97ecaca26",
+  "case_text_sha256": "e32fd7fbaecb5fd872280f8f0270d7283cd20b3d777b70c51f7728b92f359569",
+  "pdf_sha256": "6ad34811aff376298258f8b5c6ee358ef4259805c7cc575cd1b069000218ab0c",
+  "pdf_bytes": 17041014,
+  "working_case_evidence": [
+    {
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 0,
+      "source_end_char_exclusive": 21,
+      "raw_quote": "司徒李杏岡仲子小便澁滯腫痛寒熱此肝經濕熱用"
+    },
+    {
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 0,
+      "source_end_char_exclusive": 21,
+      "raw_quote": "龍膽㵼肝湯而消但内熱倦怠此兼脾氣虚弱用四君"
+    },
+    {
+      "source_ref": "XJ-BYCY-V5-L0523",
+      "source_start_char": 0,
+      "source_end_char_exclusive": 10,
+      "raw_quote": "子加柴胡山梔芎歸而愈"
+    }
+  ],
+  "scan_reading": "司徒李杏岡仲子小便澁滯腫痛寒熱此肝經濕熱用龍膽瀉肝湯而消但内熱倦怠此兼脾氣虛弱用四君子加柴胡山梔芎歸而愈",
+  "compared_body_characters_excluding_modern_punctuation": 52,
+  "differences": [
+    {
+      "ordinal": 24,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 2,
+      "source_end_char_exclusive": 3,
+      "working": "㵼",
+      "scan": "瀉",
+      "status": "different_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 5
+    },
+    {
+      "ordinal": 38,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 16,
+      "source_end_char_exclusive": 17,
+      "working": "虚",
+      "scan": "虛",
+      "status": "different_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 19
+    }
+  ],
+  "alignment": [
+    {
+      "ordinal": 1,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 0,
+      "source_end_char_exclusive": 1,
+      "working": "司",
+      "scan": "司",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 1
+    },
+    {
+      "ordinal": 2,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 1,
+      "source_end_char_exclusive": 2,
+      "working": "徒",
+      "scan": "徒",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 2
+    },
+    {
+      "ordinal": 3,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 2,
+      "source_end_char_exclusive": 3,
+      "working": "李",
+      "scan": "李",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 3
+    },
+    {
+      "ordinal": 4,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 3,
+      "source_end_char_exclusive": 4,
+      "working": "杏",
+      "scan": "杏",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 4
+    },
+    {
+      "ordinal": 5,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 4,
+      "source_end_char_exclusive": 5,
+      "working": "岡",
+      "scan": "岡",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 5
+    },
+    {
+      "ordinal": 6,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 5,
+      "source_end_char_exclusive": 6,
+      "working": "仲",
+      "scan": "仲",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 6
+    },
+    {
+      "ordinal": 7,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 6,
+      "source_end_char_exclusive": 7,
+      "working": "子",
+      "scan": "子",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 7
+    },
+    {
+      "ordinal": 8,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 7,
+      "source_end_char_exclusive": 8,
+      "working": "小",
+      "scan": "小",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 8
+    },
+    {
+      "ordinal": 9,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 8,
+      "source_end_char_exclusive": 9,
+      "working": "便",
+      "scan": "便",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 9
+    },
+    {
+      "ordinal": 10,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 9,
+      "source_end_char_exclusive": 10,
+      "working": "澁",
+      "scan": "澁",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 10
+    },
+    {
+      "ordinal": 11,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 10,
+      "source_end_char_exclusive": 11,
+      "working": "滯",
+      "scan": "滯",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 11
+    },
+    {
+      "ordinal": 12,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 11,
+      "source_end_char_exclusive": 12,
+      "working": "腫",
+      "scan": "腫",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 12
+    },
+    {
+      "ordinal": 13,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 12,
+      "source_end_char_exclusive": 13,
+      "working": "痛",
+      "scan": "痛",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 13
+    },
+    {
+      "ordinal": 14,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 13,
+      "source_end_char_exclusive": 14,
+      "working": "寒",
+      "scan": "寒",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 14
+    },
+    {
+      "ordinal": 15,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 14,
+      "source_end_char_exclusive": 15,
+      "working": "熱",
+      "scan": "熱",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 15
+    },
+    {
+      "ordinal": 16,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 15,
+      "source_end_char_exclusive": 16,
+      "working": "此",
+      "scan": "此",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 16
+    },
+    {
+      "ordinal": 17,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 16,
+      "source_end_char_exclusive": 17,
+      "working": "肝",
+      "scan": "肝",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 17
+    },
+    {
+      "ordinal": 18,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 17,
+      "source_end_char_exclusive": 18,
+      "working": "經",
+      "scan": "經",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 18
+    },
+    {
+      "ordinal": 19,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 18,
+      "source_end_char_exclusive": 19,
+      "working": "濕",
+      "scan": "濕",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 19
+    },
+    {
+      "ordinal": 20,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 19,
+      "source_end_char_exclusive": 20,
+      "working": "熱",
+      "scan": "熱",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 1
+    },
+    {
+      "ordinal": 21,
+      "source_ref": "XJ-BYCY-V5-L0521",
+      "source_start_char": 20,
+      "source_end_char_exclusive": 21,
+      "working": "用",
+      "scan": "用",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 2
+    },
+    {
+      "ordinal": 22,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 0,
+      "source_end_char_exclusive": 1,
+      "working": "龍",
+      "scan": "龍",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 3
+    },
+    {
+      "ordinal": 23,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 1,
+      "source_end_char_exclusive": 2,
+      "working": "膽",
+      "scan": "膽",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 4
+    },
+    {
+      "ordinal": 24,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 2,
+      "source_end_char_exclusive": 3,
+      "working": "㵼",
+      "scan": "瀉",
+      "status": "different_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 5
+    },
+    {
+      "ordinal": 25,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 3,
+      "source_end_char_exclusive": 4,
+      "working": "肝",
+      "scan": "肝",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 6
+    },
+    {
+      "ordinal": 26,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 4,
+      "source_end_char_exclusive": 5,
+      "working": "湯",
+      "scan": "湯",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 7
+    },
+    {
+      "ordinal": 27,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 5,
+      "source_end_char_exclusive": 6,
+      "working": "而",
+      "scan": "而",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 8
+    },
+    {
+      "ordinal": 28,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 6,
+      "source_end_char_exclusive": 7,
+      "working": "消",
+      "scan": "消",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 9
+    },
+    {
+      "ordinal": 29,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 7,
+      "source_end_char_exclusive": 8,
+      "working": "但",
+      "scan": "但",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 10
+    },
+    {
+      "ordinal": 30,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 8,
+      "source_end_char_exclusive": 9,
+      "working": "内",
+      "scan": "内",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 11
+    },
+    {
+      "ordinal": 31,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 9,
+      "source_end_char_exclusive": 10,
+      "working": "熱",
+      "scan": "熱",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 12
+    },
+    {
+      "ordinal": 32,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 10,
+      "source_end_char_exclusive": 11,
+      "working": "倦",
+      "scan": "倦",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 13
+    },
+    {
+      "ordinal": 33,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 11,
+      "source_end_char_exclusive": 12,
+      "working": "怠",
+      "scan": "怠",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 14
+    },
+    {
+      "ordinal": 34,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 12,
+      "source_end_char_exclusive": 13,
+      "working": "此",
+      "scan": "此",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 15
+    },
+    {
+      "ordinal": 35,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 13,
+      "source_end_char_exclusive": 14,
+      "working": "兼",
+      "scan": "兼",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 16
+    },
+    {
+      "ordinal": 36,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 14,
+      "source_end_char_exclusive": 15,
+      "working": "脾",
+      "scan": "脾",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 17
+    },
+    {
+      "ordinal": 37,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 15,
+      "source_end_char_exclusive": 16,
+      "working": "氣",
+      "scan": "氣",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 18
+    },
+    {
+      "ordinal": 38,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 16,
+      "source_end_char_exclusive": 17,
+      "working": "虚",
+      "scan": "虛",
+      "status": "different_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 19
+    },
+    {
+      "ordinal": 39,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 17,
+      "source_end_char_exclusive": 18,
+      "working": "弱",
+      "scan": "弱",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 1
+    },
+    {
+      "ordinal": 40,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 18,
+      "source_end_char_exclusive": 19,
+      "working": "用",
+      "scan": "用",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 2
+    },
+    {
+      "ordinal": 41,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 19,
+      "source_end_char_exclusive": 20,
+      "working": "四",
+      "scan": "四",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 3
+    },
+    {
+      "ordinal": 42,
+      "source_ref": "XJ-BYCY-V5-L0522",
+      "source_start_char": 20,
+      "source_end_char_exclusive": 21,
+      "working": "君",
+      "scan": "君",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 4
+    },
+    {
+      "ordinal": 43,
+      "source_ref": "XJ-BYCY-V5-L0523",
+      "source_start_char": 0,
+      "source_end_char_exclusive": 1,
+      "working": "子",
+      "scan": "子",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 5
+    },
+    {
+      "ordinal": 44,
+      "source_ref": "XJ-BYCY-V5-L0523",
+      "source_start_char": 1,
+      "source_end_char_exclusive": 2,
+      "working": "加",
+      "scan": "加",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 6
+    },
+    {
+      "ordinal": 45,
+      "source_ref": "XJ-BYCY-V5-L0523",
+      "source_start_char": 2,
+      "source_end_char_exclusive": 3,
+      "working": "柴",
+      "scan": "柴",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 7
+    },
+    {
+      "ordinal": 46,
+      "source_ref": "XJ-BYCY-V5-L0523",
+      "source_start_char": 3,
+      "source_end_char_exclusive": 4,
+      "working": "胡",
+      "scan": "胡",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 8
+    },
+    {
+      "ordinal": 47,
+      "source_ref": "XJ-BYCY-V5-L0523",
+      "source_start_char": 4,
+      "source_end_char_exclusive": 5,
+      "working": "山",
+      "scan": "山",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 9
+    },
+    {
+      "ordinal": 48,
+      "source_ref": "XJ-BYCY-V5-L0523",
+      "source_start_char": 5,
+      "source_end_char_exclusive": 6,
+      "working": "梔",
+      "scan": "梔",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 10
+    },
+    {
+      "ordinal": 49,
+      "source_ref": "XJ-BYCY-V5-L0523",
+      "source_start_char": 6,
+      "source_end_char_exclusive": 7,
+      "working": "芎",
+      "scan": "芎",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 11
+    },
+    {
+      "ordinal": 50,
+      "source_ref": "XJ-BYCY-V5-L0523",
+      "source_start_char": 7,
+      "source_end_char_exclusive": 8,
+      "working": "歸",
+      "scan": "歸",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 12
+    },
+    {
+      "ordinal": 51,
+      "source_ref": "XJ-BYCY-V5-L0523",
+      "source_start_char": 8,
+      "source_end_char_exclusive": 9,
+      "working": "而",
+      "scan": "而",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 13
+    },
+    {
+      "ordinal": 52,
+      "source_ref": "XJ-BYCY-V5-L0523",
+      "source_start_char": 9,
+      "source_end_char_exclusive": 10,
+      "working": "愈",
+      "scan": "愈",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 14
+    }
+  ],
+  "limitations": [
+    "Program validates recorded alignment and provenance, not the model visual reading.",
+    "One printed witness cannot adjudicate other editions or correct the frozen corpus.",
+    "Punctuation, kundoku marks and paleographic glyph variants are not fully collated."
+  ]
+}

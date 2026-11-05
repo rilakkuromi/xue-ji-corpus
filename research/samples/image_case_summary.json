@@ -1,8 +1,8 @@
 {
   "scope": "combined_model_image_comparisons_not_expert_collation",
-  "cases": 35,
-  "compared_body_characters": 2588,
-  "pdf_cases": 34,
+  "cases": 37,
+  "compared_body_characters": 2690,
+  "pdf_cases": 36,
   "iiif_cases": 1,
   "works": [
     "BYCY",
@@ -15,7 +15,7 @@
     "ZTLY"
   ],
   "cases_by_work": {
-    "BYCY": 11,
+    "BYCY": 13,
     "KCLY": 11,
     "LYJY": 2,
     "NKCZ": 4,
@@ -25,7 +25,7 @@
     "LZWKFH": 1
   },
   "compared_body_characters_by_work": {
-    "BYCY": 772,
+    "BYCY": 874,
     "KCLY": 829,
     "LYJY": 121,
     "NKCZ": 201,
@@ -34,7 +34,7 @@
     "ZTLY": 116,
     "LZWKFH": 58
   },
-  "equal_length_different_positions": 33,
+  "equal_length_different_positions": 37,
   "reviewed_block_difference_events": 4,
   "pending_model_image_readings": 1,
   "viewed_iiif_canvases": 10,
