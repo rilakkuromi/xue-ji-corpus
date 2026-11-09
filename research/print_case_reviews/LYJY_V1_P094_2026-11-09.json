@@ -1,0 +1,69 @@
+{
+  "case_id": "XJ-LYJY-C-V1-P094",
+  "review_date": "2026-11-09",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/LYJY_target_spots_2026-10-28.json",
+  "pdf_page": 35,
+  "page_half": "left",
+  "location": "第35页左半叶自右第4至8列，止而髮漸生，次列另起。",
+  "render_command": "pdftoppm -f 35 -l 35 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256": "b10e685cc4bad18ab8f5e77a619c0a62052ecd1db1cc9718b9a97b0434b954b5",
+  "scan_columns": [
+    "一男子素不慎房勞其髮忽落或發熱惡寒或吐",
+    "痰頭暈或口乾作渴或小便如淋兩足發熱或冷",
+    "至經屬足三陰虧損而陰火内熾朝用十全大補",
+    "湯夕用六味丸料加炒黑黃柏枸杞子治之諸症",
+    "退而髮漸生"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 35,
+      "page_half": "left",
+      "column_from_right": 4
+    },
+    {
+      "pdf_page": 35,
+      "page_half": "left",
+      "column_from_right": 5
+    },
+    {
+      "pdf_page": 35,
+      "page_half": "left",
+      "column_from_right": 6
+    },
+    {
+      "pdf_page": 35,
+      "page_half": "left",
+      "column_from_right": 7
+    },
+    {
+      "pdf_page": 35,
+      "page_half": "left",
+      "column_from_right": 8
+    }
+  ],
+  "transcription_policy": "正文常用字编码对照，保留所列差异。未据单一见证更改冻结底本。",
+  "expected_substitutions": [
+    {
+      "working": "發",
+      "scan": "髮"
+    },
+    {
+      "working": "脛",
+      "scan": "經"
+    },
+    {
+      "working": "內",
+      "scan": "内"
+    },
+    {
+      "working": "發",
+      "scan": "髮"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction"
+}
