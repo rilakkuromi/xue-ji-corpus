@@ -1,0 +1,95 @@
+{
+  "case_id": "XJ-ZTLY-C-V1-P037-1",
+  "review_date": "2026-11-09",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/ZTLY_target_spots_2026-10-27.json",
+  "pdf_page": 17,
+  "render_sha256": "4ea1d86532ab9f5d9be02d53cf40db5d385083d60e68204c5d0aa432dda429df",
+  "render_command": "pdftoppm -f 17 -l 17 -scale-to 3400 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "page_half": "left",
+  "location": "第17页左半叶第5至9列接第18页右半叶第1至3列，止而痊；次列为湿热乘肝节题。",
+  "scan_columns": [
+    "有一患者杖瘡愈後失於調理頭目不清服祛風",
+    "化痰等藥反眩暈服牛黃清心丸又肚腹疼痛杖",
+    "痕腫癢發熱作渴飲食不思痰氣上升以為杖瘡",
+    "餘毒復作診左尺脉洪大按之如無予曰此腎經",
+    "不足不能攝氣歸源遂用人參黃芪茯苓陳皮當",
+    "歸川芎熟地山藥山茱萸五味麥門炙草服之而",
+    "尋愈後因勞熱渴頭痛倦怠少食用補中益氣湯",
+    "加麥門五味而痊"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 17,
+      "page_half": "left",
+      "column_from_right": 5
+    },
+    {
+      "pdf_page": 17,
+      "page_half": "left",
+      "column_from_right": 6
+    },
+    {
+      "pdf_page": 17,
+      "page_half": "left",
+      "column_from_right": 7
+    },
+    {
+      "pdf_page": 17,
+      "page_half": "left",
+      "column_from_right": 8
+    },
+    {
+      "pdf_page": 17,
+      "page_half": "left",
+      "column_from_right": 9
+    },
+    {
+      "pdf_page": 18,
+      "page_half": "right",
+      "column_from_right": 1
+    },
+    {
+      "pdf_page": 18,
+      "page_half": "right",
+      "column_from_right": 2
+    },
+    {
+      "pdf_page": 18,
+      "page_half": "right",
+      "column_from_right": 3
+    }
+  ],
+  "transcription_policy": "按书影正文大字作常用字编码对照。未据单一见证改动冻结底本。",
+  "expected_substitutions": [
+    {
+      "working": "脈",
+      "scan": "脉"
+    },
+    {
+      "working": "余",
+      "scan": "予"
+    },
+    {
+      "working": "耆",
+      "scan": "芪"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction",
+  "page_renders": [
+    {
+      "pdf_page": 17,
+      "render_sha256": "4ea1d86532ab9f5d9be02d53cf40db5d385083d60e68204c5d0aa432dda429df",
+      "render_command": "pdftoppm -f 17 -l 17 -scale-to 3400 -png -singlefile INPUT.pdf OUTPUT_PREFIX"
+    },
+    {
+      "pdf_page": 18,
+      "render_sha256": "5766cd35161712eb2f645130b31d4c34c27de61dea552c789f0d29d146f295ba",
+      "render_command": "pdftoppm -f 18 -l 18 -scale-to 3400 -png -singlefile INPUT.pdf OUTPUT_PREFIX"
+    }
+  ]
+}

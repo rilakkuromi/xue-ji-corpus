@@ -1,0 +1,63 @@
+{
+  "case_id": "XJ-ZTLY-C-V1-P038-1",
+  "review_date": "2026-11-09",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/ZTLY_target_spots_2026-10-27.json",
+  "pdf_page": 18,
+  "render_sha256": "5766cd35161712eb2f645130b31d4c34c27de61dea552c789f0d29d146f295ba",
+  "render_command": "pdftoppm -f 18 -l 18 -scale-to 3400 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "page_half": "right",
+  "location": "第18页右半叶第5至8列，止服之遂瘳；次列为肝经郁火节题。",
+  "scan_columns": [
+    "有一患者愈後腿作痛余意膿血過多瘡雖愈肝",
+    "經血氣尚未充實而濕熱乘虛也遂以八珍加牛",
+    "膝木瓜蒼术黃栢防己炙草以去濕熱養陰血痛",
+    "漸止乃去防己黃栢服之遂瘳"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 18,
+      "page_half": "right",
+      "column_from_right": 5
+    },
+    {
+      "pdf_page": 18,
+      "page_half": "right",
+      "column_from_right": 6
+    },
+    {
+      "pdf_page": 18,
+      "page_half": "right",
+      "column_from_right": 7
+    },
+    {
+      "pdf_page": 18,
+      "page_half": "right",
+      "column_from_right": 8
+    }
+  ],
+  "transcription_policy": "按书影正文大字作常用字编码对照。未据单一见证改动冻结底本。",
+  "expected_substitutions": [
+    {
+      "working": "朮",
+      "scan": "术"
+    },
+    {
+      "working": "柏",
+      "scan": "栢"
+    },
+    {
+      "working": "祛",
+      "scan": "去"
+    },
+    {
+      "working": "柏",
+      "scan": "栢"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction"
+}

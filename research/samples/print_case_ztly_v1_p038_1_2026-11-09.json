@@ -1,0 +1,891 @@
+{
+  "case_id": "XJ-ZTLY-C-V1-P038-1",
+  "review_date": "2026-11-09",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/ZTLY_target_spots_2026-10-27.json",
+  "pdf_page": 18,
+  "render_sha256": "5766cd35161712eb2f645130b31d4c34c27de61dea552c789f0d29d146f295ba",
+  "render_command": "pdftoppm -f 18 -l 18 -scale-to 3400 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "page_half": "right",
+  "location": "第18页右半叶第5至8列，止服之遂瘳；次列为肝经郁火节题。",
+  "scan_columns": [
+    "有一患者愈後腿作痛余意膿血過多瘡雖愈肝",
+    "經血氣尚未充實而濕熱乘虛也遂以八珍加牛",
+    "膝木瓜蒼术黃栢防己炙草以去濕熱養陰血痛",
+    "漸止乃去防己黃栢服之遂瘳"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 18,
+      "page_half": "right",
+      "column_from_right": 5
+    },
+    {
+      "pdf_page": 18,
+      "page_half": "right",
+      "column_from_right": 6
+    },
+    {
+      "pdf_page": 18,
+      "page_half": "right",
+      "column_from_right": 7
+    },
+    {
+      "pdf_page": 18,
+      "page_half": "right",
+      "column_from_right": 8
+    }
+  ],
+  "transcription_policy": "按书影正文大字作常用字编码对照。未据单一见证改动冻结底本。",
+  "expected_substitutions": [
+    {
+      "working": "朮",
+      "scan": "术"
+    },
+    {
+      "working": "柏",
+      "scan": "栢"
+    },
+    {
+      "working": "祛",
+      "scan": "去"
+    },
+    {
+      "working": "柏",
+      "scan": "栢"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction",
+  "edition_date_verification": "inherited_metadata_not_reverified_from_images",
+  "bibliographic_metadata_origin": "inherited_scan_record_not_new_titlepage_audit",
+  "source_git_blob": "e8459e27e93711c44357fafcf7d106f97ecaca26",
+  "case_text_sha256": "613fbd819d117ae4222a84dcac18be643f47f074bc025f5f9d9704a739581c16",
+  "pdf_sha256": "9856a213a331da98be8c2d16c4968a804893ad917fdd63229c70ec420045fb28",
+  "pdf_bytes": 16189110,
+  "working_case_evidence": [
+    {
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 0,
+      "source_end_char_exclusive": 86,
+      "raw_quote": "有一患者，愈後腿作痛。余意膿血過多，瘡雖愈，肝經血氣尚未充實，而濕熱乘虛也。遂以八珍加牛膝、木瓜、蒼朮、黃柏、防己、炙草以祛濕熱，養陰血，痛漸止；乃去防己、黃柏，服之遂瘳。"
+    }
+  ],
+  "scan_reading": "有一患者愈後腿作痛余意膿血過多瘡雖愈肝經血氣尚未充實而濕熱乘虛也遂以八珍加牛膝木瓜蒼术黃栢防己炙草以去濕熱養陰血痛漸止乃去防己黃栢服之遂瘳",
+  "compared_body_characters_excluding_modern_punctuation": 69,
+  "differences": [
+    {
+      "ordinal": 43,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 50,
+      "source_end_char_exclusive": 51,
+      "working": "朮",
+      "scan": "术",
+      "status": "different_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 5
+    },
+    {
+      "ordinal": 45,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 53,
+      "source_end_char_exclusive": 54,
+      "working": "柏",
+      "scan": "栢",
+      "status": "different_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 7
+    },
+    {
+      "ordinal": 51,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 61,
+      "source_end_char_exclusive": 62,
+      "working": "祛",
+      "scan": "去",
+      "status": "different_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 13
+    },
+    {
+      "ordinal": 65,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 79,
+      "source_end_char_exclusive": 80,
+      "working": "柏",
+      "scan": "栢",
+      "status": "different_model_reading",
+      "scan_column_index": 4,
+      "scan_column_char_index": 8
+    }
+  ],
+  "alignment": [
+    {
+      "ordinal": 1,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 0,
+      "source_end_char_exclusive": 1,
+      "working": "有",
+      "scan": "有",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 1
+    },
+    {
+      "ordinal": 2,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 1,
+      "source_end_char_exclusive": 2,
+      "working": "一",
+      "scan": "一",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 2
+    },
+    {
+      "ordinal": 3,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 2,
+      "source_end_char_exclusive": 3,
+      "working": "患",
+      "scan": "患",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 3
+    },
+    {
+      "ordinal": 4,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 3,
+      "source_end_char_exclusive": 4,
+      "working": "者",
+      "scan": "者",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 4
+    },
+    {
+      "ordinal": 5,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 5,
+      "source_end_char_exclusive": 6,
+      "working": "愈",
+      "scan": "愈",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 5
+    },
+    {
+      "ordinal": 6,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 6,
+      "source_end_char_exclusive": 7,
+      "working": "後",
+      "scan": "後",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 6
+    },
+    {
+      "ordinal": 7,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 7,
+      "source_end_char_exclusive": 8,
+      "working": "腿",
+      "scan": "腿",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 7
+    },
+    {
+      "ordinal": 8,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 8,
+      "source_end_char_exclusive": 9,
+      "working": "作",
+      "scan": "作",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 8
+    },
+    {
+      "ordinal": 9,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 9,
+      "source_end_char_exclusive": 10,
+      "working": "痛",
+      "scan": "痛",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 9
+    },
+    {
+      "ordinal": 10,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 11,
+      "source_end_char_exclusive": 12,
+      "working": "余",
+      "scan": "余",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 10
+    },
+    {
+      "ordinal": 11,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 12,
+      "source_end_char_exclusive": 13,
+      "working": "意",
+      "scan": "意",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 11
+    },
+    {
+      "ordinal": 12,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 13,
+      "source_end_char_exclusive": 14,
+      "working": "膿",
+      "scan": "膿",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 12
+    },
+    {
+      "ordinal": 13,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 14,
+      "source_end_char_exclusive": 15,
+      "working": "血",
+      "scan": "血",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 13
+    },
+    {
+      "ordinal": 14,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 15,
+      "source_end_char_exclusive": 16,
+      "working": "過",
+      "scan": "過",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 14
+    },
+    {
+      "ordinal": 15,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 16,
+      "source_end_char_exclusive": 17,
+      "working": "多",
+      "scan": "多",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 15
+    },
+    {
+      "ordinal": 16,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 18,
+      "source_end_char_exclusive": 19,
+      "working": "瘡",
+      "scan": "瘡",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 16
+    },
+    {
+      "ordinal": 17,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 19,
+      "source_end_char_exclusive": 20,
+      "working": "雖",
+      "scan": "雖",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 17
+    },
+    {
+      "ordinal": 18,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 20,
+      "source_end_char_exclusive": 21,
+      "working": "愈",
+      "scan": "愈",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 18
+    },
+    {
+      "ordinal": 19,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 22,
+      "source_end_char_exclusive": 23,
+      "working": "肝",
+      "scan": "肝",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 19
+    },
+    {
+      "ordinal": 20,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 23,
+      "source_end_char_exclusive": 24,
+      "working": "經",
+      "scan": "經",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 1
+    },
+    {
+      "ordinal": 21,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 24,
+      "source_end_char_exclusive": 25,
+      "working": "血",
+      "scan": "血",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 2
+    },
+    {
+      "ordinal": 22,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 25,
+      "source_end_char_exclusive": 26,
+      "working": "氣",
+      "scan": "氣",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 3
+    },
+    {
+      "ordinal": 23,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 26,
+      "source_end_char_exclusive": 27,
+      "working": "尚",
+      "scan": "尚",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 4
+    },
+    {
+      "ordinal": 24,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 27,
+      "source_end_char_exclusive": 28,
+      "working": "未",
+      "scan": "未",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 5
+    },
+    {
+      "ordinal": 25,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 28,
+      "source_end_char_exclusive": 29,
+      "working": "充",
+      "scan": "充",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 6
+    },
+    {
+      "ordinal": 26,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 29,
+      "source_end_char_exclusive": 30,
+      "working": "實",
+      "scan": "實",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 7
+    },
+    {
+      "ordinal": 27,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 31,
+      "source_end_char_exclusive": 32,
+      "working": "而",
+      "scan": "而",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 8
+    },
+    {
+      "ordinal": 28,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 32,
+      "source_end_char_exclusive": 33,
+      "working": "濕",
+      "scan": "濕",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 9
+    },
+    {
+      "ordinal": 29,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 33,
+      "source_end_char_exclusive": 34,
+      "working": "熱",
+      "scan": "熱",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 10
+    },
+    {
+      "ordinal": 30,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 34,
+      "source_end_char_exclusive": 35,
+      "working": "乘",
+      "scan": "乘",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 11
+    },
+    {
+      "ordinal": 31,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 35,
+      "source_end_char_exclusive": 36,
+      "working": "虛",
+      "scan": "虛",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 12
+    },
+    {
+      "ordinal": 32,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 36,
+      "source_end_char_exclusive": 37,
+      "working": "也",
+      "scan": "也",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 13
+    },
+    {
+      "ordinal": 33,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 38,
+      "source_end_char_exclusive": 39,
+      "working": "遂",
+      "scan": "遂",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 14
+    },
+    {
+      "ordinal": 34,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 39,
+      "source_end_char_exclusive": 40,
+      "working": "以",
+      "scan": "以",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 15
+    },
+    {
+      "ordinal": 35,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 40,
+      "source_end_char_exclusive": 41,
+      "working": "八",
+      "scan": "八",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 16
+    },
+    {
+      "ordinal": 36,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 41,
+      "source_end_char_exclusive": 42,
+      "working": "珍",
+      "scan": "珍",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 17
+    },
+    {
+      "ordinal": 37,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 42,
+      "source_end_char_exclusive": 43,
+      "working": "加",
+      "scan": "加",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 18
+    },
+    {
+      "ordinal": 38,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 43,
+      "source_end_char_exclusive": 44,
+      "working": "牛",
+      "scan": "牛",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 19
+    },
+    {
+      "ordinal": 39,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 44,
+      "source_end_char_exclusive": 45,
+      "working": "膝",
+      "scan": "膝",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 1
+    },
+    {
+      "ordinal": 40,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 46,
+      "source_end_char_exclusive": 47,
+      "working": "木",
+      "scan": "木",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 2
+    },
+    {
+      "ordinal": 41,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 47,
+      "source_end_char_exclusive": 48,
+      "working": "瓜",
+      "scan": "瓜",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 3
+    },
+    {
+      "ordinal": 42,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 49,
+      "source_end_char_exclusive": 50,
+      "working": "蒼",
+      "scan": "蒼",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 4
+    },
+    {
+      "ordinal": 43,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 50,
+      "source_end_char_exclusive": 51,
+      "working": "朮",
+      "scan": "术",
+      "status": "different_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 5
+    },
+    {
+      "ordinal": 44,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 52,
+      "source_end_char_exclusive": 53,
+      "working": "黃",
+      "scan": "黃",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 6
+    },
+    {
+      "ordinal": 45,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 53,
+      "source_end_char_exclusive": 54,
+      "working": "柏",
+      "scan": "栢",
+      "status": "different_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 7
+    },
+    {
+      "ordinal": 46,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 55,
+      "source_end_char_exclusive": 56,
+      "working": "防",
+      "scan": "防",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 8
+    },
+    {
+      "ordinal": 47,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 56,
+      "source_end_char_exclusive": 57,
+      "working": "己",
+      "scan": "己",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 9
+    },
+    {
+      "ordinal": 48,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 58,
+      "source_end_char_exclusive": 59,
+      "working": "炙",
+      "scan": "炙",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 10
+    },
+    {
+      "ordinal": 49,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 59,
+      "source_end_char_exclusive": 60,
+      "working": "草",
+      "scan": "草",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 11
+    },
+    {
+      "ordinal": 50,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 60,
+      "source_end_char_exclusive": 61,
+      "working": "以",
+      "scan": "以",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 12
+    },
+    {
+      "ordinal": 51,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 61,
+      "source_end_char_exclusive": 62,
+      "working": "祛",
+      "scan": "去",
+      "status": "different_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 13
+    },
+    {
+      "ordinal": 52,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 62,
+      "source_end_char_exclusive": 63,
+      "working": "濕",
+      "scan": "濕",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 14
+    },
+    {
+      "ordinal": 53,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 63,
+      "source_end_char_exclusive": 64,
+      "working": "熱",
+      "scan": "熱",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 15
+    },
+    {
+      "ordinal": 54,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 65,
+      "source_end_char_exclusive": 66,
+      "working": "養",
+      "scan": "養",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 16
+    },
+    {
+      "ordinal": 55,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 66,
+      "source_end_char_exclusive": 67,
+      "working": "陰",
+      "scan": "陰",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 17
+    },
+    {
+      "ordinal": 56,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 67,
+      "source_end_char_exclusive": 68,
+      "working": "血",
+      "scan": "血",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 18
+    },
+    {
+      "ordinal": 57,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 69,
+      "source_end_char_exclusive": 70,
+      "working": "痛",
+      "scan": "痛",
+      "status": "same_model_reading",
+      "scan_column_index": 3,
+      "scan_column_char_index": 19
+    },
+    {
+      "ordinal": 58,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 70,
+      "source_end_char_exclusive": 71,
+      "working": "漸",
+      "scan": "漸",
+      "status": "same_model_reading",
+      "scan_column_index": 4,
+      "scan_column_char_index": 1
+    },
+    {
+      "ordinal": 59,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 71,
+      "source_end_char_exclusive": 72,
+      "working": "止",
+      "scan": "止",
+      "status": "same_model_reading",
+      "scan_column_index": 4,
+      "scan_column_char_index": 2
+    },
+    {
+      "ordinal": 60,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 73,
+      "source_end_char_exclusive": 74,
+      "working": "乃",
+      "scan": "乃",
+      "status": "same_model_reading",
+      "scan_column_index": 4,
+      "scan_column_char_index": 3
+    },
+    {
+      "ordinal": 61,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 74,
+      "source_end_char_exclusive": 75,
+      "working": "去",
+      "scan": "去",
+      "status": "same_model_reading",
+      "scan_column_index": 4,
+      "scan_column_char_index": 4
+    },
+    {
+      "ordinal": 62,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 75,
+      "source_end_char_exclusive": 76,
+      "working": "防",
+      "scan": "防",
+      "status": "same_model_reading",
+      "scan_column_index": 4,
+      "scan_column_char_index": 5
+    },
+    {
+      "ordinal": 63,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 76,
+      "source_end_char_exclusive": 77,
+      "working": "己",
+      "scan": "己",
+      "status": "same_model_reading",
+      "scan_column_index": 4,
+      "scan_column_char_index": 6
+    },
+    {
+      "ordinal": 64,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 78,
+      "source_end_char_exclusive": 79,
+      "working": "黃",
+      "scan": "黃",
+      "status": "same_model_reading",
+      "scan_column_index": 4,
+      "scan_column_char_index": 7
+    },
+    {
+      "ordinal": 65,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 79,
+      "source_end_char_exclusive": 80,
+      "working": "柏",
+      "scan": "栢",
+      "status": "different_model_reading",
+      "scan_column_index": 4,
+      "scan_column_char_index": 8
+    },
+    {
+      "ordinal": 66,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 81,
+      "source_end_char_exclusive": 82,
+      "working": "服",
+      "scan": "服",
+      "status": "same_model_reading",
+      "scan_column_index": 4,
+      "scan_column_char_index": 9
+    },
+    {
+      "ordinal": 67,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 82,
+      "source_end_char_exclusive": 83,
+      "working": "之",
+      "scan": "之",
+      "status": "same_model_reading",
+      "scan_column_index": 4,
+      "scan_column_char_index": 10
+    },
+    {
+      "ordinal": 68,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 83,
+      "source_end_char_exclusive": 84,
+      "working": "遂",
+      "scan": "遂",
+      "status": "same_model_reading",
+      "scan_column_index": 4,
+      "scan_column_char_index": 11
+    },
+    {
+      "ordinal": 69,
+      "source_ref": "XJ-ZTLY-V1-P038",
+      "source_start_char": 84,
+      "source_end_char_exclusive": 85,
+      "working": "瘳",
+      "scan": "瘳",
+      "status": "same_model_reading",
+      "scan_column_index": 4,
+      "scan_column_char_index": 12
+    }
+  ],
+  "limitations": [
+    "Program validates recorded alignment and provenance, not the model visual reading.",
+    "One printed witness cannot adjudicate other editions or correct the frozen corpus.",
+    "Punctuation, kundoku marks and paleographic glyph variants are not fully collated."
+  ]
+}
