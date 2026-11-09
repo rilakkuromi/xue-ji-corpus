@@ -1,0 +1,57 @@
+{
+  "case_id": "XJ-NKCZ-C-V1-P010-1",
+  "review_date": "2026-11-09",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/NKCZ_target_spots_2026-10-27.json",
+  "pdf_page": 7,
+  "render_sha256": "070db78b55bec93bdb70390ad06d3160aea37937bc458e12782ca3bea380efab",
+  "render_command": "pdftoppm -f 7 -l 7 -scale-to 3600 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "page_half": "left",
+  "location": "第7页左半叶第9列接第8页右半叶第1至2列，第2列只取前四字，止黃芩而愈。",
+  "scan_columns": [
+    "一婦人兩眉稜痛後及太陽面青善怒余作膽經",
+    "風熱用選奇湯合逍遙散加山梔天麻黃芪半夏",
+    "黃芩而愈"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 7,
+      "page_half": "left",
+      "column_from_right": 9
+    },
+    {
+      "pdf_page": 8,
+      "page_half": "right",
+      "column_from_right": 1
+    },
+    {
+      "pdf_page": 8,
+      "page_half": "right",
+      "column_from_right": 2
+    }
+  ],
+  "transcription_policy": "正文大字常用字编码对照。按冻结案界保留个案正文。",
+  "expected_substitutions": [
+    {
+      "working": "耆",
+      "scan": "芪"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction",
+  "page_renders": [
+    {
+      "pdf_page": 7,
+      "render_sha256": "070db78b55bec93bdb70390ad06d3160aea37937bc458e12782ca3bea380efab",
+      "render_command": "pdftoppm -f 7 -l 7 -scale-to 3600 -png -singlefile INPUT.pdf OUTPUT_PREFIX"
+    },
+    {
+      "pdf_page": 8,
+      "render_sha256": "6a5bab98d057763060c128e7493ef498a9e8863e8c5da6f212aae6b61d9231f9",
+      "render_command": "pdftoppm -f 8 -l 8 -scale-to 3600 -png -singlefile INPUT.pdf OUTPUT_PREFIX"
+    }
+  ]
+}
