@@ -1,0 +1,51 @@
+{
+  "case_id": "XJ-LYJY-C-V1-P078",
+  "review_date": "2026-11-09",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/LYJY_target_spots_2026-10-28.json",
+  "pdf_page": 31,
+  "page_half": "left",
+  "location": "第31页左半叶自右第5至8列，起一男子愈後，止四劑而瘥；第9列另起一男子。",
+  "render_command": "pdftoppm -f 31 -l 31 -scale-to 2600 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256": "2b9e501dd3b35591842be0def25a927758a94ccec2bf7f3822fbc4211e4f9ba7",
+  "scan_columns": [
+    "一男子愈後因勞惡寒頭痛體倦余謂惡寒乃胃",
+    "氣虛不能護衛肌表頭痛乃清氣虛不能上升巔",
+    "頂用補中益氣湯加五味麥門益甚更兼口噤脉",
+    "微細如無又加附子五分四劑而瘥"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 31,
+      "page_half": "left",
+      "column_from_right": 5
+    },
+    {
+      "pdf_page": 31,
+      "page_half": "left",
+      "column_from_right": 6
+    },
+    {
+      "pdf_page": 31,
+      "page_half": "left",
+      "column_from_right": 7
+    },
+    {
+      "pdf_page": 31,
+      "page_half": "left",
+      "column_from_right": 8
+    }
+  ],
+  "transcription_policy": "按正文大字录文，保留脈／脉差异及麥門原字。",
+  "expected_substitutions": [
+    {
+      "working": "脈",
+      "scan": "脉"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction"
+}
