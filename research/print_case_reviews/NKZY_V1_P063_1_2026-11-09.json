@@ -1,0 +1,57 @@
+{
+  "case_id": "XJ-NKZY-C-V1-P063-1",
+  "review_date": "2026-11-09",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/NKZY_target_spots_2026-10-27.json",
+  "pdf_page": 24,
+  "render_sha256": "0d4e3b759e623fd5734784aa41904d199447308959045a46e0d8d30398e58894",
+  "render_command": "pdftoppm -f 24 -l 24 -scale-to 3600 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "page_half": "right",
+  "location": "第24页右半叶第7至9列接左半叶第1至2列，止不月而愈，左第3列通安橋另起。",
+  "scan_columns": [
+    "大尹沈用之不時發熱日飲冰水數碗寒藥二劑",
+    "熱渴益甚形體日瘦尺脉洪大而數時或無力王",
+    "太僕曰熱之不熱責其無火寒之不寒責其無水",
+    "又云倏熱往來是無火也時作時止是無水也法",
+    "當補腎用加減八味丸不月而愈"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 24,
+      "page_half": "right",
+      "column_from_right": 7
+    },
+    {
+      "pdf_page": 24,
+      "page_half": "right",
+      "column_from_right": 8
+    },
+    {
+      "pdf_page": 24,
+      "page_half": "right",
+      "column_from_right": 9
+    },
+    {
+      "pdf_page": 24,
+      "page_half": "left",
+      "column_from_right": 1
+    },
+    {
+      "pdf_page": 24,
+      "page_half": "left",
+      "column_from_right": 2
+    }
+  ],
+  "transcription_policy": "正文大字编码对照，按冻结案界截取；詐字放大复读。",
+  "expected_substitutions": [
+    {
+      "working": "脈",
+      "scan": "脉"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction"
+}
