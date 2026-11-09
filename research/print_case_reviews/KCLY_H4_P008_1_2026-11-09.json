@@ -1,0 +1,77 @@
+{
+  "case_id": "XJ-KCLY-C-H4-P008-1",
+  "review_date": "2026-11-09",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/KCLY_target_spots_2026-10-27.json",
+  "pdf_page": 16,
+  "page_half": "right",
+  "location": "第16页右半叶第7至9列接左半叶第1至4列，止又數劑而愈，次列一婦人另起。",
+  "render_command": "pdftoppm -f 16 -l 16 -scale-to 3600 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256": "db4c1cd90876de68228ff7751f23520c5e0cd6b8ae5d2343ead650482da439c2",
+  "scan_columns": [
+    "一膏粱之人患舌痛敷服皆消毒之藥舌腫勢急",
+    "余刺舌尖及兩傍出紫血杯許腫消一二更服犀",
+    "角地黃湯一劑翌早復腫脹仍刺出紫血杯許亦",
+    "消一二仍服前湯良久舌大腫又刺出黑血二杯",
+    "許腫漸消忽寒熱作嘔頭痛作暈脉洪浮而數此",
+    "邪雖去而真氣愈傷與補中益氣倍用參芪歸术",
+    "四劑而安又數劑而愈"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 16,
+      "page_half": "right",
+      "column_from_right": 7
+    },
+    {
+      "pdf_page": 16,
+      "page_half": "right",
+      "column_from_right": 8
+    },
+    {
+      "pdf_page": 16,
+      "page_half": "right",
+      "column_from_right": 9
+    },
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 1
+    },
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 2
+    },
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 3
+    },
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 4
+    }
+  ],
+  "transcription_policy": "正文大字常用字编码对照，保留所列差异，按冻结案界截取。",
+  "expected_substitutions": [
+    {
+      "working": "脈",
+      "scan": "脉"
+    },
+    {
+      "working": "耆",
+      "scan": "芪"
+    },
+    {
+      "working": "術",
+      "scan": "术"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction"
+}

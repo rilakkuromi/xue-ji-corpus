@@ -1,0 +1,51 @@
+{
+  "case_id": "XJ-KCLY-C-H4-P009-1",
+  "review_date": "2026-11-09",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/KCLY_target_spots_2026-10-27.json",
+  "pdf_page": 16,
+  "page_half": "left",
+  "location": "第16页左半叶第5至8列，第8列只取前四字，止五味而愈，同列下文若因暴怒另作边界旁证。",
+  "render_command": "pdftoppm -f 16 -l 16 -scale-to 3600 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256": "db4c1cd90876de68228ff7751f23520c5e0cd6b8ae5d2343ead650482da439c2",
+  "scan_columns": [
+    "一婦人善怒舌痛煩熱用降火化痰等藥前症益",
+    "甚兩脇作脹服流氣飲肚腹亦脹經行不止此肝",
+    "虛不能藏血脾虛不能統血用加味歸脾加麥門",
+    "五味而愈"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 5
+    },
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 6
+    },
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 7
+    },
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 8
+    }
+  ],
+  "transcription_policy": "正文大字常用字编码对照，保留所列差异，按冻结案界截取。",
+  "expected_substitutions": [
+    {
+      "working": "脅",
+      "scan": "脇"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction"
+}
