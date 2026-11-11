@@ -1,0 +1,65 @@
+{
+  "case_id": "XJ-WKSY-C-V2-P122-1",
+  "review_date": "2026-11-09",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/WKSY_target_spots_2026-10-28.json",
+  "pdf_page": 83,
+  "render_sha256": "2295a16278e8198dd05c615e9f5bf4f547bd9e07852af010776e9b45a3d24941",
+  "render_command": "pdftoppm -f 83 -l 83 -scale-to 3500 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "page_half": "right",
+  "location": "第83页右半叶第3至7列，止歸芪而愈，第8列另起一患者。",
+  "scan_columns": [
+    "一儒者患前症色焮赤作痛大便秘而不實服祛",
+    "風敗毒等藥舌痛口乾脉浮而數此邪氣去而陰",
+    "虛所致用六味丸料加山梔當歸四劑脉症頓退",
+    "又用八珍湯加山梔丹皮瘡色漸白後用四君加",
+    "歸芪而愈"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 83,
+      "page_half": "right",
+      "column_from_right": 3
+    },
+    {
+      "pdf_page": 83,
+      "page_half": "right",
+      "column_from_right": 4
+    },
+    {
+      "pdf_page": 83,
+      "page_half": "right",
+      "column_from_right": 5
+    },
+    {
+      "pdf_page": 83,
+      "page_half": "right",
+      "column_from_right": 6
+    },
+    {
+      "pdf_page": 83,
+      "page_half": "right",
+      "column_from_right": 7
+    }
+  ],
+  "transcription_policy": "只录正文大字，保留用字差异与冻结案界。",
+  "expected_substitutions": [
+    {
+      "working": "脈",
+      "scan": "脉"
+    },
+    {
+      "working": "脈",
+      "scan": "脉"
+    },
+    {
+      "working": "耆",
+      "scan": "芪"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction"
+}
