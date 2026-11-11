@@ -1,0 +1,85 @@
+{
+  "case_id": "XJ-LZWKFH-C-V3-P072-1",
+  "work_ref": "XJ-LZWKFH",
+  "review_date": "2026-11-11",
+  "method": "model_visual_full_case_iiif_image_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "manifest_snapshot": "research/iiif_reviews/LZWKFH_utokyo_manifest_vol3_2026-11-11.json",
+  "manifest_sha256": "a57e01d0a7c463b71772eb45da4fabba4b994e780d26b9ffd3c29313b2f5bc55",
+  "manifest_uri": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/177e2e34-3d82-91a3-52d3-26ec8aa24f43/manifest",
+  "catalogue_url": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/177e2e34-3d82-91a3-52d3-26ec8aa24f43",
+  "catalogue_claim": {
+    "title": "立齋外科發揮 8巻 [2]",
+    "holding": "東京大学総合図書館",
+    "shelfmark": "V11:1104",
+    "year": "1661",
+    "status": "institutional_catalogue_page_read_not_colophon_reverified"
+  },
+  "viewed_canvases": [
+    {
+      "ordinal_one_based": 13,
+      "canvas_uri": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/177e2e34-3d82-91a3-52d3-26ec8aa24f43/canvas/p13",
+      "image_service": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/002/V11_1104_002_0013.tif",
+      "requested_width": 2800,
+      "download_url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/002/V11_1104_002_0013.tif/full/2800,/0/default.jpg",
+      "bytes": 418797,
+      "sha256": "273da52b67b620fa7287759c8db1ed62e53eb5a2324f60adf31bec5785e8a2a0"
+    }
+  ],
+  "case_canvas_ordinal_one_based": 13,
+  "location": "第13幅右半叶第7至11列，止而愈，同列凡字起后续通论。",
+  "scan_columns": [
+    "一男子臀漫腫色不變脉滑數而無",
+    "力此臀癰也膿將成尚在内予欲",
+    "治以托裏藥待發出而用針彼欲",
+    "内消服攻伐藥愈虛復求治仍投",
+    "前藥托出針之以大補藥而愈"
+  ],
+  "column_locations": [
+    {
+      "page_half": "right",
+      "column_from_right": 7
+    },
+    {
+      "page_half": "right",
+      "column_from_right": 8
+    },
+    {
+      "page_half": "right",
+      "column_from_right": 9
+    },
+    {
+      "page_half": "right",
+      "column_from_right": 10
+    },
+    {
+      "page_half": "right",
+      "column_from_right": 11
+    }
+  ],
+  "expected_substitutions": [
+    {
+      "working": "脈",
+      "scan": "脉"
+    },
+    {
+      "working": "內",
+      "scan": "内"
+    },
+    {
+      "working": "余",
+      "scan": "予"
+    },
+    {
+      "working": "裡",
+      "scan": "裏"
+    },
+    {
+      "working": "內",
+      "scan": "内"
+    }
+  ]
+}

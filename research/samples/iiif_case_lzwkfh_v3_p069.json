@@ -1,0 +1,638 @@
+{
+  "case_id": "XJ-LZWKFH-C-V3-P069-1",
+  "work_ref": "XJ-LZWKFH",
+  "review_date": "2026-11-11",
+  "method": "model_visual_full_case_iiif_image_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "manifest_snapshot": "research/iiif_reviews/LZWKFH_utokyo_manifest_vol3_2026-11-11.json",
+  "manifest_sha256": "a57e01d0a7c463b71772eb45da4fabba4b994e780d26b9ffd3c29313b2f5bc55",
+  "manifest_uri": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/177e2e34-3d82-91a3-52d3-26ec8aa24f43/manifest",
+  "catalogue_url": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/177e2e34-3d82-91a3-52d3-26ec8aa24f43",
+  "catalogue_claim": {
+    "title": "立齋外科發揮 8巻 [2]",
+    "holding": "東京大学総合図書館",
+    "shelfmark": "V11:1104",
+    "year": "1661",
+    "status": "institutional_catalogue_page_read_not_colophon_reverified"
+  },
+  "viewed_canvases": [
+    {
+      "ordinal_one_based": 12,
+      "canvas_uri": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/177e2e34-3d82-91a3-52d3-26ec8aa24f43/canvas/p12",
+      "image_service": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/002/V11_1104_002_0012.tif",
+      "requested_width": 2500,
+      "download_url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/002/V11_1104_002_0012.tif/full/2500,/0/default.jpg",
+      "bytes": 331445,
+      "sha256": "e285fd7bcbf7d7e24cffc51faf2b39ff4feeae8d21e6f36dff40ec4d84fc078c"
+    }
+  ],
+  "case_canvas_ordinal_one_based": 12,
+  "location": "第12幅左半叶第11至15列，止而斂。",
+  "scan_columns": [
+    "一男子臀癰膿水不止肌肉漸瘦飲",
+    "食少思胃脉微弦以六君子湯加",
+    "藿香當歸數劑飲食遂進飲以十",
+    "全大補湯及豆豉餅灸之兩月餘",
+    "而斂"
+  ],
+  "column_locations": [
+    {
+      "page_half": "left",
+      "column_from_right": 11
+    },
+    {
+      "page_half": "left",
+      "column_from_right": 12
+    },
+    {
+      "page_half": "left",
+      "column_from_right": 13
+    },
+    {
+      "page_half": "left",
+      "column_from_right": 14
+    },
+    {
+      "page_half": "left",
+      "column_from_right": 15
+    }
+  ],
+  "expected_substitutions": [
+    {
+      "working": "脈",
+      "scan": "脉"
+    }
+  ],
+  "source_git_blob": "e8459e27e93711c44357fafcf7d106f97ecaca26",
+  "case_text_sha256": "a4a6e0a403d75f6e2201892ad7e776b287df3de6ee7aac780df3cddaa9585896",
+  "compared_body_characters": 55,
+  "scan_reading": "一男子臀癰膿水不止肌肉漸瘦飲食少思胃脉微弦以六君子湯加藿香當歸數劑飲食遂進飲以十全大補湯及豆豉餅灸之兩月餘而斂",
+  "alignment": [
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 0,
+      "source_end_char_exclusive": 1,
+      "working": "一",
+      "scan": "一",
+      "page_half": "left",
+      "column_from_right": 11,
+      "scan_column_char_index": 1
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 1,
+      "source_end_char_exclusive": 2,
+      "working": "男",
+      "scan": "男",
+      "page_half": "left",
+      "column_from_right": 11,
+      "scan_column_char_index": 2
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 2,
+      "source_end_char_exclusive": 3,
+      "working": "子",
+      "scan": "子",
+      "page_half": "left",
+      "column_from_right": 11,
+      "scan_column_char_index": 3
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 3,
+      "source_end_char_exclusive": 4,
+      "working": "臀",
+      "scan": "臀",
+      "page_half": "left",
+      "column_from_right": 11,
+      "scan_column_char_index": 4
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 4,
+      "source_end_char_exclusive": 5,
+      "working": "癰",
+      "scan": "癰",
+      "page_half": "left",
+      "column_from_right": 11,
+      "scan_column_char_index": 5
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 6,
+      "source_end_char_exclusive": 7,
+      "working": "膿",
+      "scan": "膿",
+      "page_half": "left",
+      "column_from_right": 11,
+      "scan_column_char_index": 6
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 7,
+      "source_end_char_exclusive": 8,
+      "working": "水",
+      "scan": "水",
+      "page_half": "left",
+      "column_from_right": 11,
+      "scan_column_char_index": 7
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 8,
+      "source_end_char_exclusive": 9,
+      "working": "不",
+      "scan": "不",
+      "page_half": "left",
+      "column_from_right": 11,
+      "scan_column_char_index": 8
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 9,
+      "source_end_char_exclusive": 10,
+      "working": "止",
+      "scan": "止",
+      "page_half": "left",
+      "column_from_right": 11,
+      "scan_column_char_index": 9
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 11,
+      "source_end_char_exclusive": 12,
+      "working": "肌",
+      "scan": "肌",
+      "page_half": "left",
+      "column_from_right": 11,
+      "scan_column_char_index": 10
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 12,
+      "source_end_char_exclusive": 13,
+      "working": "肉",
+      "scan": "肉",
+      "page_half": "left",
+      "column_from_right": 11,
+      "scan_column_char_index": 11
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 13,
+      "source_end_char_exclusive": 14,
+      "working": "漸",
+      "scan": "漸",
+      "page_half": "left",
+      "column_from_right": 11,
+      "scan_column_char_index": 12
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 14,
+      "source_end_char_exclusive": 15,
+      "working": "瘦",
+      "scan": "瘦",
+      "page_half": "left",
+      "column_from_right": 11,
+      "scan_column_char_index": 13
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 16,
+      "source_end_char_exclusive": 17,
+      "working": "飲",
+      "scan": "飲",
+      "page_half": "left",
+      "column_from_right": 11,
+      "scan_column_char_index": 14
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 17,
+      "source_end_char_exclusive": 18,
+      "working": "食",
+      "scan": "食",
+      "page_half": "left",
+      "column_from_right": 12,
+      "scan_column_char_index": 1
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 18,
+      "source_end_char_exclusive": 19,
+      "working": "少",
+      "scan": "少",
+      "page_half": "left",
+      "column_from_right": 12,
+      "scan_column_char_index": 2
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 19,
+      "source_end_char_exclusive": 20,
+      "working": "思",
+      "scan": "思",
+      "page_half": "left",
+      "column_from_right": 12,
+      "scan_column_char_index": 3
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 21,
+      "source_end_char_exclusive": 22,
+      "working": "胃",
+      "scan": "胃",
+      "page_half": "left",
+      "column_from_right": 12,
+      "scan_column_char_index": 4
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 22,
+      "source_end_char_exclusive": 23,
+      "working": "脈",
+      "scan": "脉",
+      "page_half": "left",
+      "column_from_right": 12,
+      "scan_column_char_index": 5
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 23,
+      "source_end_char_exclusive": 24,
+      "working": "微",
+      "scan": "微",
+      "page_half": "left",
+      "column_from_right": 12,
+      "scan_column_char_index": 6
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 24,
+      "source_end_char_exclusive": 25,
+      "working": "弦",
+      "scan": "弦",
+      "page_half": "left",
+      "column_from_right": 12,
+      "scan_column_char_index": 7
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 26,
+      "source_end_char_exclusive": 27,
+      "working": "以",
+      "scan": "以",
+      "page_half": "left",
+      "column_from_right": 12,
+      "scan_column_char_index": 8
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 27,
+      "source_end_char_exclusive": 28,
+      "working": "六",
+      "scan": "六",
+      "page_half": "left",
+      "column_from_right": 12,
+      "scan_column_char_index": 9
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 28,
+      "source_end_char_exclusive": 29,
+      "working": "君",
+      "scan": "君",
+      "page_half": "left",
+      "column_from_right": 12,
+      "scan_column_char_index": 10
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 29,
+      "source_end_char_exclusive": 30,
+      "working": "子",
+      "scan": "子",
+      "page_half": "left",
+      "column_from_right": 12,
+      "scan_column_char_index": 11
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 30,
+      "source_end_char_exclusive": 31,
+      "working": "湯",
+      "scan": "湯",
+      "page_half": "left",
+      "column_from_right": 12,
+      "scan_column_char_index": 12
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 31,
+      "source_end_char_exclusive": 32,
+      "working": "加",
+      "scan": "加",
+      "page_half": "left",
+      "column_from_right": 12,
+      "scan_column_char_index": 13
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 32,
+      "source_end_char_exclusive": 33,
+      "working": "藿",
+      "scan": "藿",
+      "page_half": "left",
+      "column_from_right": 13,
+      "scan_column_char_index": 1
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 33,
+      "source_end_char_exclusive": 34,
+      "working": "香",
+      "scan": "香",
+      "page_half": "left",
+      "column_from_right": 13,
+      "scan_column_char_index": 2
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 35,
+      "source_end_char_exclusive": 36,
+      "working": "當",
+      "scan": "當",
+      "page_half": "left",
+      "column_from_right": 13,
+      "scan_column_char_index": 3
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 36,
+      "source_end_char_exclusive": 37,
+      "working": "歸",
+      "scan": "歸",
+      "page_half": "left",
+      "column_from_right": 13,
+      "scan_column_char_index": 4
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 37,
+      "source_end_char_exclusive": 38,
+      "working": "數",
+      "scan": "數",
+      "page_half": "left",
+      "column_from_right": 13,
+      "scan_column_char_index": 5
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 38,
+      "source_end_char_exclusive": 39,
+      "working": "劑",
+      "scan": "劑",
+      "page_half": "left",
+      "column_from_right": 13,
+      "scan_column_char_index": 6
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 40,
+      "source_end_char_exclusive": 41,
+      "working": "飲",
+      "scan": "飲",
+      "page_half": "left",
+      "column_from_right": 13,
+      "scan_column_char_index": 7
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 41,
+      "source_end_char_exclusive": 42,
+      "working": "食",
+      "scan": "食",
+      "page_half": "left",
+      "column_from_right": 13,
+      "scan_column_char_index": 8
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 42,
+      "source_end_char_exclusive": 43,
+      "working": "遂",
+      "scan": "遂",
+      "page_half": "left",
+      "column_from_right": 13,
+      "scan_column_char_index": 9
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 43,
+      "source_end_char_exclusive": 44,
+      "working": "進",
+      "scan": "進",
+      "page_half": "left",
+      "column_from_right": 13,
+      "scan_column_char_index": 10
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 45,
+      "source_end_char_exclusive": 46,
+      "working": "飲",
+      "scan": "飲",
+      "page_half": "left",
+      "column_from_right": 13,
+      "scan_column_char_index": 11
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 46,
+      "source_end_char_exclusive": 47,
+      "working": "以",
+      "scan": "以",
+      "page_half": "left",
+      "column_from_right": 13,
+      "scan_column_char_index": 12
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 47,
+      "source_end_char_exclusive": 48,
+      "working": "十",
+      "scan": "十",
+      "page_half": "left",
+      "column_from_right": 13,
+      "scan_column_char_index": 13
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 48,
+      "source_end_char_exclusive": 49,
+      "working": "全",
+      "scan": "全",
+      "page_half": "left",
+      "column_from_right": 14,
+      "scan_column_char_index": 1
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 49,
+      "source_end_char_exclusive": 50,
+      "working": "大",
+      "scan": "大",
+      "page_half": "left",
+      "column_from_right": 14,
+      "scan_column_char_index": 2
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 50,
+      "source_end_char_exclusive": 51,
+      "working": "補",
+      "scan": "補",
+      "page_half": "left",
+      "column_from_right": 14,
+      "scan_column_char_index": 3
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 51,
+      "source_end_char_exclusive": 52,
+      "working": "湯",
+      "scan": "湯",
+      "page_half": "left",
+      "column_from_right": 14,
+      "scan_column_char_index": 4
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 52,
+      "source_end_char_exclusive": 53,
+      "working": "及",
+      "scan": "及",
+      "page_half": "left",
+      "column_from_right": 14,
+      "scan_column_char_index": 5
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 53,
+      "source_end_char_exclusive": 54,
+      "working": "豆",
+      "scan": "豆",
+      "page_half": "left",
+      "column_from_right": 14,
+      "scan_column_char_index": 6
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 54,
+      "source_end_char_exclusive": 55,
+      "working": "豉",
+      "scan": "豉",
+      "page_half": "left",
+      "column_from_right": 14,
+      "scan_column_char_index": 7
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 55,
+      "source_end_char_exclusive": 56,
+      "working": "餅",
+      "scan": "餅",
+      "page_half": "left",
+      "column_from_right": 14,
+      "scan_column_char_index": 8
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 56,
+      "source_end_char_exclusive": 57,
+      "working": "灸",
+      "scan": "灸",
+      "page_half": "left",
+      "column_from_right": 14,
+      "scan_column_char_index": 9
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 57,
+      "source_end_char_exclusive": 58,
+      "working": "之",
+      "scan": "之",
+      "page_half": "left",
+      "column_from_right": 14,
+      "scan_column_char_index": 10
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 59,
+      "source_end_char_exclusive": 60,
+      "working": "兩",
+      "scan": "兩",
+      "page_half": "left",
+      "column_from_right": 14,
+      "scan_column_char_index": 11
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 60,
+      "source_end_char_exclusive": 61,
+      "working": "月",
+      "scan": "月",
+      "page_half": "left",
+      "column_from_right": 14,
+      "scan_column_char_index": 12
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 61,
+      "source_end_char_exclusive": 62,
+      "working": "餘",
+      "scan": "餘",
+      "page_half": "left",
+      "column_from_right": 14,
+      "scan_column_char_index": 13
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 62,
+      "source_end_char_exclusive": 63,
+      "working": "而",
+      "scan": "而",
+      "page_half": "left",
+      "column_from_right": 15,
+      "scan_column_char_index": 1
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 63,
+      "source_end_char_exclusive": 64,
+      "working": "斂",
+      "scan": "斂",
+      "page_half": "left",
+      "column_from_right": 15,
+      "scan_column_char_index": 2
+    }
+  ],
+  "differences": [
+    {
+      "source_ref": "XJ-LZWKFH-V3-P069",
+      "source_start_char": 22,
+      "source_end_char_exclusive": 23,
+      "working": "脈",
+      "scan": "脉",
+      "page_half": "left",
+      "column_from_right": 12,
+      "scan_column_char_index": 5
+    }
+  ],
+  "case_canvas_uri": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/177e2e34-3d82-91a3-52d3-26ec8aa24f43/canvas/p12"
+}

@@ -1,0 +1,69 @@
+{
+  "case_id": "XJ-LZWKFH-C-V3-P069-1",
+  "work_ref": "XJ-LZWKFH",
+  "review_date": "2026-11-11",
+  "method": "model_visual_full_case_iiif_image_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "manifest_snapshot": "research/iiif_reviews/LZWKFH_utokyo_manifest_vol3_2026-11-11.json",
+  "manifest_sha256": "a57e01d0a7c463b71772eb45da4fabba4b994e780d26b9ffd3c29313b2f5bc55",
+  "manifest_uri": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/177e2e34-3d82-91a3-52d3-26ec8aa24f43/manifest",
+  "catalogue_url": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/177e2e34-3d82-91a3-52d3-26ec8aa24f43",
+  "catalogue_claim": {
+    "title": "立齋外科發揮 8巻 [2]",
+    "holding": "東京大学総合図書館",
+    "shelfmark": "V11:1104",
+    "year": "1661",
+    "status": "institutional_catalogue_page_read_not_colophon_reverified"
+  },
+  "viewed_canvases": [
+    {
+      "ordinal_one_based": 12,
+      "canvas_uri": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/177e2e34-3d82-91a3-52d3-26ec8aa24f43/canvas/p12",
+      "image_service": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/002/V11_1104_002_0012.tif",
+      "requested_width": 2500,
+      "download_url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/002/V11_1104_002_0012.tif/full/2500,/0/default.jpg",
+      "bytes": 331445,
+      "sha256": "e285fd7bcbf7d7e24cffc51faf2b39ff4feeae8d21e6f36dff40ec4d84fc078c"
+    }
+  ],
+  "case_canvas_ordinal_one_based": 12,
+  "location": "第12幅左半叶第11至15列，止而斂。",
+  "scan_columns": [
+    "一男子臀癰膿水不止肌肉漸瘦飲",
+    "食少思胃脉微弦以六君子湯加",
+    "藿香當歸數劑飲食遂進飲以十",
+    "全大補湯及豆豉餅灸之兩月餘",
+    "而斂"
+  ],
+  "column_locations": [
+    {
+      "page_half": "left",
+      "column_from_right": 11
+    },
+    {
+      "page_half": "left",
+      "column_from_right": 12
+    },
+    {
+      "page_half": "left",
+      "column_from_right": 13
+    },
+    {
+      "page_half": "left",
+      "column_from_right": 14
+    },
+    {
+      "page_half": "left",
+      "column_from_right": 15
+    }
+  ],
+  "expected_substitutions": [
+    {
+      "working": "脈",
+      "scan": "脉"
+    }
+  ]
+}

@@ -12,6 +12,12 @@ ROOT=core.ROOT
 INPUT=ROOT/'research/iiif_reviews/LZWKFH_V5_P183_2026-11-01.json'
 OUT=ROOT/'research/samples/iiif_case_lzwkfh_v5_p183.json'
 SUMMARY=ROOT/'research/samples/image_case_summary.json'
+ADDITIONAL_CASES = (
+    (ROOT/'research/iiif_reviews/LZWKFH_V3_P069_2026-11-11.json',
+     ROOT/'research/samples/iiif_case_lzwkfh_v3_p069.json'),
+    (ROOT/'research/iiif_reviews/LZWKFH_V3_P072_2026-11-11.json',
+     ROOT/'research/samples/iiif_case_lzwkfh_v3_p072.json'),
+)
 
 def build(record=None):
     r=copy.deepcopy(record) if record is not None else json.loads(INPUT.read_text())
@@ -23,7 +29,9 @@ def build(record=None):
     manifest=json.loads(raw)
     if manifest['@id']!=r['manifest_uri']:raise ValueError('Manifest identity drift')
     if not manifest['label'].startswith('立齋外科發揮'):raise ValueError('Manifest work mismatch')
-    if r['waseda_retry']['visual_read_performed'] is not False:
+    if (r['case_id']=='XJ-LZWKFH-C-V5-P183-1' or 'waseda_retry' in r) and (
+        r.get('waseda_retry', {}).get('visual_read_performed') is not False
+    ):
         raise ValueError('Tokyo image cannot verify Waseda witness')
     canvases=manifest['sequences'][0]['canvases']
     visited=r['viewed_canvases']
@@ -67,24 +75,34 @@ def build(record=None):
             'compared_body_characters':len(chars),'scan_reading':reading,'alignment':alignment,
             'differences':differences,'case_canvas_uri':case_page['canvas_uri']}
 
-def summarize(row):
+def build_additional():
+    return [(output, build(json.loads(source.read_text()))) for source, output in ADDITIONAL_CASES]
+
+def summarize(row, extra_rows=None):
     pdf=json.loads((ROOT/'research/samples/print_case_summary.json').read_text())
-    if row['case_id'] in pdf['case_ids']:raise ValueError('Duplicate case across PDF and IIIF')
-    summary = {'scope':'combined_model_image_comparisons_not_expert_collation','cases':pdf['cases']+1,
-            'compared_body_characters':pdf['compared_body_characters']+row['compared_body_characters'],
-            'pdf_cases':pdf['cases'],'iiif_cases':1,'works':sorted({*pdf['cases_by_work'],'LZWKFH'}),
-            'cases_by_work':{**pdf['cases_by_work'],'LZWKFH':pdf['cases_by_work'].get('LZWKFH',0)+1},
+    if extra_rows is None:
+        extra_rows = [case for _, case in build_additional()]
+    iiif = [row, *extra_rows]
+    seen = set(pdf['case_ids'])
+    for case in iiif:
+        if case['case_id'] in seen:
+            raise ValueError('Duplicate case in combined PDF and IIIF roster')
+        seen.add(case['case_id'])
+    iiif_chars = sum(case['compared_body_characters'] for case in iiif)
+    summary = {'scope':'combined_model_image_comparisons_not_expert_collation','cases':pdf['cases']+len(iiif),
+            'compared_body_characters':pdf['compared_body_characters']+iiif_chars,
+            'pdf_cases':pdf['cases'],'iiif_cases':len(iiif),'works':sorted({*pdf['cases_by_work'],'LZWKFH'}),
+            'cases_by_work':{**pdf['cases_by_work'],'LZWKFH':pdf['cases_by_work'].get('LZWKFH',0)+len(iiif)},
             'compared_body_characters_by_work':{**pdf['compared_body_characters_by_work'],
-                'LZWKFH':pdf['compared_body_characters_by_work'].get('LZWKFH',0)+row['compared_body_characters']},
-            'equal_length_different_positions':pdf['different_character_positions']+len(row['differences']),
+                'LZWKFH':pdf['compared_body_characters_by_work'].get('LZWKFH',0)+iiif_chars},
+            'equal_length_different_positions':pdf['different_character_positions']+sum(len(case['differences']) for case in iiif),
             'reviewed_block_difference_events':pdf['reviewed_block_difference_events'],
             'pending_model_image_readings':pdf['pending_model_image_readings'],
-            'viewed_iiif_canvases':len(row['viewed_canvases']),
+            'viewed_iiif_canvases':len({canvas['canvas_uri'] for case in iiif for canvas in case['viewed_canvases']}),
             'page_counting_note':'IIIF canvases are not PDF pages; manifest identifiers retained separately',
             'expert_collated_cases':0,'initial_query_exported':0}
     import check_djvu_case
     djvu = check_djvu_case.build()['cases']
-    seen = set(pdf['case_ids']) | {row['case_id']}
     for case in djvu:
         if case['case_id'] in seen:
             raise ValueError('Duplicate case across image formats')
@@ -112,8 +130,9 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--write',action='store_true');p.add_argument('--image',type=Path,action='append');a=p.parse_args()
     row=build()
     if a.image:check_images(row,a.image)
-    summary=summarize(row)
-    for path,obj in [(OUT,row),(SUMMARY,summary)]:
+    additional = build_additional()
+    summary=summarize(row, [case for _, case in additional])
+    for path,obj in [(OUT,row), *additional, (SUMMARY,summary)]:
         text=json.dumps(obj,ensure_ascii=False,indent=2)+'\n'
         if a.write:path.write_text(text)
         if path.read_text()!=text:raise ValueError('IIIF derived artifact drift')

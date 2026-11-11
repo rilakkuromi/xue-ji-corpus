@@ -1208,8 +1208,16 @@ class DjvuCaseTests(unittest.TestCase):
         self.assertEqual(sum(r['compared_body_characters'] for r in rows), 640)
         self.assertEqual(sum(len(r['expected_differences']) for r in rows), 21)
         summary = iiif.summarize(iiif.build())
-        self.assertEqual(summary['cases'], 58)
+        self.assertEqual(summary['cases'], 60)
+        self.assertEqual(summary['iiif_cases'], 3)
+        self.assertEqual(summary['compared_body_characters'], 4682)
         self.assertEqual(summary['cases_by_work']['BYCY'], 20)
+
+    def test_same_iiif_case_cannot_count_twice(self):
+        import check_iiif_case as iiif
+        row = iiif.build()
+        with self.assertRaisesRegex(ValueError, 'Duplicate case'):
+            iiif.summarize(row, [row])
 
     def test_duplicate_truncation_and_unrecorded_difference_rejected(self):
         import check_djvu_case as d
