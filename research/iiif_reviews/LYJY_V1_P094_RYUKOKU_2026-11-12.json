@@ -1,0 +1,32 @@
+{
+  "case_id": "XJ-LYJY-C-V1-P094",
+  "review_date": "2026-11-12",
+  "human_adjudication": "pending",
+  "catalogue_url": "https://da.library.ryukoku.ac.jp/page/980010",
+  "shelfmark": "690.9-365-W-1",
+  "catalogue_year": null,
+  "manifest_url": "https://da.library.ryukoku.ac.jp/iiif/980010/1/manifest.json",
+  "manifest_sha256": "5307d228b727c2f423026cea07ed69003cf6295c86e618e2379e31412c02b44b",
+  "canvas_ordinal": 33,
+  "canvas_uri": "https://da.library.ryukoku.ac.jp/iiif/980010/1/canvas/33",
+  "image_url": "https://da2.library.ryukoku.ac.jp/image/?IIIF=/98%2F980010%2F980010-0033.tif/full/max/0/default.jpg",
+  "image_bytes": 261779,
+  "image_sha256": "8f05be942d0fc98ff9c69d1c770f18dee977377f15c8fa7cc2585c6eb066cecc",
+  "page_half": "right",
+  "first_column_from_right": 3,
+  "scan_columns": [
+    "一男子素不慎房勞其髮忽落或發熱惡寒或",
+    "吐痰頭暈或口乾作渴或小便如淋兩足發熱",
+    "或冷至脛屬足三陰虧損而陰火内熾朝用十",
+    "全大補湯夕用六味丸料加炒黑黃栢枸杞子",
+    "治之諸症退而髮漸生"
+  ],
+  "primary_comparison": "research/samples/print_case_lyjy_v1_p094_2026-11-09.json",
+  "target": {
+    "ordinal": 40,
+    "source_ref": "XJ-LYJY-V1-P094",
+    "source_start_char": 46,
+    "previous_ncl_reading": "經",
+    "revised_reading": "脛"
+  }
+}

@@ -12,6 +12,7 @@ ROOT=core.ROOT
 INPUT=ROOT/'research/iiif_reviews/LZWKFH_V5_P183_2026-11-01.json'
 OUT=ROOT/'research/samples/iiif_case_lzwkfh_v5_p183.json'
 SUMMARY=ROOT/'research/samples/image_case_summary.json'
+RYUKOKU_P094 = ROOT/'research/iiif_reviews/LYJY_V1_P094_RYUKOKU_2026-11-12.json'
 ADDITIONAL_CASES = (
     (ROOT/'research/iiif_reviews/LZWKFH_V3_P069_2026-11-11.json',
      ROOT/'research/samples/iiif_case_lzwkfh_v3_p069.json'),
@@ -126,8 +127,41 @@ def check_images(row,paths):
     page=next(x for x in row['viewed_canvases'] if x['ordinal_one_based']==row['case_canvas_ordinal_one_based'])
     if (page['sha256'],page['bytes']) not in actual:raise ValueError('Actual case image required')
 
+def check_ryukoku_p094(manifest_path=None, image_path=None):
+    record = json.loads(RYUKOKU_P094.read_text())
+    primary = json.loads((ROOT / record['primary_comparison']).read_text())
+    if record['case_id'] != primary['case_id'] or record['human_adjudication'] != 'pending':
+        raise ValueError('Parallel witness case or review status drift')
+    reading = ''.join(record['scan_columns'])
+    if reading != primary['scan_reading']:
+        raise ValueError('Recorded Ryukoku and NCL readings do not match')
+    target = record['target']
+    position = primary['alignment'][target['ordinal'] - 1]
+    if (position['source_ref'], position['source_start_char'], position['working'], position['scan']) != (
+        target['source_ref'], target['source_start_char'], target['revised_reading'], target['revised_reading']
+    ):
+        raise ValueError('P094 target does not match the frozen evidence and revised reading')
+    if manifest_path:
+        raw = manifest_path.read_bytes()
+        if hashlib.sha256(raw).hexdigest() != record['manifest_sha256']:
+            raise ValueError('Ryukoku manifest digest drift')
+        manifest = json.loads(raw)
+        canvas = manifest['sequences'][0]['canvases'][record['canvas_ordinal'] - 1]
+        if (manifest['@id'], canvas['@id'], canvas['images'][0]['resource']['@id']) != (
+            record['manifest_url'], record['canvas_uri'], record['image_url']
+        ):
+            raise ValueError('Ryukoku manifest or canvas identity drift')
+    if image_path:
+        raw = image_path.read_bytes()
+        if (len(raw), hashlib.sha256(raw).hexdigest()) != (record['image_bytes'], record['image_sha256']):
+            raise ValueError('Ryukoku case image identity drift')
+    return len(reading)
+
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--write',action='store_true');p.add_argument('--image',type=Path,action='append');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--write',action='store_true');p.add_argument('--image',type=Path,action='append')
+    p.add_argument('--ryukoku-manifest', type=Path)
+    p.add_argument('--ryukoku-image', type=Path)
+    a=p.parse_args()
     row=build()
     if a.image:check_images(row,a.image)
     additional = build_additional()
@@ -136,7 +170,9 @@ def main():
         text=json.dumps(obj,ensure_ascii=False,indent=2)+'\n'
         if a.write:path.write_text(text)
         if path.read_text()!=text:raise ValueError('IIIF derived artifact drift')
+    p094_chars = check_ryukoku_p094(a.ryukoku_manifest, a.ryukoku_image)
     print(json.dumps(summary,ensure_ascii=False))
+    print(f'PASS: {p094_chars} P094 characters align with the primary PDF record; case count unchanged')
     print('PASS: recorded IIIF provenance and alignment reproduce; visual accuracy not established by program')
 
 if __name__=='__main__':main()

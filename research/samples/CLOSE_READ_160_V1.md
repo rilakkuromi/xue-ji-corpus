@@ -1340,7 +1340,7 @@ initial/later window 相对于首次明确叙述者评议或处置；later 包�
 - **干预前史/后续插入干预**：本次复读未选定证据；未载/归属不明待专家确认。
 - **病机解释**：屬足三陰虧損而陰火內熾（initial_narrator_window；case_narrator；physician_interpretation；present） `XJ-LYJY-V1-P094[48:59)`
 
-复读意见：素不慎房劳为习惯，非明确本次发作事件；或冷或热保留交替描述。
+复读意见：素不慎房劳仅记为平素习惯；保留「或」字连接的症状，原文未交代冷热出现的先后或是否反复交替。
 
 ## 057 · XJ-LYJY-C-V1-P082
 

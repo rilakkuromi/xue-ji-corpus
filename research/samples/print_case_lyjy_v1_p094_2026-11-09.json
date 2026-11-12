@@ -13,8 +13,8 @@
   "scan_columns": [
     "一男子素不慎房勞其髮忽落或發熱惡寒或吐",
     "痰頭暈或口乾作渴或小便如淋兩足發熱或冷",
-    "至經屬足三陰虧損而陰火内熾朝用十全大補",
-    "湯夕用六味丸料加炒黑黃柏枸杞子治之諸症",
+    "至脛屬足三陰虧損而陰火内熾朝用十全大補",
+    "湯夕用六味丸料加炒黑黃栢枸杞子治之諸症",
     "退而髮漸生"
   ],
   "column_locations": [
@@ -51,12 +51,12 @@
       "scan": "髮"
     },
     {
-      "working": "脛",
-      "scan": "經"
-    },
-    {
       "working": "內",
       "scan": "内"
+    },
+    {
+      "working": "柏",
+      "scan": "栢"
     },
     {
       "working": "發",
@@ -80,7 +80,7 @@
       "raw_quote": "一男子素不慎房勞，其發忽落，或發熱惡寒，或吐痰頭暈，或口乾作渴，或小便如淋，兩足發熱，或冷至脛，屬足三陰虧損而陰火內熾。朝用十全大補湯，夕用六味丸料加炒黑黃柏、枸杞子治之，諸症退而發漸生。"
     }
   ],
-  "scan_reading": "一男子素不慎房勞其髮忽落或發熱惡寒或吐痰頭暈或口乾作渴或小便如淋兩足發熱或冷至經屬足三陰虧損而陰火内熾朝用十全大補湯夕用六味丸料加炒黑黃柏枸杞子治之諸症退而髮漸生",
+  "scan_reading": "一男子素不慎房勞其髮忽落或發熱惡寒或吐痰頭暈或口乾作渴或小便如淋兩足發熱或冷至脛屬足三陰虧損而陰火内熾朝用十全大補湯夕用六味丸料加炒黑黃栢枸杞子治之諸症退而髮漸生",
   "compared_body_characters_excluding_modern_punctuation": 81,
   "differences": [
     {
@@ -95,17 +95,6 @@
       "scan_column_char_index": 10
     },
     {
-      "ordinal": 40,
-      "source_ref": "XJ-LYJY-V1-P094",
-      "source_start_char": 46,
-      "source_end_char_exclusive": 47,
-      "working": "脛",
-      "scan": "經",
-      "status": "different_model_reading",
-      "scan_column_index": 3,
-      "scan_column_char_index": 2
-    },
-    {
       "ordinal": 50,
       "source_ref": "XJ-LYJY-V1-P094",
       "source_start_char": 57,
@@ -114,6 +103,17 @@
       "scan": "内",
       "status": "different_model_reading",
       "scan_column_index": 3,
+      "scan_column_char_index": 12
+    },
+    {
+      "ordinal": 69,
+      "source_ref": "XJ-LYJY-V1-P094",
+      "source_start_char": 78,
+      "source_end_char_exclusive": 79,
+      "working": "柏",
+      "scan": "栢",
+      "status": "different_model_reading",
+      "scan_column_index": 4,
       "scan_column_char_index": 12
     },
     {
@@ -564,8 +564,8 @@
       "source_start_char": 46,
       "source_end_char_exclusive": 47,
       "working": "脛",
-      "scan": "經",
-      "status": "different_model_reading",
+      "scan": "脛",
+      "status": "same_model_reading",
       "scan_column_index": 3,
       "scan_column_char_index": 2
     },
@@ -883,8 +883,8 @@
       "source_start_char": 78,
       "source_end_char_exclusive": 79,
       "working": "柏",
-      "scan": "柏",
-      "status": "same_model_reading",
+      "scan": "栢",
+      "status": "different_model_reading",
       "scan_column_index": 4,
       "scan_column_char_index": 12
     },
