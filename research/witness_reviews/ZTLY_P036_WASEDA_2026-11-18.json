@@ -1,0 +1,33 @@
+{
+  "case_id": "XJ-ZTLY-C-V1-P036-1",
+  "review_date": "2026-11-18",
+  "shelfmark": "ヤ09 00584 0040",
+  "holding_library": "Waseda University Library",
+  "catalogue_url": "https://www.wul.waseda.ac.jp/kotenseki/html/ya09/ya09_00584_0040/index.html",
+  "mirror_metadata_url": "https://commons.wikimedia.org/wiki/File:WUL-ya09_00584_0040_正體類要.pdf",
+  "pdf_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/WUL-ya09_00584_0040_%E6%AD%A3%E9%AB%94%E9%A1%9E%E8%A6%81.pdf",
+  "pdf_bytes": 18230197,
+  "pdf_sha256": "057ee4f4561db68906bf07f59a253fc5cec19d57fa6078148de322b710e9be62",
+  "pdf_page": 11,
+  "render_command": "pdftoppm -f 11 -l 11 -scale-to 3500 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256": "502b837fd6be079d2a8d5a3ce8b5b1d24739f23444f38ed1518496285bf52f5d",
+  "page_half": "left",
+  "first_column_from_right": 5,
+  "scan_columns": [
+    "有一患者腹脹嘔吐眩暈用柴胡黃芩山梔紫蘇杏仁枳殼桔",
+    "梗川芎當歸赤芍紅花桃仁四劑而定後又出血過多昏憒目",
+    "黑用十全大補等藥而蘇時肌肉潰爛膿水淋漓筋攣骨痛予",
+    "切其脉浮而濇沉而弱此因氣血耗損不能養筋筋虛不能束",
+    "骨遂用養氣血之藥治之而愈"
+  ],
+  "primary_comparison": "research/samples/print_case_ztly_v1_p036_1_2026-11-09.json",
+  "expected_differences": [
+    {"ordinal": 23, "source_start_char": 29, "working": "殼", "ncl": "殻", "waseda": "殼"},
+    {"ordinal": 39, "source_start_char": 52, "working": "定", "ncl": "愈", "waseda": "定"},
+    {"ordinal": 72, "source_start_char": 92, "working": "餘", "ncl": "予", "waseda": "予"},
+    {"ordinal": 75, "source_start_char": 95, "working": "脈", "ncl": "脉", "waseda": "脉"},
+    {"ordinal": 78, "source_start_char": 98, "working": "澀", "ncl": "濇", "waseda": "濇"}
+  ],
+  "human_adjudication": "pending",
+  "scope": "supplemental_witness_for_existing_case_not_additional_coverage_or_expert_collation"
+}

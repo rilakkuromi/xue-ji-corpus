@@ -32,6 +32,7 @@ commands=[
  ['research/check_iiif_case.py'],
  ['research/check_witness_bibliography.py'],
  ['research/check_witness_catalog.py'],
+ ['research/check_ztly_waseda.py'],
  ['research/check_publication.py'],
  ['-m','unittest','discover','-s','research','-p','test_close_read_160.py','-v'],
 ]
@@ -69,7 +70,7 @@ def main():
  tracked += [ROOT/'.github/workflows/validate.yml']
  tracked += sorted((ROOT/'research/print_case_pending').glob('*.json'))
  tracked += [ROOT/'research/check_witness_bibliography.py',*sorted((ROOT/'research/witness_reviews').glob('*.json'))]
- tracked += [ROOT/'research/check_witness_catalog.py']
+ tracked += [ROOT/'research/check_witness_catalog.py', ROOT/'research/check_ztly_waseda.py']
  tracked += [ROOT/'research/build_role_pilot.py']
  tracked += sorted((ROOT/'research/scan_reviews').glob('*.json'))
  report={'date_client_timezone_Asia_Shanghai':args.report_date,

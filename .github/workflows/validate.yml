@@ -55,6 +55,7 @@ jobs:
           python3 research/check_iiif_case.py
           python3 research/check_witness_bibliography.py
           python3 research/check_witness_catalog.py
+          python3 research/check_ztly_waseda.py
       - name: Reject invalid provenance, spans, verification and query claims
         run: python3 -m unittest discover -s research -p 'test_close_read_160.py' -v
 
