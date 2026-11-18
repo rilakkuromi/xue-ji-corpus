@@ -1,0 +1,462 @@
+{
+  "case_id": "XJ-LZWKFH-C-V3-P091-1",
+  "work_ref": "XJ-LZWKFH",
+  "review_date": "2026-11-19",
+  "method": "model_visual_full_case_iiif_image_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "manifest_snapshot": "research/iiif_reviews/LZWKFH_utokyo_manifest_vol3_2026-11-11.json",
+  "manifest_sha256": "a57e01d0a7c463b71772eb45da4fabba4b994e780d26b9ffd3c29313b2f5bc55",
+  "manifest_uri": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/177e2e34-3d82-91a3-52d3-26ec8aa24f43/manifest",
+  "catalogue_url": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/177e2e34-3d82-91a3-52d3-26ec8aa24f43",
+  "catalogue_claim": {
+    "title": "立齋外科發揮 8巻 [2]",
+    "holding": "東京大学総合図書館",
+    "shelfmark": "V11:1104",
+    "year": "1661",
+    "status": "institutional_catalogue_page_read_not_colophon_reverified"
+  },
+  "viewed_canvases": [
+    {
+      "ordinal_one_based": 17,
+      "canvas_uri": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/177e2e34-3d82-91a3-52d3-26ec8aa24f43/canvas/p17",
+      "image_service": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/002/V11_1104_002_0017.tif",
+      "requested_width": 2800,
+      "download_url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/002/V11_1104_002_0017.tif/full/2800,/0/default.jpg",
+      "bytes": 409980,
+      "sha256": "863cf0bf817bf896099cf44745471debf5428a3a91f198b6c669ca830660c7ca"
+    }
+  ],
+  "case_canvas_ordinal_one_based": 17,
+  "location": "第17幅右半叶第12至14列，止而安，第15列一男子素有脚氣为下一案。",
+  "scan_columns": [
+    "一男子腿痛每痛則痰盛或作嘈雜",
+    "脉滑而數以二陳湯加升麻二术",
+    "澤瀉羌活南星治之而安"
+  ],
+  "column_locations": [
+    {
+      "page_half": "right",
+      "column_from_right": 12
+    },
+    {
+      "page_half": "right",
+      "column_from_right": 13
+    },
+    {
+      "page_half": "right",
+      "column_from_right": 14
+    }
+  ],
+  "expected_substitutions": [
+    {
+      "working": "脈",
+      "scan": "脉"
+    },
+    {
+      "working": "朮",
+      "scan": "术"
+    }
+  ],
+  "source_git_blob": "e8459e27e93711c44357fafcf7d106f97ecaca26",
+  "case_text_sha256": "5110819fd68e7a91fd10c303764f1e54331c6584a5057f2246e637a7920ee4de",
+  "compared_body_characters": 37,
+  "scan_reading": "一男子腿痛每痛則痰盛或作嘈雜脉滑而數以二陳湯加升麻二术澤瀉羌活南星治之而安",
+  "alignment": [
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 0,
+      "source_end_char_exclusive": 1,
+      "working": "一",
+      "scan": "一",
+      "page_half": "right",
+      "column_from_right": 12,
+      "scan_column_char_index": 1
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 1,
+      "source_end_char_exclusive": 2,
+      "working": "男",
+      "scan": "男",
+      "page_half": "right",
+      "column_from_right": 12,
+      "scan_column_char_index": 2
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 2,
+      "source_end_char_exclusive": 3,
+      "working": "子",
+      "scan": "子",
+      "page_half": "right",
+      "column_from_right": 12,
+      "scan_column_char_index": 3
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 3,
+      "source_end_char_exclusive": 4,
+      "working": "腿",
+      "scan": "腿",
+      "page_half": "right",
+      "column_from_right": 12,
+      "scan_column_char_index": 4
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 4,
+      "source_end_char_exclusive": 5,
+      "working": "痛",
+      "scan": "痛",
+      "page_half": "right",
+      "column_from_right": 12,
+      "scan_column_char_index": 5
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 6,
+      "source_end_char_exclusive": 7,
+      "working": "每",
+      "scan": "每",
+      "page_half": "right",
+      "column_from_right": 12,
+      "scan_column_char_index": 6
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 7,
+      "source_end_char_exclusive": 8,
+      "working": "痛",
+      "scan": "痛",
+      "page_half": "right",
+      "column_from_right": 12,
+      "scan_column_char_index": 7
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 8,
+      "source_end_char_exclusive": 9,
+      "working": "則",
+      "scan": "則",
+      "page_half": "right",
+      "column_from_right": 12,
+      "scan_column_char_index": 8
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 9,
+      "source_end_char_exclusive": 10,
+      "working": "痰",
+      "scan": "痰",
+      "page_half": "right",
+      "column_from_right": 12,
+      "scan_column_char_index": 9
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 10,
+      "source_end_char_exclusive": 11,
+      "working": "盛",
+      "scan": "盛",
+      "page_half": "right",
+      "column_from_right": 12,
+      "scan_column_char_index": 10
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 12,
+      "source_end_char_exclusive": 13,
+      "working": "或",
+      "scan": "或",
+      "page_half": "right",
+      "column_from_right": 12,
+      "scan_column_char_index": 11
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 13,
+      "source_end_char_exclusive": 14,
+      "working": "作",
+      "scan": "作",
+      "page_half": "right",
+      "column_from_right": 12,
+      "scan_column_char_index": 12
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 14,
+      "source_end_char_exclusive": 15,
+      "working": "嘈",
+      "scan": "嘈",
+      "page_half": "right",
+      "column_from_right": 12,
+      "scan_column_char_index": 13
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 15,
+      "source_end_char_exclusive": 16,
+      "working": "雜",
+      "scan": "雜",
+      "page_half": "right",
+      "column_from_right": 12,
+      "scan_column_char_index": 14
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 17,
+      "source_end_char_exclusive": 18,
+      "working": "脈",
+      "scan": "脉",
+      "page_half": "right",
+      "column_from_right": 13,
+      "scan_column_char_index": 1
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 18,
+      "source_end_char_exclusive": 19,
+      "working": "滑",
+      "scan": "滑",
+      "page_half": "right",
+      "column_from_right": 13,
+      "scan_column_char_index": 2
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 19,
+      "source_end_char_exclusive": 20,
+      "working": "而",
+      "scan": "而",
+      "page_half": "right",
+      "column_from_right": 13,
+      "scan_column_char_index": 3
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 20,
+      "source_end_char_exclusive": 21,
+      "working": "數",
+      "scan": "數",
+      "page_half": "right",
+      "column_from_right": 13,
+      "scan_column_char_index": 4
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 22,
+      "source_end_char_exclusive": 23,
+      "working": "以",
+      "scan": "以",
+      "page_half": "right",
+      "column_from_right": 13,
+      "scan_column_char_index": 5
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 23,
+      "source_end_char_exclusive": 24,
+      "working": "二",
+      "scan": "二",
+      "page_half": "right",
+      "column_from_right": 13,
+      "scan_column_char_index": 6
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 24,
+      "source_end_char_exclusive": 25,
+      "working": "陳",
+      "scan": "陳",
+      "page_half": "right",
+      "column_from_right": 13,
+      "scan_column_char_index": 7
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 25,
+      "source_end_char_exclusive": 26,
+      "working": "湯",
+      "scan": "湯",
+      "page_half": "right",
+      "column_from_right": 13,
+      "scan_column_char_index": 8
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 26,
+      "source_end_char_exclusive": 27,
+      "working": "加",
+      "scan": "加",
+      "page_half": "right",
+      "column_from_right": 13,
+      "scan_column_char_index": 9
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 27,
+      "source_end_char_exclusive": 28,
+      "working": "升",
+      "scan": "升",
+      "page_half": "right",
+      "column_from_right": 13,
+      "scan_column_char_index": 10
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 28,
+      "source_end_char_exclusive": 29,
+      "working": "麻",
+      "scan": "麻",
+      "page_half": "right",
+      "column_from_right": 13,
+      "scan_column_char_index": 11
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 30,
+      "source_end_char_exclusive": 31,
+      "working": "二",
+      "scan": "二",
+      "page_half": "right",
+      "column_from_right": 13,
+      "scan_column_char_index": 12
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 31,
+      "source_end_char_exclusive": 32,
+      "working": "朮",
+      "scan": "术",
+      "page_half": "right",
+      "column_from_right": 13,
+      "scan_column_char_index": 13
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 33,
+      "source_end_char_exclusive": 34,
+      "working": "澤",
+      "scan": "澤",
+      "page_half": "right",
+      "column_from_right": 14,
+      "scan_column_char_index": 1
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 34,
+      "source_end_char_exclusive": 35,
+      "working": "瀉",
+      "scan": "瀉",
+      "page_half": "right",
+      "column_from_right": 14,
+      "scan_column_char_index": 2
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 36,
+      "source_end_char_exclusive": 37,
+      "working": "羌",
+      "scan": "羌",
+      "page_half": "right",
+      "column_from_right": 14,
+      "scan_column_char_index": 3
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 37,
+      "source_end_char_exclusive": 38,
+      "working": "活",
+      "scan": "活",
+      "page_half": "right",
+      "column_from_right": 14,
+      "scan_column_char_index": 4
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 39,
+      "source_end_char_exclusive": 40,
+      "working": "南",
+      "scan": "南",
+      "page_half": "right",
+      "column_from_right": 14,
+      "scan_column_char_index": 5
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 40,
+      "source_end_char_exclusive": 41,
+      "working": "星",
+      "scan": "星",
+      "page_half": "right",
+      "column_from_right": 14,
+      "scan_column_char_index": 6
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 42,
+      "source_end_char_exclusive": 43,
+      "working": "治",
+      "scan": "治",
+      "page_half": "right",
+      "column_from_right": 14,
+      "scan_column_char_index": 7
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 43,
+      "source_end_char_exclusive": 44,
+      "working": "之",
+      "scan": "之",
+      "page_half": "right",
+      "column_from_right": 14,
+      "scan_column_char_index": 8
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 44,
+      "source_end_char_exclusive": 45,
+      "working": "而",
+      "scan": "而",
+      "page_half": "right",
+      "column_from_right": 14,
+      "scan_column_char_index": 9
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 45,
+      "source_end_char_exclusive": 46,
+      "working": "安",
+      "scan": "安",
+      "page_half": "right",
+      "column_from_right": 14,
+      "scan_column_char_index": 10
+    }
+  ],
+  "differences": [
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 17,
+      "source_end_char_exclusive": 18,
+      "working": "脈",
+      "scan": "脉",
+      "page_half": "right",
+      "column_from_right": 13,
+      "scan_column_char_index": 1
+    },
+    {
+      "source_ref": "XJ-LZWKFH-V3-P091",
+      "source_start_char": 31,
+      "source_end_char_exclusive": 32,
+      "working": "朮",
+      "scan": "术",
+      "page_half": "right",
+      "column_from_right": 13,
+      "scan_column_char_index": 13
+    }
+  ],
+  "case_canvas_uri": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/177e2e34-3d82-91a3-52d3-26ec8aa24f43/canvas/p17"
+}

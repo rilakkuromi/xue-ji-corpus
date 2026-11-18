@@ -1208,9 +1208,9 @@ class DjvuCaseTests(unittest.TestCase):
         self.assertEqual(sum(r['compared_body_characters'] for r in rows), 640)
         self.assertEqual(sum(len(r['expected_differences']) for r in rows), 21)
         summary = iiif.summarize(iiif.build())
-        self.assertEqual(summary['cases'], 60)
-        self.assertEqual(summary['iiif_cases'], 3)
-        self.assertEqual(summary['compared_body_characters'], 4682)
+        self.assertEqual(summary['cases'], 62)
+        self.assertEqual(summary['iiif_cases'], 5)
+        self.assertEqual(summary['compared_body_characters'], 4762)
         self.assertEqual(summary['cases_by_work']['BYCY'], 20)
 
     def test_same_iiif_case_cannot_count_twice(self):

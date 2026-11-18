@@ -1,0 +1,63 @@
+{
+  "case_id": "XJ-LZWKFH-C-V3-P091-1",
+  "work_ref": "XJ-LZWKFH",
+  "review_date": "2026-11-19",
+  "method": "model_visual_full_case_iiif_image_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "manifest_snapshot": "research/iiif_reviews/LZWKFH_utokyo_manifest_vol3_2026-11-11.json",
+  "manifest_sha256": "a57e01d0a7c463b71772eb45da4fabba4b994e780d26b9ffd3c29313b2f5bc55",
+  "manifest_uri": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/177e2e34-3d82-91a3-52d3-26ec8aa24f43/manifest",
+  "catalogue_url": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/177e2e34-3d82-91a3-52d3-26ec8aa24f43",
+  "catalogue_claim": {
+    "title": "立齋外科發揮 8巻 [2]",
+    "holding": "東京大学総合図書館",
+    "shelfmark": "V11:1104",
+    "year": "1661",
+    "status": "institutional_catalogue_page_read_not_colophon_reverified"
+  },
+  "viewed_canvases": [
+    {
+      "ordinal_one_based": 17,
+      "canvas_uri": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/177e2e34-3d82-91a3-52d3-26ec8aa24f43/canvas/p17",
+      "image_service": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/002/V11_1104_002_0017.tif",
+      "requested_width": 2800,
+      "download_url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/soto_gakken/V11_1104/002/V11_1104_002_0017.tif/full/2800,/0/default.jpg",
+      "bytes": 409980,
+      "sha256": "863cf0bf817bf896099cf44745471debf5428a3a91f198b6c669ca830660c7ca"
+    }
+  ],
+  "case_canvas_ordinal_one_based": 17,
+  "location": "第17幅右半叶第12至14列，止而安，第15列一男子素有脚氣为下一案。",
+  "scan_columns": [
+    "一男子腿痛每痛則痰盛或作嘈雜",
+    "脉滑而數以二陳湯加升麻二术",
+    "澤瀉羌活南星治之而安"
+  ],
+  "column_locations": [
+    {
+      "page_half": "right",
+      "column_from_right": 12
+    },
+    {
+      "page_half": "right",
+      "column_from_right": 13
+    },
+    {
+      "page_half": "right",
+      "column_from_right": 14
+    }
+  ],
+  "expected_substitutions": [
+    {
+      "working": "脈",
+      "scan": "脉"
+    },
+    {
+      "working": "朮",
+      "scan": "术"
+    }
+  ]
+}

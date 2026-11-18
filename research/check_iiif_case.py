@@ -18,6 +18,10 @@ ADDITIONAL_CASES = (
      ROOT/'research/samples/iiif_case_lzwkfh_v3_p069.json'),
     (ROOT/'research/iiif_reviews/LZWKFH_V3_P072_2026-11-11.json',
      ROOT/'research/samples/iiif_case_lzwkfh_v3_p072.json'),
+    (ROOT/'research/iiif_reviews/LZWKFH_V3_P088_2026-11-19.json',
+     ROOT/'research/samples/iiif_case_lzwkfh_v3_p088.json'),
+    (ROOT/'research/iiif_reviews/LZWKFH_V3_P091_2026-11-19.json',
+     ROOT/'research/samples/iiif_case_lzwkfh_v3_p091.json'),
 )
 
 def build(record=None):
