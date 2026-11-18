@@ -1,0 +1,449 @@
+{
+  "case_id": "XJ-NKZY-C-V1-P021-1",
+  "review_date": "2026-11-19",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/NKZY_target_spots_2026-10-27.json",
+  "pdf_page": 10,
+  "render_sha256": "a926b1e4cbd9b5461f34ec7b5323d72647d95db6dade023a4f0b94feb73f303a",
+  "render_command": "pdftoppm -f 10 -l 10 -scale-to 3400 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "page_half": "left",
+  "location": "第10页左半叶第7至8列，止治之，同列余白后的一男子为下一案。",
+  "scan_columns": [
+    "一婦人善怒舌本強手臂麻余曰舌本屬土被木",
+    "尅制故耳當用六君加柴胡芍藥治之"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 10,
+      "page_half": "left",
+      "column_from_right": 7
+    },
+    {
+      "pdf_page": 10,
+      "page_half": "left",
+      "column_from_right": 8
+    }
+  ],
+  "transcription_policy": "按冻结案界逐列录正文大字，不计句读和训点。",
+  "expected_substitutions": [
+    {
+      "working": "剋",
+      "scan": "尅"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction",
+  "edition_date_verification": "inherited_metadata_not_reverified_from_images",
+  "bibliographic_metadata_origin": "existing_corpus_metadata_not_new_titlepage_audit",
+  "source_git_blob": "e8459e27e93711c44357fafcf7d106f97ecaca26",
+  "case_text_sha256": "86306a52e06980ba81bc441618feb844ac2a96920dc9edc911de7bbbb785c998",
+  "pdf_sha256": "31242d851036ad788b187f52f606dcc130b83606da845232fd91549b4f54106c",
+  "pdf_bytes": 26304363,
+  "working_case_evidence": [
+    {
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 0,
+      "source_end_char_exclusive": 43,
+      "raw_quote": "一婦人，善怒，舌本強，手臂麻。余曰：舌本屬土，被木剋制故耳，當用六君加柴胡、芍藥治之。"
+    }
+  ],
+  "scan_reading": "一婦人善怒舌本強手臂麻余曰舌本屬土被木尅制故耳當用六君加柴胡芍藥治之",
+  "compared_body_characters_excluding_modern_punctuation": 34,
+  "differences": [
+    {
+      "ordinal": 20,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 25,
+      "source_end_char_exclusive": 26,
+      "working": "剋",
+      "scan": "尅",
+      "status": "different_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 1
+    }
+  ],
+  "alignment": [
+    {
+      "ordinal": 1,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 0,
+      "source_end_char_exclusive": 1,
+      "working": "一",
+      "scan": "一",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 1
+    },
+    {
+      "ordinal": 2,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 1,
+      "source_end_char_exclusive": 2,
+      "working": "婦",
+      "scan": "婦",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 2
+    },
+    {
+      "ordinal": 3,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 2,
+      "source_end_char_exclusive": 3,
+      "working": "人",
+      "scan": "人",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 3
+    },
+    {
+      "ordinal": 4,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 4,
+      "source_end_char_exclusive": 5,
+      "working": "善",
+      "scan": "善",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 4
+    },
+    {
+      "ordinal": 5,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 5,
+      "source_end_char_exclusive": 6,
+      "working": "怒",
+      "scan": "怒",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 5
+    },
+    {
+      "ordinal": 6,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 7,
+      "source_end_char_exclusive": 8,
+      "working": "舌",
+      "scan": "舌",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 6
+    },
+    {
+      "ordinal": 7,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 8,
+      "source_end_char_exclusive": 9,
+      "working": "本",
+      "scan": "本",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 7
+    },
+    {
+      "ordinal": 8,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 9,
+      "source_end_char_exclusive": 10,
+      "working": "強",
+      "scan": "強",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 8
+    },
+    {
+      "ordinal": 9,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 11,
+      "source_end_char_exclusive": 12,
+      "working": "手",
+      "scan": "手",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 9
+    },
+    {
+      "ordinal": 10,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 12,
+      "source_end_char_exclusive": 13,
+      "working": "臂",
+      "scan": "臂",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 10
+    },
+    {
+      "ordinal": 11,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 13,
+      "source_end_char_exclusive": 14,
+      "working": "麻",
+      "scan": "麻",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 11
+    },
+    {
+      "ordinal": 12,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 15,
+      "source_end_char_exclusive": 16,
+      "working": "余",
+      "scan": "余",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 12
+    },
+    {
+      "ordinal": 13,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 16,
+      "source_end_char_exclusive": 17,
+      "working": "曰",
+      "scan": "曰",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 13
+    },
+    {
+      "ordinal": 14,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 18,
+      "source_end_char_exclusive": 19,
+      "working": "舌",
+      "scan": "舌",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 14
+    },
+    {
+      "ordinal": 15,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 19,
+      "source_end_char_exclusive": 20,
+      "working": "本",
+      "scan": "本",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 15
+    },
+    {
+      "ordinal": 16,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 20,
+      "source_end_char_exclusive": 21,
+      "working": "屬",
+      "scan": "屬",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 16
+    },
+    {
+      "ordinal": 17,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 21,
+      "source_end_char_exclusive": 22,
+      "working": "土",
+      "scan": "土",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 17
+    },
+    {
+      "ordinal": 18,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 23,
+      "source_end_char_exclusive": 24,
+      "working": "被",
+      "scan": "被",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 18
+    },
+    {
+      "ordinal": 19,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 24,
+      "source_end_char_exclusive": 25,
+      "working": "木",
+      "scan": "木",
+      "status": "same_model_reading",
+      "scan_column_index": 1,
+      "scan_column_char_index": 19
+    },
+    {
+      "ordinal": 20,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 25,
+      "source_end_char_exclusive": 26,
+      "working": "剋",
+      "scan": "尅",
+      "status": "different_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 1
+    },
+    {
+      "ordinal": 21,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 26,
+      "source_end_char_exclusive": 27,
+      "working": "制",
+      "scan": "制",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 2
+    },
+    {
+      "ordinal": 22,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 27,
+      "source_end_char_exclusive": 28,
+      "working": "故",
+      "scan": "故",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 3
+    },
+    {
+      "ordinal": 23,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 28,
+      "source_end_char_exclusive": 29,
+      "working": "耳",
+      "scan": "耳",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 4
+    },
+    {
+      "ordinal": 24,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 30,
+      "source_end_char_exclusive": 31,
+      "working": "當",
+      "scan": "當",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 5
+    },
+    {
+      "ordinal": 25,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 31,
+      "source_end_char_exclusive": 32,
+      "working": "用",
+      "scan": "用",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 6
+    },
+    {
+      "ordinal": 26,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 32,
+      "source_end_char_exclusive": 33,
+      "working": "六",
+      "scan": "六",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 7
+    },
+    {
+      "ordinal": 27,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 33,
+      "source_end_char_exclusive": 34,
+      "working": "君",
+      "scan": "君",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 8
+    },
+    {
+      "ordinal": 28,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 34,
+      "source_end_char_exclusive": 35,
+      "working": "加",
+      "scan": "加",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 9
+    },
+    {
+      "ordinal": 29,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 35,
+      "source_end_char_exclusive": 36,
+      "working": "柴",
+      "scan": "柴",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 10
+    },
+    {
+      "ordinal": 30,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 36,
+      "source_end_char_exclusive": 37,
+      "working": "胡",
+      "scan": "胡",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 11
+    },
+    {
+      "ordinal": 31,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 38,
+      "source_end_char_exclusive": 39,
+      "working": "芍",
+      "scan": "芍",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 12
+    },
+    {
+      "ordinal": 32,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 39,
+      "source_end_char_exclusive": 40,
+      "working": "藥",
+      "scan": "藥",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 13
+    },
+    {
+      "ordinal": 33,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 40,
+      "source_end_char_exclusive": 41,
+      "working": "治",
+      "scan": "治",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 14
+    },
+    {
+      "ordinal": 34,
+      "source_ref": "XJ-NKZY-V1-P021",
+      "source_start_char": 41,
+      "source_end_char_exclusive": 42,
+      "working": "之",
+      "scan": "之",
+      "status": "same_model_reading",
+      "scan_column_index": 2,
+      "scan_column_char_index": 15
+    }
+  ],
+  "limitations": [
+    "Program validates recorded alignment and provenance, not the model visual reading.",
+    "One printed witness cannot adjudicate other editions or correct the frozen corpus.",
+    "Punctuation, kundoku marks and paleographic glyph variants are not fully collated."
+  ]
+}
