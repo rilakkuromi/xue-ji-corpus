@@ -1,0 +1,69 @@
+{
+  "case_id": "XJ-WKSY-C-V1-P098-1",
+  "review_date": "2026-11-19",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/WKSY_target_spots_2026-10-28.json",
+  "pdf_page": 42,
+  "render_sha256": "e8ed58ba775f1b7bc371d9a517bdae701cea7cd52fc256b8ebe4c6d4a698a31e",
+  "render_command": "pdftoppm -f 42 -l 42 -scale-to 3400 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "page_half": "left",
+  "location": "第42页左半叶第9列接第43页右半叶第1至4列，止而瘥。",
+  "scan_columns": [
+    "一老婦手大指患疔為人針破出鮮血手背俱腫",
+    "半體皆痛神思昏憒五日矣用活命飲始知痛在",
+    "手瘡勢雖惡不宜大攻再用大補劑又各一劑外",
+    "用隔蒜灸喜此手背赤腫而出毒水又各一劑赤",
+    "腫漸潰又用托裏藥而瘥"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 42,
+      "page_half": "left",
+      "column_from_right": 9
+    },
+    {
+      "pdf_page": 43,
+      "page_half": "right",
+      "column_from_right": 1
+    },
+    {
+      "pdf_page": 43,
+      "page_half": "right",
+      "column_from_right": 2
+    },
+    {
+      "pdf_page": 43,
+      "page_half": "right",
+      "column_from_right": 3
+    },
+    {
+      "pdf_page": 43,
+      "page_half": "right",
+      "column_from_right": 4
+    }
+  ],
+  "transcription_policy": "只录正文大字，保留用字差异与冻结案界。",
+  "expected_substitutions": [
+    {
+      "working": "裡",
+      "scan": "裏"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction",
+  "page_renders": [
+    {
+      "pdf_page": 42,
+      "render_sha256": "e8ed58ba775f1b7bc371d9a517bdae701cea7cd52fc256b8ebe4c6d4a698a31e",
+      "render_command": "pdftoppm -f 42 -l 42 -scale-to 3400 -png -singlefile INPUT.pdf OUTPUT_PREFIX"
+    },
+    {
+      "pdf_page": 43,
+      "render_sha256": "432e588bc36fde46a8e81843f004ba65f95514e01ee29eb5f9c23d46b082a093",
+      "render_command": "pdftoppm -f 43 -l 43 -scale-to 3400 -png -singlefile INPUT.pdf OUTPUT_PREFIX"
+    }
+  ]
+}

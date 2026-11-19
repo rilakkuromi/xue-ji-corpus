@@ -1,0 +1,83 @@
+{
+  "case_id": "XJ-WKSY-C-V1-P095-1",
+  "review_date": "2026-11-19",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/WKSY_target_spots_2026-10-28.json",
+  "pdf_page": 42,
+  "render_sha256": "e8ed58ba775f1b7bc371d9a517bdae701cea7cd52fc256b8ebe4c6d4a698a31e",
+  "render_command": "pdftoppm -f 42 -l 42 -scale-to 3400 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "page_half": "right",
+  "location": "第42页右半叶第3至9列接左半叶第1列，止不已惜哉。",
+  "scan_columns": [
+    "翰林屠漸山年四十患濕毒瘡疾誤用輕粉之劑",
+    "虧損元氣久不能愈一日將晡之際診之肝脉忽",
+    "洪數而有力余曰何肝脉之如此侵晨瘡出黯血",
+    "三四碗體倦自汗雖甚可畏所喜血黯而脉靜余",
+    "曰此輕粉之熱血受其毒而妄行輕粉之毒亦得",
+    "以泄邪氣而真氣虛也當急用獨參湯主之余重",
+    "其為人體恤甚篤但惑於他言不果致邪氣連綿",
+    "不已惜哉"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 42,
+      "page_half": "right",
+      "column_from_right": 3
+    },
+    {
+      "pdf_page": 42,
+      "page_half": "right",
+      "column_from_right": 4
+    },
+    {
+      "pdf_page": 42,
+      "page_half": "right",
+      "column_from_right": 5
+    },
+    {
+      "pdf_page": 42,
+      "page_half": "right",
+      "column_from_right": 6
+    },
+    {
+      "pdf_page": 42,
+      "page_half": "right",
+      "column_from_right": 7
+    },
+    {
+      "pdf_page": 42,
+      "page_half": "right",
+      "column_from_right": 8
+    },
+    {
+      "pdf_page": 42,
+      "page_half": "right",
+      "column_from_right": 9
+    },
+    {
+      "pdf_page": 42,
+      "page_half": "left",
+      "column_from_right": 1
+    }
+  ],
+  "transcription_policy": "只录正文大字，保留用字差异与冻结案界。",
+  "expected_substitutions": [
+    {
+      "working": "脈",
+      "scan": "脉"
+    },
+    {
+      "working": "脈",
+      "scan": "脉"
+    },
+    {
+      "working": "脈",
+      "scan": "脉"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction"
+}

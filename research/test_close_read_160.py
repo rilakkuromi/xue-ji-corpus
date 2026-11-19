@@ -798,9 +798,9 @@ class MultiCasePrintTests(unittest.TestCase):
 
     def test_actual_roster_and_unresolved_differences_retained(self):
         summary=self.p.summarize(self.rows)
-        self.assertEqual(summary['cases'],55)
-        self.assertEqual(summary['compared_body_characters'],4090)
-        self.assertEqual(summary['different_character_positions'],89)
+        self.assertEqual(summary['cases'],58)
+        self.assertEqual(summary['compared_body_characters'],4402)
+        self.assertEqual(summary['different_character_positions'],97)
         self.assertEqual(len(next(r for r in self.rows if r['case_id']=='XJ-KCLY-C-H3-P014-1')['differences']),0)
 
     def test_duplicate_case_cannot_inflate_full_case_count(self):
@@ -1208,9 +1208,9 @@ class DjvuCaseTests(unittest.TestCase):
         self.assertEqual(sum(r['compared_body_characters'] for r in rows), 640)
         self.assertEqual(sum(len(r['expected_differences']) for r in rows), 21)
         summary = iiif.summarize(iiif.build())
-        self.assertEqual(summary['cases'], 67)
+        self.assertEqual(summary['cases'], 70)
         self.assertEqual(summary['iiif_cases'], 5)
-        self.assertEqual(summary['compared_body_characters'], 4988)
+        self.assertEqual(summary['compared_body_characters'], 5300)
         self.assertEqual(summary['cases_by_work']['BYCY'], 20)
 
     def test_same_iiif_case_cannot_count_twice(self):
