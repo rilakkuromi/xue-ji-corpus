@@ -1,0 +1,88 @@
+{
+  "case_id": "XJ-LYJY-C-V1-P092",
+  "review_date": "2026-11-20",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/LYJY_target_spots_2026-10-28.json",
+  "pdf_page": 35,
+  "page_half": "right",
+  "location": "第35页右半叶第4至7列，止眉髮生矣。",
+  "render_command": "pdftoppm -f 35 -l 35 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256": "b10e685cc4bad18ab8f5e77a619c0a62052ecd1db1cc9718b9a97b0434b954b5",
+  "scan_columns": [
+    "一男子遍身搔痒服祛風辛燥之劑眉髮脫落余",
+    "謂前藥復傷肝腎精血虛而火内熾所致朝用八",
+    "珍湯加麥門冬五味子又用六味丸料加當歸黃",
+    "芪治之風熱退而眉髮生矣"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 35,
+      "page_half": "right",
+      "column_from_right": 4
+    },
+    {
+      "pdf_page": 35,
+      "page_half": "right",
+      "column_from_right": 5
+    },
+    {
+      "pdf_page": 35,
+      "page_half": "right",
+      "column_from_right": 6
+    },
+    {
+      "pdf_page": 35,
+      "page_half": "right",
+      "column_from_right": 7
+    }
+  ],
+  "transcription_policy": "逐列录正文大字，保留用字差异与冻结案界。",
+  "expected_substitutions": [
+    {
+      "working": "癢",
+      "scan": "痒"
+    },
+    {
+      "working": "發",
+      "scan": "髮"
+    },
+    {
+      "working": "內",
+      "scan": "内"
+    },
+    {
+      "working": "夕",
+      "scan": "又"
+    },
+    {
+      "working": "耆",
+      "scan": "芪"
+    },
+    {
+      "working": "發",
+      "scan": "髮"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction",
+  "supplemental_variant": {
+    "scope": "single_reading_only",
+    "catalogue_url": "https://da.library.ryukoku.ac.jp/page/980010",
+    "shelfmark": "690.9-365-W-1",
+    "canvas_ordinal": 32,
+    "canvas_uri": "https://da.library.ryukoku.ac.jp/iiif/980010/1/canvas/32",
+    "manifest_sha256": "5307d228b727c2f423026cea07ed69003cf6295c86e618e2379e31412c02b44b",
+    "image_url": "https://da2.library.ryukoku.ac.jp/image/?IIIF=/98%2F980010%2F980010-0032.tif/full/max/0/default.jpg",
+    "image_sha256": "78fd1ce1b8a6ac28c2f357534c97cc6973260dc5deca745d71956c4f72c6655a",
+    "image_bytes": 266109,
+    "page_half": "left",
+    "column_from_right": 6,
+    "ordinal": 48,
+    "working": "夕",
+    "ncl": "又",
+    "ryukoku": "夕"
+  }
+}

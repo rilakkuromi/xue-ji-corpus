@@ -1,0 +1,75 @@
+{
+  "case_id": "XJ-LYJY-C-V1-P091",
+  "review_date": "2026-11-20",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/LYJY_target_spots_2026-10-28.json",
+  "pdf_page": 34,
+  "page_half": "left",
+  "location": "第34页左半叶第9列接第35页右半叶第1至3列，止而完。",
+  "render_command": "pdftoppm -f 34 -l 34 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256": "c0ef895e7340deea33a791164ca11da2e949d701f9acc55bc51e77ea8ea48d1c",
+  "scan_columns": [
+    "一男子因大怒發熱眉髮頓落蓋髮屬腎而眉屬",
+    "肝此肝腎素虛為怒陰火愈盛銷爍精血而然也",
+    "用六味丸料加柴胡山梔黃栢數劑漸生又二十",
+    "餘劑而完"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 34,
+      "page_half": "left",
+      "column_from_right": 9
+    },
+    {
+      "pdf_page": 35,
+      "page_half": "right",
+      "column_from_right": 1
+    },
+    {
+      "pdf_page": 35,
+      "page_half": "right",
+      "column_from_right": 2
+    },
+    {
+      "pdf_page": 35,
+      "page_half": "right",
+      "column_from_right": 3
+    }
+  ],
+  "transcription_policy": "逐列录正文大字，保留用字差异与冻结案界。",
+  "expected_substitutions": [
+    {
+      "working": "發",
+      "scan": "髮"
+    },
+    {
+      "working": "發",
+      "scan": "髮"
+    },
+    {
+      "working": "鑠",
+      "scan": "爍"
+    },
+    {
+      "working": "柏",
+      "scan": "栢"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction",
+  "page_renders": [
+    {
+      "pdf_page": 34,
+      "render_sha256": "c0ef895e7340deea33a791164ca11da2e949d701f9acc55bc51e77ea8ea48d1c",
+      "render_command": "pdftoppm -f 34 -l 34 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX"
+    },
+    {
+      "pdf_page": 35,
+      "render_sha256": "b10e685cc4bad18ab8f5e77a619c0a62052ecd1db1cc9718b9a97b0434b954b5",
+      "render_command": "pdftoppm -f 35 -l 35 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX"
+    }
+  ]
+}

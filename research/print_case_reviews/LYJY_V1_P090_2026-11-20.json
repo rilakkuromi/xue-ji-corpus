@@ -1,0 +1,57 @@
+{
+  "case_id": "XJ-LYJY-C-V1-P090",
+  "review_date": "2026-11-20",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/LYJY_target_spots_2026-10-28.json",
+  "pdf_page": 34,
+  "page_half": "left",
+  "location": "第34页左半叶第4至8列，止方愈。",
+  "render_command": "pdftoppm -f 34 -l 34 -scale-to 4000 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "render_sha256": "c0ef895e7340deea33a791164ca11da2e949d701f9acc55bc51e77ea8ea48d1c",
+  "scan_columns": [
+    "一男子兩掌每至秋皮厚皺裂起白屑内熱體倦",
+    "此肝脾血燥故秋金用事之時而作用加味逍遙",
+    "散加川芎熟地三十餘劑而愈再用六味丸加五",
+    "味麥門服之半載後手足指縫臂腿腕皮厚色白",
+    "搔之則木久服前藥方愈"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 34,
+      "page_half": "left",
+      "column_from_right": 4
+    },
+    {
+      "pdf_page": 34,
+      "page_half": "left",
+      "column_from_right": 5
+    },
+    {
+      "pdf_page": 34,
+      "page_half": "left",
+      "column_from_right": 6
+    },
+    {
+      "pdf_page": 34,
+      "page_half": "left",
+      "column_from_right": 7
+    },
+    {
+      "pdf_page": 34,
+      "page_half": "left",
+      "column_from_right": 8
+    }
+  ],
+  "transcription_policy": "逐列录正文大字，保留用字差异与冻结案界。",
+  "expected_substitutions": [
+    {
+      "working": "內",
+      "scan": "内"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction"
+}
