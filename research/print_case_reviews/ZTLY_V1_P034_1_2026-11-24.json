@@ -1,0 +1,75 @@
+{
+  "case_id": "XJ-ZTLY-C-V1-P034-1",
+  "review_date": "2026-11-24",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/ZTLY_target_spots_2026-10-27.json",
+  "pdf_page": 16,
+  "render_sha256": "1e351353d3af8bb09915ea8ffc84c1d15a7dc00ac5f202a5babf10e133534487",
+  "render_command": "pdftoppm -f 16 -l 16 -scale-to 3400 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "page_half": "left",
+  "location": "第16页左半叶第2至9列，止肌肉漸生。",
+  "scan_columns": [
+    "有一患者受刑太重外皮傷破瘀血如注内肉糜",
+    "爛黯腫上徹胸背下至足指昏憒不食隨以黑羊",
+    "皮熱貼患處灌以童便酒薄粥更以清肝活血調",
+    "氣健脾之劑神思稍蘇始言遍身強痛又用大劑",
+    "養血補氣之藥腫消食進時仲冬瘀血凝結不能",
+    "潰膿又用大補之劑壯其陽氣其膿方熟遂砭去",
+    "洞見其骨塗以當歸膏及服前藥百餘劑肌肉漸",
+    "生"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 2
+    },
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 3
+    },
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 4
+    },
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 5
+    },
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 6
+    },
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 7
+    },
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 8
+    },
+    {
+      "pdf_page": 16,
+      "page_half": "left",
+      "column_from_right": 9
+    }
+  ],
+  "transcription_policy": "逐列录正文大字，保留用字差异与冻结案界。",
+  "expected_substitutions": [
+    {
+      "working": "內",
+      "scan": "内"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction"
+}
