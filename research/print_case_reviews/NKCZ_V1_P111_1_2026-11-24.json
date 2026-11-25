@@ -1,0 +1,69 @@
+{
+  "case_id": "XJ-NKCZ-C-V1-P111-1",
+  "review_date": "2026-11-24",
+  "method": "model_visual_full_case_read_and_comparison_not_expert_collation",
+  "human_adjudication": "pending",
+  "initial_query_eligible": false,
+  "pdf_record": "research/scan_reviews/NKCZ_target_spots_2026-10-27.json",
+  "pdf_page": 40,
+  "render_sha256": "93dea236559dac8e6e9ad36bf0cccbae35dcd48e3adf3bdf676d6593af3cf796",
+  "render_command": "pdftoppm -f 40 -l 40 -scale-to 3400 -png -singlefile INPUT.pdf OUTPUT_PREFIX",
+  "page_half": "left",
+  "location": "第40页左半叶第8至9列接第41页右半叶第1列，止二劑而瘥。",
+  "scan_columns": [
+    "一婦人内熱脇脹兩乳不時作痛口内不時辛辣",
+    "若臥而起急則臍下牽痛此帶脉為患用小柴胡",
+    "加青皮黃連山梔二劑而瘥"
+  ],
+  "column_locations": [
+    {
+      "pdf_page": 40,
+      "page_half": "left",
+      "column_from_right": 8
+    },
+    {
+      "pdf_page": 40,
+      "page_half": "left",
+      "column_from_right": 9
+    },
+    {
+      "pdf_page": 41,
+      "page_half": "right",
+      "column_from_right": 1
+    }
+  ],
+  "transcription_policy": "逐列录正文大字，保留用字差异与冻结案界。",
+  "expected_substitutions": [
+    {
+      "working": "內",
+      "scan": "内"
+    },
+    {
+      "working": "脅",
+      "scan": "脇"
+    },
+    {
+      "working": "內",
+      "scan": "内"
+    },
+    {
+      "working": "脈",
+      "scan": "脉"
+    }
+  ],
+  "full_case_model_image_comparisons": 1,
+  "expert_collated_cases": 0,
+  "scope": "one_full_case_one_print_witness_not_source_correction",
+  "page_renders": [
+    {
+      "pdf_page": 40,
+      "render_sha256": "93dea236559dac8e6e9ad36bf0cccbae35dcd48e3adf3bdf676d6593af3cf796",
+      "render_command": "pdftoppm -f 40 -l 40 -scale-to 3400 -png -singlefile INPUT.pdf OUTPUT_PREFIX"
+    },
+    {
+      "pdf_page": 41,
+      "render_sha256": "91b1c09e70e3cb63fef92288189c72548c88b1d7278cdff2c974e50fda9e256e",
+      "render_command": "pdftoppm -f 41 -l 41 -scale-to 3400 -png -singlefile INPUT.pdf OUTPUT_PREFIX"
+    }
+  ]
+}
